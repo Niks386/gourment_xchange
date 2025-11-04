@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Gourmet Xchange</title>
+    <meta name="description" content="Product | Gourmet Xchange">
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link href="./assets/css/navigation.css" rel="stylesheet">
+</head>
+
+<body class="overflow-hidden">
+    <!-- Top Header -->
+    <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
+        <div
+            class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
+        </div>
+        <div class="header-inner flex justify-between items-start relative">
+            <div class="breadcrumb font-brandon-grotesque ">
+                <span class="breadcrumb-item current-page">Product</span>
+            </div>
+            <a href="index.html">
+                <img src="./assets/images/main-logo.svg" alt="Logo">
+            </a>
+        </div>
+    </section>
+
+    <!-- Main navigation -->
+    <section class="navigation-wrap">
+        <div id="main-menu-overlay" class="overlay-menu"></div>
+        <!-- Menu Button -->
+        <button id="menuToggle" class="fixed bottom-[60px] left-[43px] transition-all duration-300 z-20 menu-closed">
+            <div id="menuIcon">
+                <img src="assets/images/menu/menu-icon-close.svg" alt="Menu Icon">
+            </div>
+        </button>
+        <div id="main-menu"
+            class="fixed bottom-[125px] w-full px-[108px] z-20 flex items-center  transition-all duration-500 ease-in-out transform origin-bottom opacity-100 menu-hidden">
+            <!-- Menu Content -->
+            <div id="menuContent"
+                class="bg-white-80 rounded-full rounded-bl-none pt-4 px-20 pb-[33px] flex gap-4 w-full">
+                <div class="flex items-center justify-between w-full">
+                    <div class="menu-item text-center" data-menu="development">
+                        <a href="development.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-development.svg" alt="Development">
+                            <span class="menu-title">Development</span>
+                        </a>
+                        <button class="menu-plus" data-menu="development">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="location">
+                        <a href="location.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-location.svg" alt="Location">
+                            <span class="menu-title">Location</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="product">
+                        <a href="product.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-product.svg" alt="Product">
+                            <span class="menu-title">Product</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-product">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="logistics">
+                        <a href="logistics.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
+                            <span class="menu-title">Logistics Efficiency</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="facilities">
+                        <a href="facilities.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-facilities.svg" alt="Facilities">
+                            <span class="menu-title">Facilities</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="sustainability">
+                        <a href="sustainability.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-sustainability.svg" alt="Sustainability">
+                            <span class="menu-title">Sustainability</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="value">
+                        <a href="value-added.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
+                            <span class="menu-title">Value Added</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-value">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="gallery">
+                        <a href="gallery.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-gallery.svg" alt="Gallery">
+                            <span class="menu-title">Gallery</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Submenus content -->
+                <div id="submenu-development" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <a href="introduction.html">Introduction</a>
+                            <a href="key-highlights.html">KeyHighlights</a>
+                            <a href="track-record.html">TrackRecord</a>
+                            <a href="./assets/images/e-brochure/dummy-ebrochure.pdf" target="_blank">eBrochure</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-product" class="submenu absolute bottom-[-93px]">
+                    <div class="w-full flex">
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[115px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">Select product by:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="the-xchange.html">The Xchange</a>
+                                <a href="heritage-terrace.html">Heritage Terrace</a>
+                                <a href="space-types.html">Space Types</a>
+                                <a href="food-operations.html">Food Operations</a>
+                            </div>
+                        </div>
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[60px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">View:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="unit-plan-comparison.html">Unit Plan Comparison</a>
+                                <a href="test-fit-plans.html">Test Fit Plans</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-value" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <a href="food-consultants.html">Food Consultants</a>
+                            <a href="logistics-provider.html">Logistics Provider</a>
+                            <a href="equipment-suppliers.html">Equipment Suppliers</a>
+                            <a href="rd-services.html">R&d Services</a>
+                            <a href="renovation-contractors.html">Renovation Contractors</a>
+                            <a href="other-services.html">Other Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom menu product -->
+    <div
+        class="bottom-menu w-max fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
+        <div class="w-full flex">
+            <div class="bg-white-80 rounded-full rounded-tl-none">
+                <span class="text-[13px] text-white absolute top-[-25px]">Select product by:</span>
+                <div class="flex items-center menu-list">
+                    <a href="the-xchange.html">The Xchange</a>
+                    <a href="heritage-terrace.html">Heritage Terrace</a>
+                    <a href="space-types.html">Space Types</a>
+                    <a href="food-operations.html">Food Operations</a>
+                </div>
+            </div>
+            <div class="bg-white-80 rounded-full rounded-tl-none ml-[60px]">
+                <span class="text-[13px] text-white absolute top-[-25px]">View:</span>
+                <div class="flex items-center menu-list">
+                    <a href="unit-plan-comparison.html">Unit Plan Comparison</a>
+                    <a href="test-fit-plans.html">Test Fit Plans</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 360° Rotate Model -->
+    <section class="rotate-wrap w-full h-full">
+        <!-- 360° Loader -->
+        <div id="360-loader" class="fixed inset-0 bg-black/0 flex items-center justify-center z-50">
+            <div id="circle-360-loader"
+                class="relative flex flex-col items-center justify-center w-48 h-48 rounded-full bg-dcddde-80  cursor-pointer text-center transition-all duration-500">
+                <span class="font-brandon-grotesque text-color-eb3b1d text-4xl font-semibold">360<span
+                        class="relative -top-4 -right-1 text-[33px] leading-none">•</span></span>
+                <p class="text-lg leading-[26px]">Move around to<br>view development</p>
+            </div>
+        </div>
+        <div class="rotate-img w-full h-full">
+            <div class="cloudimage-360" id="rotatinImg" data-folder="./assets/images/rotating-model/"
+                data-filename="{index}.jpg" data-amount="250" data-autoplay="false" data-stop-at-edges="false"
+                data-spin-reverse="true" drag-speed="0" data-stop-draggable="true">
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./assets/vendor/js/jquery.min.js"></script>
+    <script src="./assets/vendor/js/360-view.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
