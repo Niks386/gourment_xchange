@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction | Gourmet Xchange</title>
+    <meta name="description" content="Introduction | Gourmet Xchange">
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link href="./assets/css/navigation.css" rel="stylesheet">
+    <link href="./assets/vendor/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="./assets/vendor/css/owl.theme.default.min.css" rel="stylesheet">
+</head>
+
+<body class="overflow-hidden">
+    <!-- Top Header -->
+    <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
+        <div
+            class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
+        </div>
+        <div class="header-inner flex justify-between items-start relative">
+            <div class="breadcrumb font-brandon-grotesque flex gap-[15px]">
+                <a href="development.html" class="breadcrumb-item">Development</a>
+                <span><img src="./assets/images/breadcrumb-arrow.svg" alt="Breadcrumb Arrow"></span>
+                <span class="breadcrumb-item current-page">Introduction</span>
+            </div>
+            <a href="index.html">
+                <img src="./assets/images/main-logo.svg" alt="Logo">
+            </a>
+        </div>
+    </section>
+
+    <!-- Main navigation -->
+    <section class="navigation-wrap">
+        <div id="main-menu-overlay" class="overlay-menu"></div>
+        <!-- Menu Button -->
+        <button id="menuToggle" class="fixed bottom-[60px] left-[43px] transition-all duration-300 z-20 menu-closed">
+            <div id="menuIcon">
+                <img src="assets/images/menu/menu-icon-close.svg" alt="Menu Icon">
+            </div>
+        </button>
+        <div id="main-menu"
+            class="fixed bottom-[125px] w-full px-[108px] z-20 flex items-center  transition-all duration-500 ease-in-out transform origin-bottom opacity-100 menu-hidden">
+            <!-- Menu Content -->
+            <div id="menuContent"
+                class="bg-white-80 rounded-full rounded-bl-none pt-4 px-20 pb-[33px] flex gap-4 w-full">
+                <div class="flex items-center justify-between w-full">
+                    <div class="menu-item text-center" data-menu="development">
+                        <a href="development.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-development.svg" alt="Development">
+                            <span class="menu-title">Development</span>
+                        </a>
+                        <button class="menu-plus" data-menu="development">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="location">
+                        <a href="location.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-location.svg" alt="Location">
+                            <span class="menu-title">Location</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="product">
+                        <a href="product.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-product.svg" alt="Product">
+                            <span class="menu-title">Product</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-product">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="logistics">
+                        <a href="logistics.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
+                            <span class="menu-title">Logistics Efficiency</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="facilities">
+                        <a href="facilities.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-facilities.svg" alt="Facilities">
+                            <span class="menu-title">Facilities</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="sustainability">
+                        <a href="sustainability.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-sustainability.svg" alt="Sustainability">
+                            <span class="menu-title">Sustainability</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="value">
+                        <a href="value-added.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
+                            <span class="menu-title">Value Added</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-value">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="gallery">
+                        <a href="gallery.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-gallery.svg" alt="Gallery">
+                            <span class="menu-title">Gallery</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Submenus content -->
+                <div id="submenu-development" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <a href="introduction.html">Introduction</a>
+                            <a href="key-highlights.html">KeyHighlights</a>
+                            <a href="track-record.html">TrackRecord</a>
+                            <a href="./assets/images/e-brochure/dummy-ebrochure.pdf" target="_blank">eBrochure</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-product" class="submenu absolute bottom-[-93px]">
+                    <div class="w-full flex">
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[115px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">Select product by:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="main-block.html">Main Block</a>
+                                <a href="block-a.html">Block A</a>
+                                <a href="space-types.html">Space Types</a>
+                                <a href="food-operations.html">Food Operations</a>
+                            </div>
+                        </div>
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[60px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">View:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="unit-plan-comparison.html">Unit Plan Comparison</a>
+                                <a href="test-fit-plans.html">Test Fit Plans</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-value" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <a href="food-consultants.html">Food Consultants</a>
+                            <a href="logistics-provider.html">Logistics Provider</a>
+                            <a href="equipment-suppliers.html">Equipment Suppliers</a>
+                            <a href="rd-services.html">R&d Services</a>
+                            <a href="renovation-contractors.html">Renovation Contractors</a>
+                            <a href="other-services.html">Other Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full screen carousel -->
+    <section class="overflow-hidden intro-wrap">
+        <div class="full-carousel owl-carousel owl-theme h-screen">
+            <div class="relative h-screen content-center">
+                <div class="w-full px-36 flex gap-[40px] items-center justify-center">
+                    <div class="w-[1088px] relative">
+                        <img src="./assets/images/introduction/introduction-1.webp" alt="Discover The"
+                            class="w-full h-auto" />
+                        <span
+                            class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] leading-[10px] absolute bottom-[20px] right-[20px] text-shadow-[0px 2px 4px #000000BE;]">Artist’s
+                            Impression</span>
+                    </div>
+                    <div class="w-[486px]">
+                        <div class="text-center w-full ">
+                            <h1 class="character-style-3 uppercase">
+                                Discover The
+                            </h1>
+                            <span class="w-auto inline-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="58.219" height="45.493"
+                                    viewBox="0 0 58.219 45.493">
+                                    <path id="x"
+                                        d="M0,0,21.988,22.216,7.73,36.621H18.275l10.3-10.4L47.65,45.493H58.219L35.181,22.216,48.374,8.887H38.349l-9.506,9.6L10.545,0Z"
+                                        fill="#ec4120" />
+                                </svg>
+                            </span>
+                            <h2 class="character-style-3 uppercase">
+                                Factors at<br />Singapore’s Largest<br />City Food Hub
+                            </h2>
+                            <p class="mt-10 mx-auto">
+                                Welcome to GOURMET XCHANGE, a landmark destination where food innovation, business
+                                growth,
+                                and city-centre access converge. From advanced production spaces to lifestyle touches,
+                                this
+                                is where bold ideas take shape, contributing to Singapore’s 30 by 30 vision to meet 30%
+                                of
+                                the nation’s nutritional needs locally by 2030.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative h-screen content-center">
+                <div class="w-full px-34 flex gap-[40px] items-center justify-center">
+                    <div class="w-[510px]">
+                        <div class="text-center w-full">
+                            <h2 class="h1title uppercase">
+                                THE PERFECT STARTER
+                            </h2>
+                            <h3 class="character-style-1 uppercase svg-inside">
+                                FOR YOUR NE<svg xmlns="http://www.w3.org/2000/svg" width="58.219" height="45.493"
+                                    viewBox="0 0 58.219 45.493">
+                                    <path id="x"
+                                        d="M0,0,21.988,22.216,7.73,36.621H18.275l10.3-10.4L47.65,45.493H58.219L35.181,22.216,48.374,8.887H38.349l-9.506,9.6L10.545,0Z"
+                                        fill="#ec4120" />
+                                </svg>T <br />FOOD CHAPTER
+                            </h3>
+                            <p class="w-[481px] mt-10 mx-auto">Just like a well-prepared appetiser sets the tone for a
+                                great
+                                meal,
+                                GOURMET XCHANGE is the ideal starting point for your
+                                next culinary pursuit. Located at Kallang Way, it is more than just a food hub. It’s a
+                                vibrant destination where
+                                businesses flourish and communities come alive.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-[1088px] relative">
+                        <img src="./assets/images/introduction/introduction-2.webp" alt="The perfect starter"
+                            class="w-full h-auto" />
+                        <span
+                            class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] leading-[10px] absolute bottom-[20px] right-[20px] text-shadow-[0px 2px 4px #000000BE;]">Artist’s
+                            Impression</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative h-screen content-center">
+                <div class="w-full px-34 flex gap-[40px] items-center justify-center">
+                    <div class="w-[1088px] relative">
+                        <img src="./assets/images/introduction/introduction-3.webp" alt="One prime location"
+                            class="w-full h-auto" />
+                        <span
+                            class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] leading-[10px] absolute bottom-[20px] right-[20px] text-shadow-[0px 2px 4px #000000BE;]">Artist’s
+                            Impression</span>
+                        <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-full flex justify-center z-10">
+                            <div class="flex gap-[63px]">
+                                <div
+                                    class="relative text-white bg-[#F2673A] rounded-full rounded-tl-none w-[161px] h-[161px] flex flex-col items-center justify-center p-2 text-center shadow-md">
+                                    <p class="title-text-15 uppercase">Central<br>Singapore</p>
+                                    <p class="block text-sm leading-[18px] mt-1">Modern
+                                        in design.<br> Rich in heritage.</p>
+                                </div>
+                                <div
+                                    class="relative text-white bg-[#F26839] rounded-full rounded-tl-none w-[161px] h-[161px] flex flex-col items-center justify-center p-2 text-center shadow-md">
+                                    <p class="title-text-15 uppercase">Integrated<br>Food
+                                        Enclave</p>
+                                    <p class="block text-sm leading-[18px] mt-1">With
+                                        vibrant <br> waterfront lifestyle,<br>F&B and service<br> zones</p>
+                                </div>
+                                <div
+                                    class="relative text-white bg-[#F4784D] rounded-full rounded-tl-none w-[161px] h-[161px] flex flex-col items-center justify-center p-2 text-center shadow-md">
+                                    <p class="title-text-15 uppercase">264
+                                        Modern<br>Units and <br>8 Heritage Terrace Units</p>
+                                </div>
+                                <div
+                                    class="relative text-white bg-[#f5885f] rounded-full rounded-tl-none w-[161px] h-[161px] flex flex-col items-center justify-center p-2 text-center shadow-md">
+                                    <p class="title-text-15 uppercase">Vibrant<br>Ecosystem</p>
+                                    <p class="block text-sm leading-[18px] mt-1">in
+                                        a food zone</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[510px]">
+                        <div class="text-center w-full ">
+                            <h2 class="h1title uppercase">
+                                ONE PRIME LOCATION,
+                            </h2>
+                            <h3 class="character-style-1 uppercase svg-inside">
+                                BUILT FOR EVERY FLAVOUR<br />
+                                OF<svg xmlns="http://www.w3.org/2000/svg" width="58.219" height="45.493"
+                                    viewBox="0 0 58.219 45.493">
+                                    <path id="x"
+                                        d="M0,0,21.988,22.216,7.73,36.621H18.275l10.3-10.4L47.65,45.493H58.219L35.181,22.216,48.374,8.887H38.349l-9.506,9.6L10.545,0Z"
+                                        fill="#ec4120" />
+                                </svg>E CELLENCE
+                            </h3>
+                            <p class="w-[409px] mt-10 mx-auto">Nestled along the Kallang River and framed by lush
+                                greenery,
+                                GOURMET XCHANGE sits within an integrated precinct in the
+                                central region, offering premium-quality, strata-titled units and seamless amenities. As
+                                the largest purpose-built food
+                                hub, it is designed to inspire productivity, drive success, and shape the next chapter
+                                in culinary enterprise.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative h-screen content-center">
+                <div class="w-full px-34 flex gap-[40px] justify-center">
+                    <div class="w-[510px] mt-[97px]">
+                        <div class="text-center w-full">
+                            <h2 class="h1title uppercase">
+                                A TASTE OF BALANCE,
+                            </h2>
+                            <h3 class="character-style-1 uppercase svg-inside">
+                                AN INTEGRATED NE<svg xmlns="http://www.w3.org/2000/svg" width="58.219" height="45.493"
+                                    viewBox="0 0 58.219 45.493">
+                                    <path id="x"
+                                        d="M0,0,21.988,22.216,7.73,36.621H18.275l10.3-10.4L47.65,45.493H58.219L35.181,22.216,48.374,8.887H38.349l-9.506,9.6L10.545,0Z"
+                                        fill="#ec4120" />
+                                </svg>US
+                            </h3>
+                            <p class="w-[360px] mt-10 mx-auto">At GOURMET XCHANGE, work is just the beginning. Every
+                                corner offers a truly integrated experience: The Central Plaza
+                                blends leisure, socialising and event spaces, while a fitness zone lets you recharge
+                                body, mind and soul.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-[1088px] relative">
+                        <img src="./assets/images/introduction/introduction-4.webp" alt="A taste of balance"
+                            class="w-40 h-auto" />
+                        <span
+                            class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] leading-[10px] absolute bottom-[20px] right-[20px] text-shadow-[0px 2px 4px #000000BE;]">Artist’s
+                            Impression</span>
+                        <div class="absolute top-[-75px] right-[90px] w-full flex justify-end z-10">
+                            <div class="flex gap-[63px]">
+                                <div
+                                    class="relative text-white bg-[#F26839] rounded-full rounded-br-none w-[161px] h-[161px] flex flex-col items-center justify-center p-2 text-center shadow-md">
+                                    <p class="title-text-15 uppercase">THE CENTRAL<br> PLAZA</p>
+                                    <p class="block text-sm leading-[18px] mt-1">A community space<br> for socialising,
+                                        dining,<br> retail and activities</p>
+                                </div>
+                                <div
+                                    class="relative text-white bg-[#F4784D] rounded-full rounded-br-none w-[161px] h-[161px] flex flex-col items-center justify-center p-2 text-center shadow-md">
+                                    <p class="title-text-15 uppercase">ACTIVE ZONE</p>
+                                    <p class="block text-sm leading-[18px] mt-1">A lifestyle fitness<br> corner for
+                                        everyone<br> to recharge</p>
+                                </div>
+                                <div
+                                    class="relative text-white bg-[#F5885F] rounded-full rounded-br-none w-[161px] h-[161px] flex flex-col items-center justify-center p-2 text-center shadow-md">
+                                    <p class="title-text-15 uppercase">SKY GARDEN <br>AT 3RD STOREY</p>
+                                    <p class="block text-sm leading-[18px] mt-1">A serene haven<br> overlooking the
+                                        river<br> for rejuvenation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-[-225px] text-white bg-[#F26839] rounded-full rounded-tr-none w-[201px] h-[201px] flex flex-col items-center justify-center p-2 text-center shadow-md">
+                            <p class="title-text-15 uppercase">RIVER <br> PROMENADE</p>
+                            <p class="block text-sm leading-[18px] mt-1">A scenic riverside walk<br> with wide pathways
+                                and<br> terraced plaza seating<br> for rest and leisure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative h-screen content-center">
+                <div class="w-full px-34 flex gap-[160px] items-center justify-center">
+                    <div class="w-[475px]">
+                        <div class="text-center w-full">
+                            <h2 class="h1title uppercase">
+                                Rooted In Heritage,
+                            </h2>
+                            <h3 class="character-style-1 uppercase svg-inside">
+                                READY FOR E<svg xmlns="http://www.w3.org/2000/svg" width="58.219" height="45.493"
+                                    viewBox="0 0 58.219 45.493">
+                                    <path id="x"
+                                        d="M0,0,21.988,22.216,7.73,36.621H18.275l10.3-10.4L47.65,45.493H58.219L35.181,22.216,48.374,8.887H38.349l-9.506,9.6L10.545,0Z"
+                                        fill="#ec4120" />
+                                </svg>PLORATION
+                            </h3>
+                            <p class="w-[372px] mt-10 mx-auto">The exclusive Heritage Terrace units celebrate
+                                Singapore’s industrial legacy, reimagined for today’s food entrepreneurs.
+                                Built in the 1980s, the last remaining cluster in Singapore, they showcase sustainable
+                                redevelopment while preserving
+                                architectural heritage.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-[939px] relative">
+                        <img src="./assets/images/introduction/introduction-5.webp" alt="Rooted In Heritage,"
+                            class="w-40 h-auto" />
+                        <span
+                            class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] leading-[10px] absolute bottom-[20px] right-[20px] text-shadow-[0px 2px 4px #000000BE;]">Artist’s
+                            Impression</span>
+                        <div class="absolute top-[-115px] right-[90px] w-full flex justify-end z-10">
+                            <div class="flex gap-[63px]">
+                                <div
+                                    class="relative text-white bg-[#F26839] rounded-full rounded-br-none w-[161px] h-[161px] flex flex-col items-center justify-center p-2 text-center shadow-md">
+                                    <p class="title-text-15 uppercase">HERITAGE <br> BLOCK</p>
+                                    <p class="block text-sm leading-[18px] mt-1">Adaptive reuse of<br> 8 exclusive
+                                        3-storey<br> units</p>
+                                </div>
+                                <div
+                                    class="relative text-white bg-[#F4784D] rounded-full rounded-br-none w-[161px] h-[161px] flex flex-col items-center justify-center p-2 text-center shadow-md">
+                                    <p class="title-text-15 uppercase">HIGH <br> VISIBILITY</p>
+                                    <p class="block text-sm leading-[18px] mt-1">1st storey frontage<br> with strong<br>
+                                        footfall</p>
+                                </div>
+                                <div
+                                    class="relative text-white bg-[#F5885F] rounded-full rounded-br-none w-[161px] h-[161px] flex flex-col items-center justify-center p-2 text-center shadow-md">
+                                    <p class="title-text-15 uppercase">MULTI- <br>PURPOSE USE</p>
+                                    <p class="block text-sm leading-[18px] mt-1">Restaurant,<br> food production and<br>
+                                        office spaces all<br> in one</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative h-screen content-center">
+                <div class="w-full px-36 flex gap-[40px] items-center justify-center">
+                    <div class="w-[1088px] relative">
+                        <img src="./assets/images/introduction/introduction-6.webp" alt="Purpose Built For Every Need"
+                            class="w-full h-auto" />
+                        <span
+                            class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] leading-[10px] absolute bottom-[20px] right-[20px] text-shadow-[0px 2px 4px #000000BE;]">Artist’s
+                            Impression</span>
+                    </div>
+                    <div class="w-[486px]">
+                        <div class="text-center w-full ">
+                            <h2 class="h1title uppercase">
+                                Purpose Built For<br> Every Need
+                            </h2>
+                            <h3 class="character-style-1 uppercase svg-inside">
+                                FLE<svg xmlns="http://www.w3.org/2000/svg" width="58.219" height="45.493"
+                                    viewBox="0 0 58.219 45.493">
+                                    <path id="x"
+                                        d="M0,0,21.988,22.216,7.73,36.621H18.275l10.3-10.4L47.65,45.493H58.219L35.181,22.216,48.374,8.887H38.349l-9.506,9.6L10.545,0Z"
+                                        fill="#ec4120" />
+                                </svg>IBLE SUITABILITY
+                            </h3>
+                            <p class="w-[434px] mt-10 mx-auto">At GOURMET XCHANGE, flexible multi-tenant and terraced
+                                units maximise space efficiency, productivity and smooth
+                                workflows, offering unmatched versatility and seamless operations for businesses of all
+                                sizes to thrive.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="flex justify-start fixed bottom-8 left-1/2 -translate-x-1/2 z-10">
+        <a href="javascript:history.back();"
+            class="inline-flex gap-[25px] items-center justify-between px-8 py-4 w-[154px] rounded-full border border-[#dcddde] bg-white no-underline transition hover:shadow-lg group">
+            <svg class="min-w-[11px]" xmlns="http://www.w3.org/2000/svg" width="10.46" height="13"
+                viewBox="0 0 18.354 22.636">
+                <path id="arrowLeft"
+                    d="M40.229,13.181,51.493,24.445,40.18,35.752q2.28,0,4.561.034c-.337,0,1.183-.028,2.452,0L58.534,24.445,47.224,13.15C44.891,13.171,42.577,13.178,40.229,13.181Z"
+                    transform="translate(58.534 35.786) rotate(180)" fill="#eb3b1d" />
+            </svg>
+            <span class="font-brandon-grotesque font-bold tracking-[1.8px] text-lg uppercase">Back</span>
+        </a>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="./assets/vendor/js/jquery.min.js"></script>
+    <script src="./assets/vendor/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

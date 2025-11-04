@@ -1,0 +1,13 @@
+{
+    "name": "gourmet-Xchange",
+    "version": "1.0.0",
+    "description": "Gourmet Xchange Application",
+    "scripts": {
+        "build-css": "tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css",
+        "watch-css": "tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --watch",
+        "build": "tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --minify"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.4.1"
+    }
+}

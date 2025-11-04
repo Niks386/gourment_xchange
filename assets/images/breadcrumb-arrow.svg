@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28.821" height="31.345" viewBox="0 0 28.821 31.345">
+  <defs>
+    <filter id="Breadcrumb_Arrow" x="0" y="0" width="28.821" height="31.345" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.698"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Breadcrumb_Arrow)">
+    <path id="Breadcrumb_Arrow-2" data-name="Breadcrumb Arrow" d="M40.209,13.168l6.641,6.641-6.67,6.666q1.344,0,2.689.02c-.2,0,.7-.016,1.446,0L51,19.809,44.333,13.15C42.957,13.163,41.593,13.166,40.209,13.168Z" transform="translate(-31.18 -7.15)" fill="#fff"/>
+  </g>
+</svg>

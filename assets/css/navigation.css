@@ -1,0 +1,99 @@
+.menu-hidden {
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+.menu-item {
+    transition: opacity 0.4s ease-in-out;
+    font-family: var(--font-family-brandon-grotesque);
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+.menu-item.active {
+    position: relative;
+    z-index: 50;
+    opacity: 1;
+}
+.menu-item.inactive {
+    opacity: 0.4;
+    pointer-events: none;
+}
+/* When hovering over the parent menu container */
+.menu-item:hover {
+    opacity: 1;
+}
+/* Fade out siblings when any menu item is hovered */
+.menu-item:hover~.menu-item,
+.menu-item:not(:hover):has(~ .menu-item:hover) {
+    opacity: 0.4;
+}
+#menuToggle.menu-closed {
+    left: 30px;
+    bottom: 30px;
+}
+.submenu {
+    opacity: 0;
+    pointer-events: none;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-content: center;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.submenu.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+.overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #231f20;
+    z-index: 19;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease-in-out;
+}
+.overlay-menu.active-menu-overlay {
+    opacity: 0.7;
+    pointer-events: auto;
+}
+.menu-plus {
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: fit-content;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-plus.rotate {
+    transform: rotate(45deg);
+}
+.top-header .breadcrumb .breadcrumb-item {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-eb3b1d);
+    opacity: 0.7;
+}
+.top-header .breadcrumb .breadcrumb-item:hover {
+    opacity: 1;
+}
+.top-header .breadcrumb .breadcrumb-item.current-page {
+    font-weight: 900;
+    opacity: 1;
+}
+.bottom-menu-active {
+    opacity: 1;
+}

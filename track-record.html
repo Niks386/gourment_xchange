@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Record | Gourmet Xchange</title>
+    <meta name="description" content="Track Record | Gourmet Xchange">
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link href="./assets/css/navigation.css" rel="stylesheet">
+    <link href="./assets/vendor/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="./assets/vendor/css/owl.theme.default.min.css" rel="stylesheet">
+</head>
+
+<body class="overflow-hidden">
+    <!-- Top Header -->
+    <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
+        <div
+            class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
+        </div>
+        <div class="header-inner flex justify-between items-start relative">
+            <div class="breadcrumb font-brandon-grotesque flex gap-[15px]">
+                <a href="development.html" class="breadcrumb-item">Development</a>
+                <span><img src="./assets/images/breadcrumb-arrow.svg" alt="Breadcrumb Arrow"></span>
+                <span class="breadcrumb-item current-page">Track Record</span>
+            </div>
+            <a href="index.html">
+                <img src="./assets/images/main-logo.svg" alt="Logo">
+            </a>
+        </div>
+    </section>
+
+    <!-- Main navigation -->
+    <section class="navigation-wrap">
+        <div id="main-menu-overlay" class="overlay-menu"></div>
+        <!-- Menu Button -->
+        <button id="menuToggle" class="fixed bottom-[60px] left-[43px] transition-all duration-300 z-20 menu-closed">
+            <div id="menuIcon">
+                <img src="assets/images/menu/menu-icon-close.svg" alt="Menu Icon">
+            </div>
+        </button>
+        <div id="main-menu"
+            class="fixed bottom-[125px] w-full px-[108px] z-20 flex items-center  transition-all duration-500 ease-in-out transform origin-bottom opacity-100 menu-hidden">
+            <!-- Menu Content -->
+            <div id="menuContent"
+                class="bg-white-80 rounded-full rounded-bl-none pt-4 px-20 pb-[33px] flex gap-4 w-full">
+                <div class="flex items-center justify-between w-full">
+                    <div class="menu-item text-center" data-menu="development">
+                        <a href="development.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-development.svg" alt="Development">
+                            <span class="menu-title">Development</span>
+                        </a>
+                        <button class="menu-plus" data-menu="development">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="location">
+                        <a href="location.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-location.svg" alt="Location">
+                            <span class="menu-title">Location</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="product">
+                        <a href="product.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-product.svg" alt="Product">
+                            <span class="menu-title">Product</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-product">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="logistics">
+                        <a href="logistics.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
+                            <span class="menu-title">Logistics Efficiency</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="facilities">
+                        <a href="facilities.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-facilities.svg" alt="Facilities">
+                            <span class="menu-title">Facilities</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="sustainability">
+                        <a href="sustainability.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-sustainability.svg" alt="Sustainability">
+                            <span class="menu-title">Sustainability</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="value">
+                        <a href="value-added.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
+                            <span class="menu-title">Value Added</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-value">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="gallery">
+                        <a href="gallery.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-gallery.svg" alt="Gallery">
+                            <span class="menu-title">Gallery</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Submenus content -->
+                <div id="submenu-development" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <a href="introduction.html">Introduction</a>
+                            <a href="key-highlights.html">KeyHighlights</a>
+                            <a href="track-record.html">TrackRecord</a>
+                            <a href="./assets/images/e-brochure/dummy-ebrochure.pdf" target="_blank">eBrochure</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-product" class="submenu absolute bottom-[-93px]">
+                    <div class="w-full flex">
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[115px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">Select product by:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="main-block.html">Main Block</a>
+                                <a href="block-a.html">Block A</a>
+                                <a href="space-types.html">Space Types</a>
+                                <a href="food-operations.html">Food Operations</a>
+                            </div>
+                        </div>
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[60px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">View:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="unit-plan-comparison.html">Unit Plan Comparison</a>
+                                <a href="test-fit-plans.html">Test Fit Plans</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-value" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <a href="food-consultants.html">Food Consultants</a>
+                            <a href="logistics-provider.html">Logistics Provider</a>
+                            <a href="equipment-suppliers.html">Equipment Suppliers</a>
+                            <a href="rd-services.html">R&d Services</a>
+                            <a href="renovation-contractors.html">Renovation Contractors</a>
+                            <a href="other-services.html">Other Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full screen carousel -->
+    <section class="overflow-hidden trackr-wrap">
+        <div class="full-carousel owl-carousel owl-theme h-screen">
+            <div class="relative h-screen">
+                <img src="./assets/images/track-record/track-record-1.webp" alt="CapitaLand Development">
+                <div class="w-[591px] absolute left-[1118px] top-1/2 -translate-y-1/2">
+                    <p class="text-22-normal text-white">CapitaLand Development (CLD) is the development arm of
+                        CapitaLand Group, with a portfolio worth
+                        S$21.5 billion as at 31
+                        March 2025. Focusing on its core markets of Singapore, China and Vietnam, CLD's well-established
+                        real estate development
+                        capabilities span across various asset classes, including integrated developments, retail,
+                        office,
+                        lodging, residential,
+                        business parks, industrial, logistics and data centres. Its strong expertise in master planning,
+                        land development and
+                        project execution has won numerous accolades, including the Building and Construction Authority
+                        Quality Excellence Award
+                        and FIABCI Prix d'Excellence Award.</p>
+                </div>
+                <span
+                    class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] absolute bottom-[15px] right-[30px]">Artist’s
+                    Impression</span>
+            </div>
+            <div class="relative h-screen">
+                <img src="./assets/images/track-record/track-record-2.webp" alt="CLD aspires">
+                <div class="w-[510px] absolute left-[1118px] top-1/2 -translate-y-1/2">
+                    <p class="text-22-normal text-white">CLD aspires to be a developer of choice that goes beyond real
+                        estate development to enrich lives and uplift communities.
+                        It is committed to continue creating quality spaces for work, live and play in the communities
+                        in which it operates,
+                        through sustainable and innovative solutions. In 2025, CapitaLand Group celebrates 25 years of
+                        excellence in real estate
+                        and continues to innovate and shape the industry.</p>
+                </div>
+                <span
+                    class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] absolute bottom-[15px] right-[30px]">Artist’s
+                    Impression</span>
+            </div>
+            <div class="relative h-screen">
+                <img src="./assets/images/track-record/track-record-3.webp" alt="CapitaLand Group">
+                <div class="w-[490px] absolute left-[1118px] top-1/2 -translate-y-1/2">
+                    <p class="text-22-normal text-white">As part of CapitaLand Group, CLD places sustainability at the
+                        core of what it does. As a responsible real estate
+                        company, CLD complements CapitaLand’s businesses through its contributions to the environmental
+                        and social well-being of
+                        the communities where it operates, as it delivers long-term economic value to its stakeholders.
+                    </p>
+                </div>
+                <span
+                    class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] absolute bottom-[15px] right-[30px]">Artist’s
+                    Impression</span>
+            </div>
+            <div class="relative h-screen content-center">
+                <div class="w-full flex flex-col gap-[102px] items-center justify-center">
+                    <div class="text-center w-full ">
+                        <h2 class="h1title uppercase">
+                            Proven Track Record in <br>Food Facility Development
+                        </h2>
+                    </div>
+                    <div class="w-[1340px]">
+                        <div class="grid grid-cols-3 gap-10">
+                            <div class="text-center">
+                                <img src="./assets/images/track-record/foodxchange.webp" alt="foodxchange">
+                                <p class="text-20-normal mt-2">Foodxchange</p>
+                            </div>
+                            <div class="text-center">
+                                <img src="./assets/images/track-record/foodaxis.webp" alt="foodaxis">
+                                <p class="text-20-normal mt-2">Foodaxis</p>
+                            </div>
+                            <div class="text-center">
+                                <img src="./assets/images/track-record/senoko.webp" alt="senoko">
+                                <p class="text-20-normal mt-2">Senoko</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="flex justify-start fixed bottom-8 left-1/2 -translate-x-1/2 z-10">
+        <a href="javascript:history.back();"
+            class="inline-flex gap-[25px] items-center justify-between px-8 py-4 w-[154px] rounded-full border border-[#dcddde] bg-white no-underline transition hover:shadow-lg group">
+            <svg class="min-w-[11px]" xmlns="http://www.w3.org/2000/svg" width="10.46" height="13"
+                viewBox="0 0 18.354 22.636">
+                <path id="arrowLeft"
+                    d="M40.229,13.181,51.493,24.445,40.18,35.752q2.28,0,4.561.034c-.337,0,1.183-.028,2.452,0L58.534,24.445,47.224,13.15C44.891,13.171,42.577,13.178,40.229,13.181Z"
+                    transform="translate(58.534 35.786) rotate(180)" fill="#eb3b1d" />
+            </svg>
+            <span class="font-brandon-grotesque font-bold tracking-[1.8px] text-lg uppercase">Back</span>
+        </a>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="./assets/vendor/js/jquery.min.js"></script>
+    <script src="./assets/vendor/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

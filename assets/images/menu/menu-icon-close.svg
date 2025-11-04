@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+  <g id="menuClose" transform="translate(-43 -779)">
+    <path id="Rectangle_23" data-name="Rectangle 23" d="M32.5,0H65a0,0,0,0,1,0,0V32.5A32.5,32.5,0,0,1,32.5,65h0A32.5,32.5,0,0,1,0,32.5v0A32.5,32.5,0,0,1,32.5,0Z" transform="translate(43 779)" fill="#eb3b1d"/>
+    <g id="menuClose-icon">
+      <path id="Union_1" data-name="Union 1" d="M20747.115,17403.539l-9.693,9.693-2.422-2.424,9.693-9.693-9.693-9.691,2.422-2.424,9.693,9.693,9.693-9.693,2.422,2.424-9.691,9.691,9.691,9.693-2.422,2.424Z" transform="translate(-20671.615 -16589.615)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

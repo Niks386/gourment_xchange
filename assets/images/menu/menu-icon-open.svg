@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+  <g id="Menu" transform="translate(-43 -779)">
+    <path id="Rectangle_23" data-name="Rectangle 23" d="M32.5,0H65a0,0,0,0,1,0,0V32.5A32.5,32.5,0,0,1,32.5,65h0A32.5,32.5,0,0,1,0,32.5v0A32.5,32.5,0,0,1,32.5,0Z" transform="translate(108 779) rotate(90)" fill="#eb3b1d"/>
+    <path id="menu_icon" data-name="menu icon" d="M4.5,29.561H35.341V26.134H4.5Zm0-8.567H35.341V17.567H4.5ZM4.5,9v3.427H35.341V9Z" transform="translate(54.08 792.219)" fill="#fff"/>
+  </g>
+</svg>
