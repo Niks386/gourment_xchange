@@ -8,11 +8,13 @@
     <meta name="description" content="Product | Gourmet Xchange">
 
     <link rel="shortcut icon" href="./assets/images/favicon.png">
-    <link href="./assets/css/output.css" rel="stylesheet">
-    <link href="./assets/css/navigation.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/navigation.css">
+    <link rel="stylesheet" href="./assets/vendor/css/animate.min.css">
+
 </head>
 
-<body class="overflow-hidden">
+<body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
     <!-- Top Header -->
     <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
         <div
@@ -174,7 +176,7 @@
     <!-- 360° Rotate Model -->
     <section class="rotate-wrap w-full h-full">
         <!-- 360° Loader -->
-        <div id="360-loader" class="fixed inset-0 bg-black/0 flex items-center justify-center z-50">
+        <div id="360-loader" class="fixed inset-0 bg-black/0 flex items-center justify-center z-5">
             <div id="circle-360-loader"
                 class="relative flex flex-col items-center justify-center w-48 h-48 rounded-full bg-dcddde-80  cursor-pointer text-center transition-all duration-500">
                 <span class="font-brandon-grotesque text-color-eb3b1d text-4xl font-semibold">360<span
@@ -194,6 +196,23 @@
     <script src="./assets/vendor/js/jquery.min.js"></script>
     <script src="./assets/vendor/js/360-view.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.plan-img[data-img]').on('click', function () {
+                const imgSrc =
+                    'assets/images/product/the-xchange/1st-storey/' + $(this)
+                        .data('img');
+                $('#planImage').attr('src', imgSrc);
+                $('#floorPopup').css('display', 'flex');
+                $('body').addClass('overflow-hidden');
+            });
+
+            $('.fpclose').on('click', function () {
+                $('#floorPopup').css('display', 'none');
+                $('body').removeClass('overflow-hidden');
+            });
+        });
+    </script>
 </body>
 
 </html>

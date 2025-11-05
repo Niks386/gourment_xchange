@@ -12,7 +12,7 @@ module.exports = {
                 'new-atten': ["New Atten", "sans-serif"],
             },
             colors: {
-                'color-3k': '#8FBFE2',
+                'color-3k': '#B0DFE0',
                 'color-me': '#C8AAD0',
                 'color-7k': '#EBBB77',
                 'color-retail': '#E29EA0',
@@ -57,6 +57,9 @@ module.exports = {
             boxShadow: {
                 'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
                 'inner-soft': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+            },
+            zIndex: {
+                '5': 5,
             },
         },
     },

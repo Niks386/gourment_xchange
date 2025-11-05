@@ -10,10 +10,10 @@
 @layer base {
     :root {
         /* Colors */
-        --3k-and-blk-a: #8FBFE2;
-        --m-e: #C8AAD0;
-        --7k-big-production-unit: #EBBB77;
-        --retail-and-f-b: #E29EA0;
+        --3k: #B0DFE0;
+        --me: #C8AAD0;
+        --7k: #EBBB77;
+        --retail: #E29EA0;
         --showroom-display: #F6EE7B;
         --ancillary: #D1E3F5;
         --color-ffffff: #FFFFFF;
@@ -33,6 +33,7 @@
 
         /* Font sizes */
         --font-size-7: 7px;
+        --font-size-13: 13px;
         --font-size-15: 15px;
         --font-size-16: 16px;
         --font-size-18: 18px;
@@ -57,6 +58,7 @@
 
         /* Line spacing */
         --line-spacing-10: 10px;
+        --line-spacing-18: 18px;
         --line-spacing-20: 20px;
         --line-spacing-22: 22px;
         --line-spacing-26: 26px;
@@ -188,6 +190,12 @@
         line-height: var(--line-spacing-32);
         letter-spacing: var(--character-spacing-1-68);
     }
+    .text-13-normal {
+        font-family: var(--font-family-new-atten);
+        font-weight: var(--font-weight-normal);
+        font-size: var(--font-size-13);
+        line-height: var(--line-spacing-18);
+    }
     .text-20-normal {
         font-family: var(--font-family-new-atten);
         font-weight: var(--font-weight-normal);
@@ -312,16 +320,19 @@
 .zoom-btns {
     background-color: #969696;
     border-radius: 10px;
-    span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-    span:first-child {
-        border-bottom: 2px solid #fff;
-    }
+}
+.zoom-btns span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.zoom-btns span:first-child {
+    border-bottom: 2px solid #fff;
+}
+#map-popup {
+    display: none;
 }
