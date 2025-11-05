@@ -20,11 +20,23 @@ jQuery(document).ready(function ($) {
         }, 5000);
     });
 
-    // 360° Loader
     $("#circle-360-loader").on("click", function () {
         $(this).fadeOut(500);
         $("#360-loader").fadeOut(500);
     });
+
+    // Tap to hide loader and #select-level
+    // On page load, automatically hide loader and #select-level after 5 seconds
+    setTimeout(function () {
+        // $("#tap-loader").fadeOut(500);
+        $("#select-level").fadeOut(300);
+    }, 2000);
+
+    // Optionally keep click-to-hide as well:
+    // $("#tap-loader").on("click", function () {
+    //     $(this).fadeOut(500);
+    //     $("#select-level").fadeOut(500);
+    // });
 
     // Menu open close functionality
     // Determine if .home-menu exists to set initial menu state
@@ -197,7 +209,7 @@ jQuery(document).ready(function ($) {
             });
         }
         // Event listener for accordion toggle
-        const tabMenuList = document.querySelectorAll('.tab-menu-list li');
+        const tabMenuList = document.querySelectorAll('.tab-menu-list li, .plan-img');
 
         tabMenuList.forEach(list => {
             list.addEventListener('click', function () {

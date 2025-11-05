@@ -8,11 +8,13 @@
     <meta name="description" content="Location | Gourmet Xchange">
 
     <link rel="shortcut icon" href="./assets/images/favicon.png">
-    <link href="./assets/css/output.css" rel="stylesheet">
-    <link href="./assets/css/navigation.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/navigation.css">
+    <link rel="stylesheet" href="./assets/vendor/css/animate.min.css">
+
 </head>
 
-<body class="overflow-hidden">
+<body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
     <!-- Top Header -->
     <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
         <div
@@ -177,7 +179,7 @@
                             <img src="./assets/images/location/base-map-2x.webp" alt="Gourmet Xchange Location Map"
                                 class="w-full h-auto" />
                         </div>
-                        <div class="zoom-btns bg-[#969696] fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                        <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
                             <span class="zoom-in-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                     fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -214,7 +216,7 @@
                             <img src="./assets/images/location/island-wide-connectivity-map-2x.webp"
                                 alt="A winning central location" class="w-full h-auto" />
                         </div>
-                        <div class="zoom-btns bg-[#969696] fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                        <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
                             <span class="zoom-in-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                     fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -263,7 +265,7 @@
                             <img src="./assets/images/location/accessibility-map-2x.webp"
                                 alt="At The Core Of Connectivity And Convenience" class="w-full h-auto" />
                         </div>
-                        <div class="zoom-btns bg-[#969696] fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                        <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
                             <span class="zoom-in-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                     fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -299,7 +301,7 @@
                             <img src="./assets/images/location/ecosystem-map-2x.webp"
                                 alt="At The Core Of Connectivity And Convenience" class="w-full h-auto" />
                         </div>
-                        <div class="zoom-btns bg-[#969696] fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                        <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
                             <span class="zoom-in-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                     fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -342,7 +344,7 @@
         <!-- Bottom sticky tab bar -->
         <div
             class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
-            <div class="bg-white border border-[#94949d] rounded-full rounded-bl-none overflow-hidden">
+            <div class="bg-white border border-[#94949d] rounded-full rounded-tl-none overflow-hidden">
                 <ul class="flex items-center tab-menu-list">
                     <li class="" data-tab-target="all"> All </li>
                     <li class="" data-tab-target="connectivity"> Island-Wide Connectivity</li>
@@ -352,7 +354,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Scripts -->
     <script src="./assets/vendor/js/jquery.min.js"></script>

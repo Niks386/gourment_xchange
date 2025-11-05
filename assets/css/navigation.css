@@ -97,3 +97,6 @@
 .bottom-menu-active {
     opacity: 1;
 }
+.top-header .breadcrumb sup {
+    font-size: 60%;
+}
