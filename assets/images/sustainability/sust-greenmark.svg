@@ -1,0 +1,13 @@
+<svg id="Sust-GreenMark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67.807" height="72.72" viewBox="0 0 67.807 72.72">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_837" data-name="Rectangle 837" width="57.005" height="65.842" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="Rectangle_748" data-name="Rectangle 748" width="67.807" height="72.72" transform="translate(0 0)" fill="#fff"/>
+  <g id="Group_645" data-name="Group 645" transform="translate(5.418 3.439)">
+    <g id="Group_644" data-name="Group 644" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Path_329" data-name="Path 329" d="M55.816,32.428A27.771,27.771,0,1,1,31.125,7.421M8.048,9.534c2.425-6.11,9.386-9,14.271-9.134C31.68.146,41.753,7.739,41.694,7.735c0,0-4.355,2.456-9.914,9.375-4.418,5.5-16.346,9.745-24.4-.4m48.558-4.782L27.5,53.795,8.906,36.23l18.06,6.754Z" transform="translate(0.337 1.319)" fill="none" stroke="#479f35" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

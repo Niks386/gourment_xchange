@@ -1,0 +1,96 @@
+.custom-dropdown {
+	position: relative;
+	min-width: 237px;
+}
+.custom-dropdown-btn {
+	background-color: #fff;
+	border: 1px solid var(--color-dcddde);
+	border-radius: 0 50px 50px 50px;
+	padding: 14px 30px;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.3s ease;
+	text-transform: uppercase;
+}
+.custom-dropdown.open .custom-dropdown-btn {
+	border-radius: 0 0 30px 30px;
+}
+/* .custom-dropdown-btn:hover {
+	background: #e8e8e8;
+} */
+.custom-dropdown-arrow {
+	transition: transform 0.3s ease;
+}
+.custom-dropdown.open .custom-dropdown-arrow {
+	transform: rotate(180deg);
+}
+.custom-dropdown-list {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #dcddde;
+	border-radius: 0 30px 0 0;
+	display: none;
+	z-index: 100;
+	overflow: hidden;
+}
+.custom-dropdown.open .custom-dropdown-list {
+	display: block;
+}
+.custom-dropdown-list-inner {
+	width: 100%;
+}
+.custom-dropdown-item {
+	padding: 14px 30px;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+.custom-dropdown-item:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+.custom-dropdown-item.selected {
+	background-color: rgb(242 103 58);
+	color: #fff;
+}
+/* .custom-dropdown-item:first-child {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.custom-dropdown-item:last-child {
+	border-bottom: none;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+} */
+
+/* Custom Scrollbar - Webkit (Chrome, Safari, Edge) */
+/* Firefox Scrollbar */
+.custom-dropdown-list-inner {
+	max-height: 500px;
+	overflow-y: auto;
+	/* scrollbar-width: thin;
+	scrollbar-color: #f2673a #dcddde; */
+}
+.custom-dropdown-list-inner::-webkit-scrollbar {
+	width: 8px;
+}
+.custom-dropdown-list-inner::-webkit-scrollbar-track {
+	background-color: #fff;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+}
+.custom-dropdown-list-inner::-webkit-scrollbar-thumb {
+	background: var(--color-eb3b1d);
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+}

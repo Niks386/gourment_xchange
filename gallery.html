@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Gourmet Xchange</title>
+    <meta name="description" content="Gallery | Gourmet Xchange">
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link href="./assets/css/navigation.css" rel="stylesheet">
+    <link href="./assets/vendor/css/fancybox.css" rel="stylesheet">
+
+</head>
+
+<body class="overflow-hidden">
+    <!-- Top Header -->
+    <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
+        <div class="header-inner flex justify-between items-start relative">
+            <div class="breadcrumb font-brandon-grotesque flex gap-[15px]">
+                <span class="breadcrumb-item current-page">Gallery</span>
+            </div>
+            <a href="index.html">
+                <img src="./assets/images/main-logo.svg" alt="Logo">
+            </a>
+        </div>
+    </section>
+
+    <!-- Main navigation -->
+    <section class="navigation-wrap">
+        <div id="main-menu-overlay" class="overlay-menu"></div>
+        <!-- Menu Button -->
+        <button id="menuToggle" class="fixed bottom-[60px] left-[43px] transition-all duration-300 z-20 menu-closed">
+            <div id="menuIcon">
+                <img src="assets/images/menu/menu-icon-close.svg" alt="Menu Icon">
+            </div>
+        </button>
+        <div id="main-menu"
+            class="fixed bottom-[125px] w-full px-[108px] z-20 flex items-center  transition-all duration-500 ease-in-out transform origin-bottom opacity-100 menu-hidden">
+            <!-- Menu Content -->
+            <div id="menuContent"
+                class="bg-white-80 rounded-full rounded-bl-none pt-4 px-20 pb-[33px] flex gap-4 w-full">
+                <div class="flex items-center justify-between w-full">
+                    <div class="menu-item text-center" data-menu="development">
+                        <a href="development.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-development.svg" alt="Development">
+                            <span class="menu-title">Development</span>
+                        </a>
+                        <button class="menu-plus" data-menu="development">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="location">
+                        <a href="location.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-location.svg" alt="Location">
+                            <span class="menu-title">Location</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="product">
+                        <a href="product.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-product.svg" alt="Product">
+                            <span class="menu-title">Product</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-product">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="logistics">
+                        <a href="logistics.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
+                            <span class="menu-title">Logistics Efficiency</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="facilities">
+                        <a href="facilities.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-facilities.svg" alt="Facilities">
+                            <span class="menu-title">Facilities</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="sustainability">
+                        <a href="sustainability.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-sustainability.svg" alt="Sustainability">
+                            <span class="menu-title">Sustainability</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="value">
+                        <a href="value-added.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
+                            <span class="menu-title">Value Added</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-value">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="gallery">
+                        <a href="gallery.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-gallery.svg" alt="Gallery">
+                            <span class="menu-title">Gallery</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Submenus content -->
+                <div id="submenu-development" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <a href="introduction.html">Introduction</a>
+                            <a href="key-highlights.html">KeyHighlights</a>
+                            <a href="track-record.html">TrackRecord</a>
+                            <a href="./assets/images/e-brochure/dummy-ebrochure.pdf" target="_blank">eBrochure</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-product" class="submenu absolute bottom-[-93px]">
+                    <div class="w-full flex">
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[115px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">Select product by:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="the-xchange.html">The Xchange</a>
+                                <a href="heritage-terrace.html">Heritage Terrace</a>
+                                <a href="space-types.html">Space Types</a>
+                                <a href="food-operations.html">Food Operations</a>
+                            </div>
+                        </div>
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[60px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">View:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="unit-plan-comparison.html">Unit Plan Comparison</a>
+                                <a href="test-fit-plans.html">Test Fit Plans</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-value" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <a href="food-consultants.html">Food Consultants</a>
+                            <a href="logistics-provider.html">Logistics Provider</a>
+                            <a href="equipment-suppliers.html">Equipment Suppliers</a>
+                            <a href="rd-services.html">R&d Services</a>
+                            <a href="renovation-contractors.html">Renovation Contractors</a>
+                            <a href="other-services.html">Other Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-wrap relative h-full content-center">
+        <!-- Tab contents -->
+        <div class="tab-contents relative">
+            <div id="tab-perspectives" class="tab-content">
+                <div class="flex justify-center">
+                    <div
+                        class="custom-scrollbar grid grid-cols-4 gap-5 w-full mx-[140px] pr-10 overflow-y-auto max-h-[775px] ">
+                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image1.webp">
+                            <img src="./assets/images/gallery/gallery-image1.webp" alt="Gallery Image"
+                                class="rounded-br w-full h-auto" />
+                            <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
+                        </a>
+                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image2.webp">
+                            <img src="./assets/images/gallery/gallery-image2.webp" alt="Gallery Image"
+                                class="rounded-br w-full h-auto" />
+                            <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
+                        </a>
+                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image3.webp">
+                            <img src="./assets/images/gallery/gallery-image3.webp" alt="Gallery Image"
+                                class="rounded-br w-full h-auto" />
+                            <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
+                        </a>
+                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image1.webp">
+                            <img src="./assets/images/gallery/gallery-image1.webp" alt="Gallery Image"
+                                class="rounded-br w-full h-auto" />
+                            <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
+                        </a>
+                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image2.webp">
+                            <img src="./assets/images/gallery/gallery-image2.webp" alt="Gallery Image"
+                                class="rounded-br w-full h-auto" />
+                            <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
+                        </a>
+                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image3.webp">
+                            <img src="./assets/images/gallery/gallery-image3.webp" alt="Gallery Image"
+                                class="rounded-br w-full h-auto" />
+                            <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
+                        </a>
+                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image1.webp">
+                            <img src="./assets/images/gallery/gallery-image1.webp" alt="Gallery Image"
+                                class="rounded-br w-full h-auto" />
+                            <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
+                        </a>
+                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image2.webp">
+                            <img src="./assets/images/gallery/gallery-image2.webp" alt="Gallery Image"
+                                class="rounded-br w-full h-auto" />
+                            <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
+                        </a>
+                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image3.webp">
+                            <img src="./assets/images/gallery/gallery-image3.webp" alt="Gallery Image"
+                                class="rounded-br w-full h-auto" />
+                            <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
+                        </a>
+                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image1.webp">
+                            <img src="./assets/images/gallery/gallery-image1.webp" alt="Gallery Image"
+                                class="rounded-br w-full h-auto" />
+                            <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
+                        </a>
+                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image2.webp">
+                            <img src="./assets/images/gallery/gallery-image2.webp" alt="Gallery Image"
+                                class="rounded-br w-full h-auto" />
+                            <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
+                        </a>
+                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image3.webp">
+                            <img src="./assets/images/gallery/gallery-image3.webp" alt="Gallery Image"
+                                class="rounded-br w-full h-auto" />
+                            <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-360-ipms" class="tab-content hidden">
+                <div class="flex justify-center">
+                    <h1 class="h1title">360 IPMS</h1>
+                </div>
+            </div>
+            <div id="tab-videos" class="tab-content hidden">
+                <div class="flex justify-center">
+                    <div
+                        class="grid grid-cols-4 gap-5 w-full mx-[140px] pr-10 overflow-y-auto max-h-[775px] scrollbar-thin scrollbar-thumb-[#EB3B1D] scrollbar-track-[#DCDDDE]">
+                        <!-- Video gallery 1-->
+                        <div class="relative">
+                            <img src="assets/images/gallery/gallery-image1.webp" alt="video poster image"
+                                class="rounded-br w-full h-auto">
+                            <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                data-fancybox data-src="#vd_gallery1">
+                                <img src="./assets/images/gallery/playvideo-icon.svg" class="img-fluid w-full h-12"
+                                    alt="video gallery1">
+                            </span>
+                        </div>
+
+                        <!-- Video gallery 2-->
+                        <div class="relative">
+                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                                class="rounded-br w-full h-auto">
+                            <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                data-fancybox data-src="#vd_gallery2">
+                                <img src="./assets/images/gallery/playvideo-icon.svg" class="img-fluid w-full h-12"
+                                    alt="video gallery1">
+                            </span>
+                        </div>
+
+                        <!-- Video gallery 3-->
+                        <div class="relative">
+                            <img src="assets/images/gallery/gallery-image1.webp" alt="video poster image"
+                                class="rounded-br w-full h-auto">
+                            <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                data-fancybox data-src="#vd_gallery3">
+                                <img src="./assets/images/gallery/playvideo-icon.svg" class="img-fluid w-full h-12"
+                                    alt="video gallery1">
+                            </span>
+                        </div>
+
+                        <!-- Video gallery 4-->
+                        <div class="relative">
+                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                                class="rounded-br w-full h-auto">
+                            <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                data-fancybox data-src="#vd_gallery4">
+                                <img src="./assets/images/gallery/playvideo-icon.svg" class="img-fluid w-full h-12"
+                                    alt="video gallery1">
+                            </span>
+                        </div>
+
+                        <!-- Video gallery 5-->
+                        <div class="relative">
+                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                                class="rounded-br w-full h-auto">
+                            <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                data-fancybox data-src="#vd_gallery5">
+                                <img src="./assets/images/gallery/playvideo-icon.svg" class="img-fluid w-full h-12"
+                                    alt="video gallery1">
+                            </span>
+                        </div>
+
+                        <!-- Video gallery 6-->
+                        <div class="relative">
+                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                                class="rounded-br w-full h-auto">
+                            <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                data-fancybox data-src="#vd_gallery6">
+                                <img src="./assets/images/gallery/playvideo-icon.svg" class="img-fluid w-full h-12"
+                                    alt="video gallery1">
+                            </span>
+                        </div>
+
+                        <!-- Video gallery 7-->
+                        <div class="relative">
+                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                                class="rounded-br w-full h-auto">
+                            <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                data-fancybox data-src="#vd_gallery7">
+                                <img src="./assets/images/gallery/playvideo-icon.svg" class="img-fluid w-full h-12"
+                                    alt="video gallery1">
+                            </span>
+                        </div>
+
+                        <!-- Video gallery 8-->
+                        <div class="relative">
+                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                                class="rounded-br w-full h-auto">
+                            <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                data-fancybox data-src="#vd_gallery8">
+                                <img src="./assets/images/gallery/playvideo-icon.svg" class="img-fluid w-full h-12"
+                                    alt="video gallery1">
+                            </span>
+                        </div>
+
+                        <!-- Video gallery 9-->
+                        <div class="relative">
+                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                                class="rounded-br w-full h-auto">
+                            <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                data-fancybox data-src="#vd_gallery9">
+                                <img src="./assets/images/gallery/playvideo-icon.svg" class="img-fluid w-full h-12"
+                                    alt="video gallery1">
+                            </span>
+                        </div>
+
+                        <!-- Video gallery 10-->
+                        <div class="relative">
+                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                                class="rounded-br w-full h-auto">
+                            <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                data-fancybox data-src="#vd_gallery10">
+                                <img src="./assets/images/gallery/playvideo-icon.svg" class="img-fluid w-full h-12"
+                                    alt="video gallery1">
+                            </span>
+                        </div>
+
+                        <!-- Video gallery 11-->
+                        <div class="relative">
+                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                                class="rounded-br w-full h-auto">
+                            <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                data-fancybox data-src="#vd_gallery11">
+                                <img src="./assets/images/gallery/playvideo-icon.svg" class="img-fluid w-full h-12"
+                                    alt="video gallery1">
+                            </span>
+                        </div>
+
+                        <!-- Video gallery 12-->
+                        <div class="relative">
+                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                                class="rounded-br w-full h-auto">
+                            <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                data-fancybox data-src="#vd_gallery12">
+                                <img src="./assets/images/gallery/playvideo-icon.svg" class="img-fluid w-full h-12"
+                                    alt="video gallery1">
+                            </span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+        <!-- Bottom sticky tab bar -->
+        <div
+            class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
+            <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
+                <ul class="flex items-center tab-menu-list">
+                    <li class="" data-tab-target="perspectives"> Perspectives </li>
+                    <li class="" data-tab-target="360-ipms"> 360 IPMS</li>
+                    <li class="" data-tab-target="videos"> Videos</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Popup Modal -->
+    <div id="vd_gallery1" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
+        <embed rel="preload" width="100%" height="100%" src="./assets/images/development/dummy-video-1.mp4">
+    </div>
+
+    <div id="vd_gallery2" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
+        <embed rel="preload" width="100%" height="100%" src="./assets/images/development/dummy-video-2.mp4">
+    </div>
+
+    <div id="vd_gallery3" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
+        <embed rel="preload" width="100%" height="100%" src="./assets/images/development/dummy-video-3.mp4">
+    </div>
+
+    <div id="vd_gallery4" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
+        <embed rel="preload" width="100%" height="100%" src="./assets/images/development/dummy-video-4.mp4">
+    </div>
+
+    <div id="vd_gallery5" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
+        <embed rel="preload" width="100%" height="100%" src="./assets/images/development/dummy-video-1.mp4">
+    </div>
+
+    <div id="vd_gallery6" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
+        <embed rel="preload" width="100%" height="100%" src="./assets/images/development/dummy-video-2.mp4">
+    </div>
+
+    <div id="vd_gallery7" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
+        <embed rel="preload" width="100%" height="100%" src="./assets/images/development/dummy-video-3.mp4">
+    </div>
+
+    <div id="vd_gallery8" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
+        <embed rel="preload" width="100%" height="100%" src="./assets/images/development/dummy-video-4.mp4">
+    </div>
+
+    <div id="vd_gallery9" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
+        <embed rel="preload" width="100%" height="100%" src="./assets/images/development/dummy-video-1.mp4">
+    </div>
+
+    <div id="vd_gallery10" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
+        <embed rel="preload" width="100%" height="100%" src="./assets/images/development/dummy-video-2.mp4">
+    </div>
+
+    <div id="vd_gallery11" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
+        <embed rel="preload" width="100%" height="100%" src="./assets/images/development/dummy-video-3.mp4">
+    </div>
+
+    <div id="vd_gallery12" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
+        <embed rel="preload" width="100%" height="100%" src="./assets/images/development/dummy-video-4.mp4">
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/vendor/js/jquery.min.js"></script>
+    <script src="./assets/vendor/js/fancybox.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

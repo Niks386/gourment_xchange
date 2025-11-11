@@ -209,7 +209,7 @@ jQuery(document).ready(function ($) {
             });
         }
         // Event listener for accordion toggle
-        const tabMenuList = document.querySelectorAll('.tab-menu-list li, .plan-img');
+        const tabMenuList = document.querySelectorAll('.tab-menu-list li, .plan-img, .right-tab a, .tab-menu-list-vertical li');
 
         tabMenuList.forEach(list => {
             list.addEventListener('click', function () {
@@ -219,5 +219,12 @@ jQuery(document).ready(function ($) {
             });
         });
         initializePanzoom();
+    }
+
+    // Fancybox initialization
+    if ($("[data-fancybox]").length > 0) {
+        Fancybox.bind("[data-fancybox]", {
+            // if added custom options
+        });
     }
 });
