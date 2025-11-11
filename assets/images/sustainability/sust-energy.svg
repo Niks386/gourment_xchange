@@ -1,0 +1,13 @@
+<svg id="Sust-Energy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67.839" height="72.303" viewBox="0 0 67.839 72.303">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_838" data-name="Rectangle 838" width="60.627" height="52.575" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="Rectangle_748" data-name="Rectangle 748" width="67.839" height="72.303" fill="#fff"/>
+  <g id="Group_647" data-name="Group 647" transform="translate(3.608 9.865)">
+    <g id="Group_646" data-name="Group 646" clip-path="url(#clip-path)">
+      <path id="Path_330" data-name="Path 330" d="M16.41,49.473H43.457M35.423,36.428V49.473m-10.98,0V36.428M5.335,20.784H54.38M7.009,9.032h45.7m6.783,21.946v5.428H.393V30.979m18.92,0L20.869.705m17.52,0,2.18,30.273M54.818.394l4.671,30.585H.393L5.064.394Z" transform="translate(0.371 1.355)" fill="none" stroke="#479f35" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

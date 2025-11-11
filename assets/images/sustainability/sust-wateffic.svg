@@ -1,0 +1,17 @@
+<svg id="Sust-WatEffic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67.807" height="72.72" viewBox="0 0 67.807 72.72">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_839" data-name="Rectangle 839" width="36.857" height="54.638" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="Rectangle_748" data-name="Rectangle 748" width="67.807" height="72.72" transform="translate(0 0)" fill="#fff"/>
+  <g id="Group_649" data-name="Group 649" transform="translate(15.474 9.267)">
+    <g id="Group_648" data-name="Group 648" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Path_331" data-name="Path 331" d="M18.387.484C15.707,14.036.531,22.563.484,36.62.452,46.133,8.116,53.792,18.207,53.826S36.013,46.252,36.045,36.74C36.092,22.682,20.975,14.053,18.387.484Z" transform="translate(0.165 0.165)" fill="none" stroke="#63a847" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_332" data-name="Path 332" d="M13.826,19.758,8.64,27.371,5.249,24.177" transform="translate(1.786 6.724)" fill="none" stroke="#63a847" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_333" data-name="Path 333" d="M19.127,19.758l-5.186,7.613L10.55,24.177" transform="translate(3.59 6.724)" fill="none" stroke="#63a847" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_334" data-name="Path 334" d="M24.427,19.758l-5.186,7.613L15.85,24.177" transform="translate(5.394 6.724)" fill="none" stroke="#63a847" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_335" data-name="Path 335" d="M13.188,38.131a10.5,10.5,0,0,0,12.028-8.987" transform="translate(4.488 9.918)" fill="none" stroke="#63a847" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

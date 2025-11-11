@@ -1,0 +1,10 @@
+<svg id="Sust-Conserv" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90.768" height="63.108" viewBox="0 0 90.768 63.108">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_836" data-name="Rectangle 836" width="90.768" height="63.108" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_643" data-name="Group 643" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="Path_328" data-name="Path 328" d="M89.389,61.73h-89V52.658h89ZM64.018,19.567V12.412H75.707v7.155m0,7.153H64.018V19.565H75.707ZM64.018,52.658V32.6H75.707V52.658M57.378,6.919,69.862.394,82.349,6.919V52.658m-43.3-33.09V12.412H50.736v7.155m0,7.153H39.047V19.565H50.736ZM39.047,52.658V32.6H50.736V52.658M32.405,6.919,44.892.394,57.378,6.919V52.658m-43.3-33.09V12.412H25.766v7.155m0,7.153H14.076V19.565H25.766ZM14.076,52.658V32.6H25.766V52.658m-18.331,0V6.919L19.921.394,32.405,6.919V52.658" transform="translate(0.493 0.493)" fill="none" stroke="#479f35" stroke-width="2"/>
+  </g>
+</svg>

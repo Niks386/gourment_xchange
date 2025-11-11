@@ -61,6 +61,9 @@ module.exports = {
             zIndex: {
                 '5': 5,
             },
+            margin: {
+                '140': '140px',
+            },
         },
     },
     plugins: [],

@@ -16,9 +16,6 @@
 <body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
     <!-- Top Header -->
     <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
-        <div
-            class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
-        </div>
         <div class="header-inner flex justify-between items-start relative">
             <div class="breadcrumb font-brandon-grotesque flex gap-[15px]">
                 <a href="product.html" class="breadcrumb-item">Product</a>
@@ -154,6 +151,13 @@
     </section>
 
     <section class="plan-wrap w-full h-full content-center">
+        <div id="select-level" class="fixed inset-0 bg-black/20 flex items-center justify-center z-30">
+            <div id="tap-loader"
+                class="relative flex gap-4 flex-col items-center justify-center w-48 h-48 rounded-full bg-dcddde-80  cursor-pointer text-center transition-all duration-500">
+                <img src="./assets/images/click-icon.svg" alt="Tap Icon">
+                <p class="text-lg leading-[26px]">Select a Unit</p>
+            </div>
+        </div>
         <div class="img-wrap w-max mx-auto">
             <div class="panzoom-wrp relative panzoom-container">
                 <div class="panzoom-img">

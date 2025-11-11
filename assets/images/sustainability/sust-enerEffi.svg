@@ -1,0 +1,13 @@
+<svg id="Sust-EnerEffi" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67.839" height="72.303" viewBox="0 0 67.839 72.303">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_840" data-name="Rectangle 840" width="67.839" height="67.839" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="Rectangle_748" data-name="Rectangle 748" width="67.839" height="72.303" fill="#fff"/>
+  <g id="Group_651" data-name="Group 651" transform="translate(0 2.232)">
+    <g id="Group_650" data-name="Group 650" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Path_336" data-name="Path 336" d="M20.165,50.447h0M22.9,52.059a21.793,21.793,0,1,0-5.29-3.637M22.559,8.555,21.436,5.849m-9.344,6.243L9.787,9.786M8.555,22.558,5.849,21.437M3.655,32.461H.393m8.162,9.9L5.849,43.484m6.243,9.345L9.787,55.135m12.772,1.232-1.123,2.706m11.023,2.192v3.262m9.9-8.161,1.121,2.706m9.345-6.243,2.306,2.306m1.232-12.772,2.706,1.121m2.192-11.023h3.264m-8.162-9.9,2.706-1.121m-6.243-9.345,2.306-2.306M42.361,8.555l1.121-2.706M32.459,3.656V.394M35.7,16.23l-1.04,14.2h7.729L27.809,48.737l1.642-14.142-6.382,0Z" transform="translate(1.459 1.46)" fill="none" stroke="#479f35" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
