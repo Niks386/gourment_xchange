@@ -26,6 +26,12 @@ module.exports = {
                 'color-f5885f': '#F5885F',
                 'white-80': 'rgba(255, 255, 255, 0.8)',
                 'dcddde-80': 'rgba(220, 221, 222, 0.8)',
+                'color-E99F9D': '#E99F9D',
+                'color-B7DDDF': '#B7DDDF',
+                'color-FAD59D': '#FAD59D',
+                'color-F2C2C0': '#F2C2C0',
+                'color-C7C8E3': '#C7C8E3',
+                'color-9AB6DE': '#9AB6DE',
             },
             fontSize: {
                 '7': '7px',
@@ -60,6 +66,7 @@ module.exports = {
             },
             zIndex: {
                 '5': 5,
+                '12': 12,
             },
             margin: {
                 '140': '140px',

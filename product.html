@@ -19,9 +19,9 @@
     <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
 
         <div class="header-inner flex justify-between items-start relative">
-            <div class="breadcrumb font-brandon-grotesque ">
-                <span class="breadcrumb-item current-page">Product</span>
-            </div>
+            <ul class="breadcrumb font-brandon-grotesque flex">
+                <li class="breadcrumb-item current-page">Product</span>
+            </ul>
             <a href="index.html">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
             </a>
@@ -68,7 +68,7 @@
                         </button>
                     </div>
                     <div class="menu-item text-center" data-menu="logistics">
-                        <a href="logistics.html" class="flex flex-col items-center gap-[10px]">
+                        <a href="logistic-efficiency.html" class="flex flex-col items-center gap-[10px]">
                             <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
                             <span class="menu-title">Logistics Efficiency</span>
                         </a>
@@ -86,7 +86,7 @@
                         </a>
                     </div>
                     <div class="menu-item text-center" data-menu="value">
-                        <a href="value-added.html" class="flex flex-col items-center gap-[10px]">
+                        <a href="javascript:void(0)" class="flex flex-col items-center gap-[10px]">
                             <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
                             <span class="menu-title">Value Added</span>
                         </a>
@@ -135,12 +135,14 @@
                 <div id="submenu-value" class="submenu absolute bottom-[-93px]">
                     <div class="bg-white-80 rounded-full rounded-tl-none">
                         <div class="flex items-center menu-list">
-                            <a href="food-consultants.html">Food Consultants</a>
-                            <a href="logistics-provider.html">Logistics Provider</a>
-                            <a href="equipment-suppliers.html">Equipment Suppliers</a>
-                            <a href="rd-services.html">R&d Services</a>
-                            <a href="renovation-contractors.html">Renovation Contractors</a>
-                            <a href="other-services.html">Other Services</a>
+                            <div class="flex items-center menu-list">
+                            <a href="javascript:void(0)">Food Consultants</a>
+                            <a href="javascript:void(0)">Logistics Provider</a>
+                            <a href="javascript:void(0)">Equipment Suppliers</a>
+                            <a href="javascript:void(0)">R&d Services</a>
+                            <a href="javascript:void(0)">Renovation Contractors</a>
+                            <a href="javascript:void(0)">Other Services</a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -184,8 +186,8 @@
         </div>
         <div class="rotate-img w-full h-full">
             <div class="cloudimage-360" id="rotatinImg" data-folder="./assets/images/rotating-model/"
-                data-filename="rotating_{index}.jpg" data-amount="251" data-autoplay="false" data-stop-at-edges="false"
-                data-spin-reverse="true" drag-speed="0" data-stop-draggable="true">
+                data-filename="rotating_{index}.jpg" data-amount="251" data-index="53" data-autoplay="false"
+                data-stop-at-edges="false" data-spin-reverse="true" drag-speed="0" data-stop-draggable="true">
             </div>
         </div>
     </section>
@@ -194,23 +196,6 @@
     <script src="./assets/vendor/js/jquery.min.js"></script>
     <script src="./assets/vendor/js/360-view.min.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            $('.plan-img[data-img]').on('click', function () {
-                const imgSrc =
-                    'assets/images/product/the-xchange/1st-storey/' + $(this)
-                        .data('img');
-                $('#planImage').attr('src', imgSrc);
-                $('#floorPopup').css('display', 'flex');
-                $('body').addClass('overflow-hidden');
-            });
-
-            $('.fpclose').on('click', function () {
-                $('#floorPopup').css('display', 'none');
-                $('body').removeClass('overflow-hidden');
-            });
-        });
-    </script>
 </body>
 
 </html>

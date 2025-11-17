@@ -17,11 +17,10 @@
 <body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
     <!-- Top Header -->
     <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
-
         <div class="header-inner flex justify-between items-start relative">
-            <div class="breadcrumb font-brandon-grotesque flex gap-[15px]">
-                <span class="breadcrumb-item current-page">Location</span>
-            </div>
+            <ul class="breadcrumb font-brandon-grotesque flex">
+                <li class="breadcrumb-item current-page">Location</span>
+            </ul>
             <a href="index.html">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
             </a>
@@ -68,7 +67,7 @@
                         </button>
                     </div>
                     <div class="menu-item text-center" data-menu="logistics">
-                        <a href="logistics.html" class="flex flex-col items-center gap-[10px]">
+                        <a href="logistic-efficiency.html" class="flex flex-col items-center gap-[10px]">
                             <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
                             <span class="menu-title">Logistics Efficiency</span>
                         </a>
@@ -86,7 +85,7 @@
                         </a>
                     </div>
                     <div class="menu-item text-center" data-menu="value">
-                        <a href="value-added.html" class="flex flex-col items-center gap-[10px]">
+                        <a href="javascript:void(0)" class="flex flex-col items-center gap-[10px]">
                             <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
                             <span class="menu-title">Value Added</span>
                         </a>
@@ -135,12 +134,14 @@
                 <div id="submenu-value" class="submenu absolute bottom-[-93px]">
                     <div class="bg-white-80 rounded-full rounded-tl-none">
                         <div class="flex items-center menu-list">
-                            <a href="food-consultants.html">Food Consultants</a>
-                            <a href="logistics-provider.html">Logistics Provider</a>
-                            <a href="equipment-suppliers.html">Equipment Suppliers</a>
-                            <a href="rd-services.html">R&d Services</a>
-                            <a href="renovation-contractors.html">Renovation Contractors</a>
-                            <a href="other-services.html">Other Services</a>
+                            <div class="flex items-center menu-list">
+                            <a href="javascript:void(0)">Food Consultants</a>
+                            <a href="javascript:void(0)">Logistics Provider</a>
+                            <a href="javascript:void(0)">Equipment Suppliers</a>
+                            <a href="javascript:void(0)">R&d Services</a>
+                            <a href="javascript:void(0)">Renovation Contractors</a>
+                            <a href="javascript:void(0)">Other Services</a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -152,7 +153,7 @@
         <!-- Tab contents -->
         <div class="tab-contents relative">
             <div id="tab-all" class="tab-content relative">
-                <div class="absolute left-8 top-[115px] w-[385px]">
+                <div class="absolute left-8 top-[115px] w-[381px]">
                     <h1 class="title-text-24 uppercase">E<svg class="inline-block" xmlns="http://www.w3.org/2000/svg"
                             width="28.446" height="21.995" viewBox="0 0 28.446 21.995">
                             <path id="x"
@@ -163,9 +164,9 @@
                     <h2 class="text-28-medium uppercase">Total Convenience</h2>
                     <p class="mt-6">Located just minutes from the city and well served by four major expressways,
                         GOURMET XCHANGE offers rapid islandwide
-                        connectivity, efficient deliveries and seamless access to air and sea ports. Its proximity to
-                        residential estates also
-                        ensures convenient access to a ready workforce.
+                        connectivity, efficient delivery access and seamless links to air and sea ports, as well as key
+                        business districts. Its
+                        proximity to residential estates also ensures convenient access to a ready workforce.
                     </p>
                 </div>
 
@@ -200,7 +201,7 @@
                 <div class="absolute left-8 top-[115px] w-[385px]">
                     <h2 class="text-28-medium uppercase">A Winning <br>Central Location</h2>
                     <ul class="list-disc ml-6 mt-6">
-                        <li>Excellent islandwide connectivity for efficient food distribution</li>
+                        <li>Excellent islandwide connectivity</li>
                         <li>Minutes to city and CBD</li>
                         <li>Convenient access to Malaysia checkpoints, air and sea ports</li>
                     </ul>
@@ -283,7 +284,7 @@
                 </div>
             </div>
             <div id="tab-ecosystem" class="tab-content hidden">
-                <div class="absolute left-8 top-[115px] w-[385px]">
+                <div class="absolute left-8 top-[115px] w-[360px]">
                     <h2 class="text-28-medium uppercase">A Thriving<br> Food Ecosystem</h2>
                     <p class="mt-6">Connect within and beyond – to an established network of food clusters in the
                         precinct. Reap synergistic benefits as
@@ -321,20 +322,20 @@
         </div>
 
         <!-- Bottom right global legend -->
-        <div class="absolute right-[83px] bottom-12 w-[300px]">
+        <div class="absolute right-[83px] bottom-12 w-[310px]">
             <p class="text-18-bold mb-4">Legend:</p>
-            <ul class="space-y-2">
+            <ul class="space-y-2 uppercase">
                 <li class="flex items-center">
                     <span class="inline-block w-10 h-10 rounded-full bg-[#E0EBC2] mr-2"></span>
                     Food Ecosystem
                 </li>
                 <li class="flex items-center">
                     <span class="inline-block w-10 h-10 rounded-full bg-[#FCF5B3] mr-2"></span>
-                    City & World-Class Destinations
+                    City & Key Business District
                 </li>
                 <li class="flex items-center">
                     <span class="inline-block w-10 h-10 rounded-full bg-[#FEEAB3] mr-2"></span>
-                    Checkpoints & Mega Port
+                    Checkpoints, Air & Sea Port
                 </li>
             </ul>
         </div>

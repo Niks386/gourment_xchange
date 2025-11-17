@@ -209,7 +209,7 @@ jQuery(document).ready(function ($) {
             });
         }
         // Event listener for accordion toggle
-        const tabMenuList = document.querySelectorAll('.tab-menu-list li, .plan-img, .right-tab a, .tab-menu-list-vertical li');
+        const tabMenuList = document.querySelectorAll('.tab-menu-list li, .plan-img, .right-tab a, .tab-menu-list-vertical li, .stack-img');
 
         tabMenuList.forEach(list => {
             list.addEventListener('click', function () {

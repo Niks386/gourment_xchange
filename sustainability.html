@@ -16,9 +16,9 @@
     <!-- Top Header -->
     <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
         <div class="header-inner flex justify-between items-start relative">
-            <div class="breadcrumb font-brandon-grotesque flex gap-[15px]">
-                <span class="breadcrumb-item current-page">Sustainability</span>
-            </div>
+            <ul class="breadcrumb font-brandon-grotesque flex">
+                <li class="breadcrumb-item current-page">Sustainability</span>
+            </ul>
             <a href="index.html">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
             </a>
@@ -65,7 +65,7 @@
                         </button>
                     </div>
                     <div class="menu-item text-center" data-menu="logistics">
-                        <a href="logistics.html" class="flex flex-col items-center gap-[10px]">
+                        <a href="logistic-efficiency.html" class="flex flex-col items-center gap-[10px]">
                             <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
                             <span class="menu-title">Logistics Efficiency</span>
                         </a>
@@ -83,7 +83,7 @@
                         </a>
                     </div>
                     <div class="menu-item text-center" data-menu="value">
-                        <a href="value-added.html" class="flex flex-col items-center gap-[10px]">
+                        <a href="javascript:void(0)" class="flex flex-col items-center gap-[10px]">
                             <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
                             <span class="menu-title">Value Added</span>
                         </a>
@@ -132,12 +132,14 @@
                 <div id="submenu-value" class="submenu absolute bottom-[-93px]">
                     <div class="bg-white-80 rounded-full rounded-tl-none">
                         <div class="flex items-center menu-list">
-                            <a href="food-consultants.html">Food Consultants</a>
-                            <a href="logistics-provider.html">Logistics Provider</a>
-                            <a href="equipment-suppliers.html">Equipment Suppliers</a>
-                            <a href="rd-services.html">R&d Services</a>
-                            <a href="renovation-contractors.html">Renovation Contractors</a>
-                            <a href="other-services.html">Other Services</a>
+                            <div class="flex items-center menu-list">
+                            <a href="javascript:void(0)">Food Consultants</a>
+                            <a href="javascript:void(0)">Logistics Provider</a>
+                            <a href="javascript:void(0)">Equipment Suppliers</a>
+                            <a href="javascript:void(0)">R&d Services</a>
+                            <a href="javascript:void(0)">Renovation Contractors</a>
+                            <a href="javascript:void(0)">Other Services</a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -152,11 +154,10 @@
                     <div class="w-[788px] relative">
                         <img src="./assets/images/sustainability/sustainability.webp" alt="Sustainability"
                             class="w-full h-auto" />
-                        <span
-                            class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] leading-[10px] absolute bottom-[8px] right-[10px] text-shadow-[0px 2px 4px #000000BE;]">Artist’s
+                        <span class="text-artist-8 absolute bottom-[8px] right-[10px]">Artist’s
                             Impression</span>
                     </div>
-                    <div class="w-[900px]">
+                    <div class="w-[935px]">
                         <div class="text-center">
                             <h1 class="h1title uppercase svg-inside mb-3">
                                 THE NEW MATRI<svg class="ml-[-6px]" xmlns="http://www.w3.org/2000/svg" width="58.219"
@@ -176,137 +177,112 @@
                             </p>
                         </div>
                         <div
-                            class="flex flex-wrap gap-x-[80px] gap-y-4 max-h-[573px] custom-scrollbar overflow-y-auto mt-[50px] pr-[100px]">
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center justify-center">
-                                    <img src="./assets/images/sustainability/sust-greenmark.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">GREEN MARK</h3>
-                                    <p class="text-14-normal capitalize text-center">Platinum Super Low Energy (SLE)
-                                        with Whole Life Carbon (WLC) & Maintainability (MT) Badge</p>
-                                </div>
+                            class="grid grid-cols-3 gap-y-9 max-h-[573px] custom-scrollbar overflow-y-auto mt-10 pr-[78px]">
+
+                            <div class="flex flex-col gap-[8px] items-center justify-center">
+                                <img src="./assets/images/sustainability/sust-greenmark.svg" alt="Green Mark"
+                                    class="mb-2">
+                                <h3 class="uppercase text-14-medium">Green Mark</h3>
+                                <p class="text-14-normal capitalize text-center">Platinum Super Low Energy (SLE)<br>
+                                    with Whole Life Carbon (WLC)<br> & Maintainability (MT) Badge</p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-energy.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">ENERGY SAVINGS</h3>
-                                    <p class="text-14-normal capitalize text-center">Incorporating solar panels to
-                                        reduce building energy footprint</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-energy.svg" alt="Incorporating solar"
+                                    class="mb-2">
+                                <h3 class="uppercase text-14-medium">Energy Savings</h3>
+                                <p class="text-14-normal capitalize text-center">Incorporating solar<br> panels to
+                                    reduce building <br> energy footprint</p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-conserv.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">CONSERVATION</h3>
-                                    <p class="text-14-normal capitalize text-center">Preserving existing structures to
-                                        cut embodied carbon & retain heritage</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-wasteman.svg" alt="Waste Management"
+                                    class="mb-2">
+                                <h3 class="uppercase text-14-medium">Waste Management</h3>
+                                <p class="text-14-normal capitalize">Recycling stations for packaging<br> combined with
+                                    regular waste audits<br> support a clean, eco-conscious space</p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-wateffic.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">WATER EFFICIENT FITTINGS</h3>
-                                    <p class="text-14-normal capitalize text-center">PUB WELS 3-tick fittings optimise
-                                        water use, lowering costs & environmental impact</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-wateffic.svg"
+                                    alt="Water Efficient Fittings" class="mb-2">
+                                <h3 class="uppercase text-14-medium">Water Efficient Fittings</h3>
+                                <p class="text-14-normal capitalize text-center">PUB WELS 3-tick fittings <br>optimise
+                                    water use, lowering<br> costs & environmental impact</p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-enerEffi.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">ENERGY EFFICIENT LIGHTING</h3>
-                                    <p class="text-14-normal capitalize text-center">Achieve over 60% energy savings
-                                        with high-efficiency LED lighting facility-wide</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-enerEffi.svg"
+                                    alt="Energy Efficient Lighting" class="mb-2">
+                                <h3 class="uppercase text-14-medium">Energy Efficient Lighting</h3>
+                                <p class="text-14-normal capitalize text-center">Achieve over 60% energy<br> savings
+                                    with high-efficiency<br> LED lighting facility-wide</p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-greenenvi.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">GREEN ENVIRONMENT</h3>
-                                    <p class="text-14-normal capitalize">Experience lush sky terraces and rooftop
-                                        gardens that blend nature with industrial design</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-conserv.svg" alt="Conservation"
+                                    class="mb-3">
+                                <h3 class="uppercase text-14-medium">Conservation</h3>
+                                <p class="text-14-normal capitalize text-center">Preserving existing <br>structures to
+                                    cut embodied<br> carbon & retain heritage</p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-activemob.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">ACTIVE MOBILITY</h3>
-                                    <p class="text-14-normal capitalize">Designed for safe, convenient pedestrian and
-                                        cyclist access - promoting healthy lifestyles</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-activemob.svg" alt="Active Mobility"
+                                    class="mb-2">
+                                <h3 class="uppercase text-14-medium">Active Mobility</h3>
+                                <p class="text-14-normal capitalize">Designed for safe, convenient <br>pedestrian and
+                                    cyclist access<br> - promoting healthy lifestyles</p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-susprofin.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">SUSTAINABLE PRODUCTS & FINISHES</h3>
-                                    <p class="text-14-normal capitalize">Over 80% of architectural and landscape
-                                        materials are SGBP 2-tick certified, ensuring quality & sustainability.</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-susprofin.svg" alt="Sustainable Products"
+                                    class="mb-2">
+                                <h3 class="uppercase text-14-medium">Sustainable Products & Finishes</h3>
+                                <p class="text-14-normal capitalize">Over 80% of architectural and landscape<br>
+                                    materials are SGBP 2-tick certified,<br> ensuring quality & sustainability.</p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-wasteman.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">WASTE MANAGEMENT</h3>
-                                    <p class="text-14-normal capitalize">Recycling stations for packaging combined with
-                                        regular waste audits support a clean, eco-conscious space</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-greenenvi.svg" alt="Green Environment"
+                                    class="mb-2">
+                                <h3 class="uppercase text-14-medium">Green Environment</h3>
+                                <p class="text-14-normal capitalize">Experience lush sky terraces<br> and rooftop
+                                    gardens that blend<br> nature with industrial design</p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-reduceetv.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">REDUCED ETTV</h3>
-                                    <p class="text-14-normal capitalize">Reduced ETTV minimizes heat gain, improving
-                                        indoor comfort and reducing cooling needs</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-reduceetv.svg" alt="Reduced Ettv"
+                                    class="mb-2">
+                                <h3 class="uppercase text-14-medium">Reduced Ettv</h3>
+                                <p class="text-14-normal capitalize">Reduced ETTV minimizes heat<br> gain, improving
+                                    indoor comfort and<br> reducing cooling needs</p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-urbheat.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">URBAN HEAT ISLAND MITIGATION</h3>
-                                    <p class="text-14-normal capitalize">Over 50% site coverage with increased greenery
-                                        and usage of solar panels to reduce ambient heat</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-urbheat.svg"
+                                    alt="Urban Heat Island Mitigation" class="mb-2">
+                                <h3 class="uppercase text-14-medium">Urban Heat Island Mitigation</h3>
+                                <p class="text-14-normal capitalize">Over 50% site coverage with increased <br>greenery
+                                    and usage of solar panels<br> to reduce ambient heat</p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-embcarbon.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">EMBODIED CARBON COMPUTATION</h3>
-                                    <p class="text-14-normal capitalize">Environmentally friendly material choices.
-                                        target a 30% reduction in embodied carbon, supporting green building goals</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-embcarbon.svg" alt="Embodied Carbon"
+                                    class="mb-2">
+                                <h3 class="uppercase text-14-medium">Embodied Carbon Computation</h3>
+                                <p class="text-14-normal capitalize">Environmentally friendly material<br> choices.
+                                    target a 30% reduction<br> in embodied carbon, supporting<br> green building goals
+                                </p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-restor-comm.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">RESTORATIVE AND COMMUNITY SPACES</h3>
-                                    <p class="text-14-normal capitalize">Relaxation zones and community areas foster
-                                        engagement and well-being</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-restor-comm.svg"
+                                    alt="Restorative And Community Spaces" class="mb-2">
+                                <h3 class="uppercase text-14-medium">Restorative And Community Spaces</h3>
+                                <p class="text-14-normal capitalize">Relaxation zones and community<br> areas foster
+                                    engagement<br> and well-being</p>
                             </div>
-                            <div class="w-[200px]">
-                                <div class="flex flex-col gap-[8px] items-center text-center">
-                                    <img src="./assets/images/sustainability/sust-lowvoc.svg" alt="Green Mark"
-                                        class="mb-2 h-full min-h-[72px] object-cover">
-                                    <h3 class="uppercase text-14-medium">LOW VOC MATERIAL FINISHES</h3>
-                                    <p class="text-14-normal capitalize">Health-focused materials improve indoor air
-                                        quality and occupant wellness</p>
-                                </div>
+                            <div class="flex flex-col gap-[8px] items-center text-center">
+                                <img src="./assets/images/sustainability/sust-lowvoc.svg"
+                                    alt="Low Voc Material Finishes" class="mb-2">
+                                <h3 class="uppercase text-14-medium">Low Voc Material Finishes</h3>
+                                <p class="text-14-normal capitalize">Health-focused materials<br> improve indoor air
+                                    quality <br>and occupant wellness</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Scripts -->
