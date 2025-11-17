@@ -14,39 +14,40 @@
     <link rel="stylesheet" href="./assets/vendor/css/animate.min.css">
     <style>
         ::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-track {
-    background-color: var(--color-dcddde);
-    border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--color-eb3b1d);;
-    border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
-}
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: var(--color-dcddde);
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-eb3b1d);
+            ;
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+        }
     </style>
 </head>
 
 <body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
     <!-- Top Header -->
     <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
-        <div
-            class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
-        </div>
         <div class="header-inner flex justify-between items-start relative">
-            <div class="breadcrumb font-brandon-grotesque flex gap-[15px]">
-                <a href="product.html" class="breadcrumb-item">Product</a>
-                <span><img src="./assets/images/breadcrumb-arrow.svg" alt="Breadcrumb Arrow"></span>
-                <span class="breadcrumb-item current-page">Food operations</span>
-            </div>
+            <ul class="breadcrumb font-brandon-grotesque flex">
+                <li class="breadcrumb-item">
+                    <a href="product.html">Product</a>
+                </li>
+                <li class="breadcrumb-item current-page">Food operations</span>
+            </ul>
             <a href="index.html">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
             </a>
@@ -93,7 +94,7 @@
                         </button>
                     </div>
                     <div class="menu-item text-center" data-menu="logistics">
-                        <a href="logistics.html" class="flex flex-col items-center gap-[10px]">
+                        <a href="logistic-efficiency.html" class="flex flex-col items-center gap-[10px]">
                             <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
                             <span class="menu-title">Logistics Efficiency</span>
                         </a>
@@ -111,7 +112,7 @@
                         </a>
                     </div>
                     <div class="menu-item text-center" data-menu="value">
-                        <a href="value-added.html" class="flex flex-col items-center gap-[10px]">
+                        <a href="javascript:void(0)" class="flex flex-col items-center gap-[10px]">
                             <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
                             <span class="menu-title">Value Added</span>
                         </a>
@@ -160,12 +161,14 @@
                 <div id="submenu-value" class="submenu absolute bottom-[-93px]">
                     <div class="bg-white-80 rounded-full rounded-tl-none">
                         <div class="flex items-center menu-list">
-                            <a href="food-consultants.html">Food Consultants</a>
-                            <a href="logistics-provider.html">Logistics Provider</a>
-                            <a href="equipment-suppliers.html">Equipment Suppliers</a>
-                            <a href="rd-services.html">R&d Services</a>
-                            <a href="renovation-contractors.html">Renovation Contractors</a>
-                            <a href="other-services.html">Other Services</a>
+                            <div class="flex items-center menu-list">
+                            <a href="javascript:void(0)">Food Consultants</a>
+                            <a href="javascript:void(0)">Logistics Provider</a>
+                            <a href="javascript:void(0)">Equipment Suppliers</a>
+                            <a href="javascript:void(0)">R&d Services</a>
+                            <a href="javascript:void(0)">Renovation Contractors</a>
+                            <a href="javascript:void(0)">Other Services</a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -174,83 +177,121 @@
     </section>
 
     <!-- Food operations listing -->
-     <section class="food-operation-list keyh-wrap h-screen flex items-center justify-center bg-white">
+    <section class="food-operation-list keyh-wrap h-screen flex items-center justify-center bg-white">
         <div class="h-screen">
             <div class="relative w-full min-h-screen flex items-center py-8">
                 <div class="w-full max-w-[1640px] mx-auto px-8">
-                    <div class="grid grid-cols-4 gap-7 overflow-y-auto max-h-[750px] pr-10 scrollbar-thin scrollbar-thumb-[#EB3B1D] scrollbar-track-[#DCDDDE]">
+                    <div
+                        class="grid grid-cols-4 gap-7 overflow-y-auto max-h-[750px] pr-10 scrollbar-thin scrollbar-thumb-[#EB3B1D] scrollbar-track-[#DCDDDE]">
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="3k-central-kitchen.html" class="block group relative">
-                                <img src="assets/images/food-operations/central-kitchen.webp" alt="central-kitchen" class="w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                <p class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">3k central kitchen</p>
+                                <img src="assets/images/food-operations/central-kitchen.webp" alt="central-kitchen"
+                                    class="w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+                                <p
+                                    class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">
+                                    3k central kitchen</p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="7k-central-kitchen.html" class="block group relative">
-                                <img src="assets/images/food-operations/7k-central-kitchen.webp" alt="7k-central-kitchen" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                <p class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">7k central kitchen</p>
+                                <img src="assets/images/food-operations/7k-central-kitchen.webp"
+                                    alt="7k-central-kitchen"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+                                <p
+                                    class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">
+                                    7k central kitchen</p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="catering-kitchen.html" class="block group relative">
-                                <img src="assets/images/food-operations/testfit-bakery.webp" alt="bakery" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                <p class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">Catering kitchen</p>
+                                <img src="assets/images/food-operations/testfit-bakery.webp" alt="bakery"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+                                <p
+                                    class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">
+                                    Catering kitchen</p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="coffee-roasting.html" class="block group relative">
-                                <img src="assets/images/food-operations/coffee-roasting.webp" alt="coffee-roasting" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                <p class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">Coffee roasting</p>
+                                <img src="assets/images/food-operations/coffee-roasting.webp" alt="coffee-roasting"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+                                <p
+                                    class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">
+                                    Coffee roasting</p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="food-lab.html" class="block group relative">
-                                <img src="assets/images/food-operations/food-lab.webp" alt="food-lab" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                <p class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">Food lab</p>
+                                <img src="assets/images/food-operations/food-lab.webp" alt="food-lab"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+                                <p
+                                    class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">
+                                    Food lab</p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
-                            <a href="food-logistics.html" class="block group relative">
-                                <img src="assets/images/food-operations/food-logistics.webp" alt="food-logistics" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                <p class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">Food logistics</p>
+                            <a href="food-logistic-efficiency.html" class="block group relative">
+                                <img src="assets/images/food-operations/food-logistics.webp" alt="food-logistics"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+                                <p
+                                    class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">
+                                    Food logistics</p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="food-repacking.html" class="block group relative">
-                                <img src="assets/images/food-operations/food-packaging.webp" alt="food-packaging" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                <p class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">Food packaging</p>
+                                <img src="assets/images/food-operations/food-packaging.webp" alt="food-packaging"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+                                <p
+                                    class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">
+                                    Food packaging</p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="meat-seafood.html" class="block group relative">
-                                <img src="assets/images/food-operations/meat-sea-food.webp" alt="meat-sea-food" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                <p class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">Meat & seafood</p>
+                                <img src="assets/images/food-operations/meat-sea-food.webp" alt="meat-sea-food"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+                                <p
+                                    class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">
+                                    Meat & seafood</p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="sauce-manufacturing.html" class="block group relative">
-                                <img src="assets/images/food-operations/sauce-manufacturing.webp" alt="sauce-manufacturing" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                <p class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">Sauce manufacturing</p>
+                                <img src="assets/images/food-operations/sauce-manufacturing.webp"
+                                    alt="sauce-manufacturing"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+                                <p
+                                    class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">
+                                    Sauce manufacturing</p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="restaurants.html" class="block group relative">
-                                <img src="assets/images/food-operations/restaurants.webp" alt="restaurants" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                <p class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">Restaurants</p>
+                                <img src="assets/images/food-operations/restaurants.webp" alt="restaurants"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+                                <p
+                                    class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">
+                                    Restaurants</p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="bakery.html" class="block group relative">
-                                <img src="assets/images/food-operations/bakery.webp" alt="bakery" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                <p class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">Bakery</p>
+                                <img src="assets/images/food-operations/bakery.webp" alt="bakery"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+                                <p
+                                    class="bg-color-f2673a border border-color-dcddde w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-white font-brandon uppercase z-5 relative title-text-15">
+                                    Bakery</p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="javascript:void(0);" class="block group relative">
-                                <img src="assets/images/food-operations/production.webp" alt="production" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                
+                                <img src="assets/images/food-operations/production.webp" alt="production"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+
                                 <!-- On hover display content -->
-                                <div class="food-operations-overlay-content absolute inset-0 pt-4 bg-gray-100/80 overflow-y-auto h-[21.7rem] opacity-0 pointer-events-none transition-all duration-500 ease-out translate-y-full flex px-5 rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem]">
+                                <div
+                                    class="food-operations-overlay-content absolute inset-0 pt-4 bg-gray-100/80 overflow-y-auto h-[21.7rem] opacity-0 pointer-events-none transition-all duration-500 ease-out translate-y-full flex px-5 rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem]">
                                     <ul class="space-y-2 px-5 text-gray-900 text-base list-disc">
                                         <li>Central kitchens (for F&B brands, hotels, or caterers)</li>
                                         <li>Food manufacturing (sauces, condiments, frozen food, ready meals)</li>
@@ -259,105 +300,169 @@
                                         <li>Beverage bottling and blending (juices, kombucha, cold brews)</li>
                                         <li>Ice cream or dessert production</li>
                                     </ul>
-                                 </div>
+                                </div>
 
-                                <p id="food-operation-btn" class="food-operation-label bg-color-231f20 border border-color-dcddde items-center w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-black font-brandon uppercase z-5 relative title-text-15 flex justify-between transform transition-transform duration-500">Production & processing <span id="food-operation-btn-arrow" class="text-color-eb3b1d transition-transform duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="15.419" height="12.502" viewBox="0 0 15.419 12.502"><path id="arrow" d="M40.213,13.171l7.673,7.673-7.706,7.7q1.553,0,3.107.023c-.23,0,.806-.019,1.67,0l7.725-7.725-7.7-7.694C43.389,13.165,41.813,13.169,40.213,13.171Z" transform="translate(-13.15 52.682) rotate(-90)" fill="#eb3b1d"/></svg></span></p>
+                                <p id="food-operation-btn"
+                                    class="food-operation-label bg-color-231f20 border border-color-dcddde items-center w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-black font-brandon uppercase z-5 relative title-text-15 flex justify-between transform transition-transform duration-500">
+                                    Production & processing <span id="food-operation-btn-arrow"
+                                        class="text-color-eb3b1d transition-transform duration-300"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="15.419" height="12.502"
+                                            viewBox="0 0 15.419 12.502">
+                                            <path id="arrow"
+                                                d="M40.213,13.171l7.673,7.673-7.706,7.7q1.553,0,3.107.023c-.23,0,.806-.019,1.67,0l7.725-7.725-7.7-7.694C43.389,13.165,41.813,13.169,40.213,13.171Z"
+                                                transform="translate(-13.15 52.682) rotate(-90)" fill="#eb3b1d" />
+                                        </svg></span></p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="javascript:void(0);" class="block group relative">
-                                <img src="assets/images/food-operations/shared-culinary.webp" alt="shared-culinary" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                
-                                <!-- On hover display content -->
-                                <div class="food-operations-overlay-content absolute inset-0 pt-4 bg-gray-100/80 overflow-y-auto h-[21.7rem] opacity-0 pointer-events-none transition-all duration-500 ease-out translate-y-full flex items-center px-5 rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem]">
-                                    <ul class="space-y-2 px-5 text-gray-900 text-base list-disc">
-                                        <li>Cloud kitchens / virtual kitchen operators</li>
-                                        <li>Multi-brand kitchen setups for delivery</li>
-                                        <li>Franchise kitchen hubs (serving multiple outlets or brands)</li>
-                                    </ul>
-                                 </div>
+                                <img src="assets/images/food-operations/cold-chain.webp" alt="cold-chain"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
 
-                                <p id="food-operation-btn" class="food-operation-label bg-color-231f20 border border-color-dcddde w-full items-center rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-black font-brandon uppercase z-5 relative title-text-15 flex justify-between transform transition-transform duration-500">Shared culinary hubs <span id="food-operation-btn-arrow" class="text-color-eb3b1d transition-transform duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="15.419" height="12.502" viewBox="0 0 15.419 12.502"><path id="arrow" d="M40.213,13.171l7.673,7.673-7.706,7.7q1.553,0,3.107.023c-.23,0,.806-.019,1.67,0l7.725-7.725-7.7-7.694C43.389,13.165,41.813,13.169,40.213,13.171Z" transform="translate(-13.15 52.682) rotate(-90)" fill="#eb3b1d"/></svg></span></p>
-                            </a>
-                        </div>
-                        <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
-                            <a href="javascript:void(0);" class="block group relative">
-                                <img src="assets/images/food-operations/cold-chain.webp" alt="cold-chain" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                
                                 <!-- On hover display content -->
-                                <div class="food-operations-overlay-content absolute inset-0 pt-4 bg-gray-100/80 overflow-y-auto h-[21.7rem] opacity-0 pointer-events-none transition-all duration-500 ease-out translate-y-full flex items-center px-5 rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem]">
+                                <div
+                                    class="food-operations-overlay-content absolute inset-0 pt-4 bg-gray-100/80 overflow-y-auto h-[21.7rem] opacity-0 pointer-events-none transition-all duration-500 ease-out translate-y-full flex items-center px-5 rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem]">
                                     <ul class="space-y-2 px-5 text-gray-900 text-base list-disc">
                                         <li>Cold room and freezer storage facilities</li>
                                         <li>Meat and seafood processing & packing</li>
                                         <li>Chiller space for dairy and perishables</li>
                                     </ul>
-                                 </div>
+                                </div>
 
-                                <p id="food-operation-btn" class="food-operation-label bg-color-231f20 border border-color-dcddde items-center w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-black font-brandon uppercase z-5 relative title-text-15 flex justify-between transform transition-transform duration-500">Cold chain & storage<span id="food-operation-btn-arrow" class="text-color-eb3b1d transition-transform duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="15.419" height="12.502" viewBox="0 0 15.419 12.502"><path id="arrow" d="M40.213,13.171l7.673,7.673-7.706,7.7q1.553,0,3.107.023c-.23,0,.806-.019,1.67,0l7.725-7.725-7.7-7.694C43.389,13.165,41.813,13.169,40.213,13.171Z" transform="translate(-13.15 52.682) rotate(-90)" fill="#eb3b1d"/></svg></span></p>
+                                <p id="food-operation-btn"
+                                    class="food-operation-label bg-color-231f20 border border-color-dcddde items-center w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-black font-brandon uppercase z-5 relative title-text-15 flex justify-between transform transition-transform duration-500">
+                                    Cold chain & storage<span id="food-operation-btn-arrow"
+                                        class="text-color-eb3b1d transition-transform duration-300"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="15.419" height="12.502"
+                                            viewBox="0 0 15.419 12.502">
+                                            <path id="arrow"
+                                                d="M40.213,13.171l7.673,7.673-7.706,7.7q1.553,0,3.107.023c-.23,0,.806-.019,1.67,0l7.725-7.725-7.7-7.694C43.389,13.165,41.813,13.169,40.213,13.171Z"
+                                                transform="translate(-13.15 52.682) rotate(-90)" fill="#eb3b1d" />
+                                        </svg></span></p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="javascript:void(0);" class="block group relative">
-                                <img src="assets/images/food-operations/retail.webp" alt="retail" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                
+                                <img src="assets/images/food-operations/retail.webp" alt="retail"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+
                                 <!-- On hover display content -->
-                                <div class="food-operations-overlay-content absolute inset-0 pt-4 bg-gray-100/80 overflow-y-auto h-[21.7rem] opacity-0 pointer-events-none transition-all duration-500 ease-out translate-y-full flex items-center px-5 rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem]">
+                                <div
+                                    class="food-operations-overlay-content absolute inset-0 pt-4 bg-gray-100/80 overflow-y-auto h-[21.7rem] opacity-0 pointer-events-none transition-all duration-500 ease-out translate-y-full flex items-center px-5 rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem]">
                                     <ul class="space-y-2 px-5 text-gray-900 text-base list-disc">
                                         <li>Specialty grocers or artisanal retail with onsite prep</li>
                                         <li>Deli or butchery with production back-of-house</li>
                                         <li>Cafe-roastery or tea-blending space</li>
                                         <li>Farm-to-table concepts with central kitchen and storefront</li>
                                     </ul>
-                                 </div>
+                                </div>
 
-                                <p id="food-operation-btn" class="food-operation-label bg-color-231f20 border border-color-dcddde items-center w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-black font-brandon uppercase z-5 relative title-text-15 flex justify-between transform transition-transform duration-500">Retail + b2b hybrid concepts<span id="food-operation-btn-arrow" class="text-color-eb3b1d transition-transform duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="15.419" height="12.502" viewBox="0 0 15.419 12.502"><path id="arrow" d="M40.213,13.171l7.673,7.673-7.706,7.7q1.553,0,3.107.023c-.23,0,.806-.019,1.67,0l7.725-7.725-7.7-7.694C43.389,13.165,41.813,13.169,40.213,13.171Z" transform="translate(-13.15 52.682) rotate(-90)" fill="#eb3b1d"/></svg></span></p>
+                                <p id="food-operation-btn"
+                                    class="food-operation-label bg-color-231f20 border border-color-dcddde items-center w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-black font-brandon uppercase z-5 relative title-text-15 flex justify-between transform transition-transform duration-500">
+                                    Retail + b2b hybrid concepts<span id="food-operation-btn-arrow"
+                                        class="text-color-eb3b1d transition-transform duration-300"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="15.419" height="12.502"
+                                            viewBox="0 0 15.419 12.502">
+                                            <path id="arrow"
+                                                d="M40.213,13.171l7.673,7.673-7.706,7.7q1.553,0,3.107.023c-.23,0,.806-.019,1.67,0l7.725-7.725-7.7-7.694C43.389,13.165,41.813,13.169,40.213,13.171Z"
+                                                transform="translate(-13.15 52.682) rotate(-90)" fill="#eb3b1d" />
+                                        </svg></span></p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="javascript:void(0);" class="block group relative">
-                                <img src="assets/images/food-operations/food-Innovation.webp" alt="food-Innovation" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                
+                                <img src="assets/images/food-operations/food-Innovation.webp" alt="food-Innovation"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+
                                 <!-- On hover display content -->
-                                <div class="food-operations-overlay-content absolute inset-0 pt-4 bg-gray-100/80 overflow-y-auto h-[21.7rem] opacity-0 pointer-events-none transition-all duration-500 ease-out translate-y-full flex items-center px-5 rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem]">
+                                <div
+                                    class="food-operations-overlay-content absolute inset-0 pt-4 bg-gray-100/80 overflow-y-auto h-[21.7rem] opacity-0 pointer-events-none transition-all duration-500 ease-out translate-y-full flex items-center px-5 rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem]">
                                     <ul class="space-y-2 px-5 text-gray-900 text-base list-disc">
                                         <li>Test kitchens for food product development</li>
                                         <li>Food tech or agri-tech startups (alternative protein, lab-based foods)</li>
                                         <li>Packaging and shelf-life testing facilities</li>
                                     </ul>
-                                 </div>
+                                </div>
 
-                                <p id="food-operation-btn" class="food-operation-label bg-color-231f20 border border-color-dcddde items-center w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-black font-brandon uppercase z-5 relative title-text-15 flex justify-between transform transition-transform duration-500">Food innovation & r&d<span id="food-operation-btn-arrow" class="text-color-eb3b1d transition-transform duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="15.419" height="12.502" viewBox="0 0 15.419 12.502"><path id="arrow" d="M40.213,13.171l7.673,7.673-7.706,7.7q1.553,0,3.107.023c-.23,0,.806-.019,1.67,0l7.725-7.725-7.7-7.694C43.389,13.165,41.813,13.169,40.213,13.171Z" transform="translate(-13.15 52.682) rotate(-90)" fill="#eb3b1d"/></svg></span></p>
+                                <p id="food-operation-btn"
+                                    class="food-operation-label bg-color-231f20 border border-color-dcddde items-center w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-black font-brandon uppercase z-5 relative title-text-15 flex justify-between transform transition-transform duration-500">
+                                    Food innovation & r&d<span id="food-operation-btn-arrow"
+                                        class="text-color-eb3b1d transition-transform duration-300"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="15.419" height="12.502"
+                                            viewBox="0 0 15.419 12.502">
+                                            <path id="arrow"
+                                                d="M40.213,13.171l7.673,7.673-7.706,7.7q1.553,0,3.107.023c-.23,0,.806-.019,1.67,0l7.725-7.725-7.7-7.694C43.389,13.165,41.813,13.169,40.213,13.171Z"
+                                                transform="translate(-13.15 52.682) rotate(-90)" fill="#eb3b1d" />
+                                        </svg></span></p>
                             </a>
                         </div>
                         <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
                             <a href="javascript:void(0);" class="block group relative">
-                                <img src="assets/images/food-operations/distribution.webp" alt="distribution" class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
-                                
+                                <img src="assets/images/food-operations/distribution.webp" alt="distribution"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+
                                 <!-- On hover display content -->
-                                <div class="food-operations-overlay-content absolute inset-0 pt-4 bg-gray-100/80 overflow-y-auto h-[21.7rem] opacity-0 pointer-events-none transition-all duration-500 ease-out translate-y-full flex items-center px-5 rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem]">
+                                <div
+                                    class="food-operations-overlay-content absolute inset-0 pt-4 bg-gray-100/80 overflow-y-auto h-[21.7rem] opacity-0 pointer-events-none transition-all duration-500 ease-out translate-y-full flex items-center px-5 rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem]">
                                     <ul class="space-y-2 px-5 text-gray-900 text-base list-disc">
                                         <li>Food packing and labelling centres</li>
                                         <li>F&B supply chain logistics hubs</li>
                                         <li>eCommerce F&B fulfilment centres</li>
                                     </ul>
-                                 </div>
+                                </div>
 
-                                <p id="food-operation-btn" class="food-operation-label bg-color-231f20 border border-color-dcddde items-center w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-black font-brandon uppercase z-5 relative title-text-15 flex justify-between transform transition-transform duration-500">Distribution & logistics<span id="food-operation-btn-arrow" class="text-color-eb3b1d transition-transform duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="15.419" height="12.502" viewBox="0 0 15.419 12.502"><path id="arrow" d="M40.213,13.171l7.673,7.673-7.706,7.7q1.553,0,3.107.023c-.23,0,.806-.019,1.67,0l7.725-7.725-7.7-7.694C43.389,13.165,41.813,13.169,40.213,13.171Z" transform="translate(-13.15 52.682) rotate(-90)" fill="#eb3b1d"/></svg></span></p>
+                                <p id="food-operation-btn"
+                                    class="food-operation-label bg-color-231f20 border border-color-dcddde items-center w-full rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-black font-brandon uppercase z-5 relative title-text-15 flex justify-between transform transition-transform duration-500">
+                                    Distribution & logistics<span id="food-operation-btn-arrow"
+                                        class="text-color-eb3b1d transition-transform duration-300"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="15.419" height="12.502"
+                                            viewBox="0 0 15.419 12.502">
+                                            <path id="arrow"
+                                                d="M40.213,13.171l7.673,7.673-7.706,7.7q1.553,0,3.107.023c-.23,0,.806-.019,1.67,0l7.725-7.725-7.7-7.694C43.389,13.165,41.813,13.169,40.213,13.171Z"
+                                                transform="translate(-13.15 52.682) rotate(-90)" fill="#eb3b1d" />
+                                        </svg></span></p>
                             </a>
                         </div>
-                        
+                        <div class="rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden">
+                            <a href="javascript:void(0);" class="block group relative">
+                                <img src="assets/images/food-operations/shared-culinary.webp" alt="shared-culinary"
+                                    class="rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] w-full h-auto object-cover transform transition-transform duration-500 ease-out will-change-transform">
+
+                                <!-- On hover display content -->
+                                <div
+                                    class="food-operations-overlay-content absolute inset-0 pt-4 bg-gray-100/80 overflow-y-auto h-[21.7rem] opacity-0 pointer-events-none transition-all duration-500 ease-out translate-y-full flex items-center px-5 rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem]">
+                                    <ul class="space-y-2 px-5 text-gray-900 text-base list-disc">
+                                        <li>Cloud kitchens / virtual kitchen operators</li>
+                                        <li>Multi-brand kitchen setups for delivery</li>
+                                        <li>Franchise kitchen hubs (serving multiple outlets or brands)</li>
+                                    </ul>
+                                </div>
+
+                                <p id="food-operation-btn"
+                                    class="food-operation-label bg-color-231f20 border border-color-dcddde w-full items-center rounded-br-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] mt-[-3.25rem] py-5 px-5 text-start text-black font-brandon uppercase z-5 relative title-text-15 flex justify-between transform transition-transform duration-500">
+                                    Shared culinary hubs <span id="food-operation-btn-arrow"
+                                        class="text-color-eb3b1d transition-transform duration-300"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="15.419" height="12.502"
+                                            viewBox="0 0 15.419 12.502">
+                                            <path id="arrow"
+                                                d="M40.213,13.171l7.673,7.673-7.706,7.7q1.553,0,3.107.023c-.23,0,.806-.019,1.67,0l7.725-7.725-7.7-7.694C43.389,13.165,41.813,13.169,40.213,13.171Z"
+                                                transform="translate(-13.15 52.682) rotate(-90)" fill="#eb3b1d" />
+                                        </svg></span></p>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
 
     <!-- Scripts -->
     <script src="./assets/vendor/js/jquery.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
-       jQuery(document).ready(function() {
-            jQuery('.food-operation-label').click(function(e) {
+        jQuery(document).ready(function () {
+            jQuery('.food-operation-label').click(function (e) {
                 e.preventDefault();
 
                 var parent = jQuery(this).closest('a');
@@ -383,4 +488,5 @@
 
     </script>
 </body>
+
 </html>

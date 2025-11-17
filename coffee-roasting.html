@@ -16,17 +16,17 @@
 <body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
     <!-- Top Header -->
     <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
-        <div
-            class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
-        </div>
+
         <div class="header-inner flex justify-between items-start relative">
-            <div class="breadcrumb font-brandon-grotesque flex gap-[15px]">
-                <a href="product.html" class="breadcrumb-item">Product</a>
-                <span><img src="./assets/images/breadcrumb-arrow.svg" alt="Breadcrumb Arrow"></span>
-                <a href="food-operations.html" class="breadcrumb-item">Food Operations</a>
-                <span><img src="./assets/images/breadcrumb-arrow.svg" alt="Breadcrumb Arrow"></span>
-                <span class="breadcrumb-item current-page">Coffee Roasting</span>
-            </div>
+            <ul class="breadcrumb font-brandon-grotesque flex">
+                <li class="breadcrumb-item">
+                    <a href="product.html">Product</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="food-operations.html">Food Operations</a>
+                </li>
+                <li class="breadcrumb-item current-page">Coffee Roasting</li>
+            </ul>
             <a href="index.html">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
             </a>
@@ -73,7 +73,7 @@
                         </button>
                     </div>
                     <div class="menu-item text-center" data-menu="logistics">
-                        <a href="logistics.html" class="flex flex-col items-center gap-[10px]">
+                        <a href="logistic-efficiency.html" class="flex flex-col items-center gap-[10px]">
                             <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
                             <span class="menu-title">Logistics Efficiency</span>
                         </a>
@@ -91,7 +91,7 @@
                         </a>
                     </div>
                     <div class="menu-item text-center" data-menu="value">
-                        <a href="value-added.html" class="flex flex-col items-center gap-[10px]">
+                        <a href="javascript:void(0)" class="flex flex-col items-center gap-[10px]">
                             <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
                             <span class="menu-title">Value Added</span>
                         </a>
@@ -140,12 +140,14 @@
                 <div id="submenu-value" class="submenu absolute bottom-[-93px]">
                     <div class="bg-white-80 rounded-full rounded-tl-none">
                         <div class="flex items-center menu-list">
-                            <a href="food-consultants.html">Food Consultants</a>
-                            <a href="logistics-provider.html">Logistics Provider</a>
-                            <a href="equipment-suppliers.html">Equipment Suppliers</a>
-                            <a href="rd-services.html">R&d Services</a>
-                            <a href="renovation-contractors.html">Renovation Contractors</a>
-                            <a href="other-services.html">Other Services</a>
+                            <div class="flex items-center menu-list">
+                            <a href="javascript:void(0)">Food Consultants</a>
+                            <a href="javascript:void(0)">Logistics Provider</a>
+                            <a href="javascript:void(0)">Equipment Suppliers</a>
+                            <a href="javascript:void(0)">R&d Services</a>
+                            <a href="javascript:void(0)">Renovation Contractors</a>
+                            <a href="javascript:void(0)">Other Services</a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -162,7 +164,7 @@
                     <img src="assets/images/food-operations/3k-placeholder1.webp" alt="Placeholder"
                         class="w-full h-full object-cover">
                     <span
-                        class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] absolute bottom-[15px] right-[30px]">Artist’s
+                        class="text-artist-8">Artist’s
                         Impression</span>
                 </div>
             </div>
@@ -195,7 +197,7 @@
                 <div class="map-image w-[1039px] mx-auto">
                     <div class="panzoom-wrp relative panzoom-container">
                         <div class="panzoom-img">
-                            <img src="./assets/images/food-operations/3k_bare_plan_coffee_roasting.webp"
+                            <img src="./assets/images/food-operations/coffee-roasting/01-39.webp"
                                 alt="3k_bare_plan_coffee_roasting" class="w-full h-auto" />
                         </div>
                         <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
@@ -223,7 +225,7 @@
                 <div class="map-image w-[1039px] mx-auto">
                     <div class="panzoom-wrp relative panzoom-container">
                         <div class="panzoom-img">
-                            <img src="./assets/images/food-operations/3k_fitted_coffee_roasting.webp"
+                            <img src="./assets/images/food-operations/coffee-roasting/3k-fitted-coffee-roasting.webp"
                                 alt="3k fitted central kitchen" class="w-full h-auto" />
                         </div>
                         <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
@@ -251,7 +253,7 @@
                     <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder"
                         class="w-full h-full object-cover">
                     <span
-                        class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] absolute bottom-[15px] right-[30px]">Artist’s
+                        class="text-artist-8">Artist’s
                         Impression</span>
                 </div>
             </div>
@@ -260,7 +262,7 @@
                     <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder"
                         class="w-full h-full object-cover">
                     <span
-                        class="text-white text-[7px] font-medium uppercase font-brandon-grotesque tracking-[0.7px] absolute bottom-[15px] right-[30px]">Artist’s
+                        class="text-artist-8">Artist’s
                         Impression</span>
                 </div>
             </div>
@@ -268,11 +270,9 @@
 
         <!-- Bottom sticky tab bar -->
         <div
-            class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active w-full max-w-[1199px]">
+            class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
             <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
-                <ul class="flex items-center justify-evenly tab-menu-list">
-                    <li class="" data-tab-target="360-bare"> 360° Bare </li>
-                    <li class="" data-tab-target="360-fitted"> 360° Fitted </li>
+                <ul class="flex items-center justify-evenly tab-menu-list w-max">
                     <li class="" data-tab-target="bare-plan"> Bare Plan </li>
                     <li class="" data-tab-target="fitted-plan">Fitted plan</li>
                     <li class="" data-tab-target="perspective">Perspective</li>

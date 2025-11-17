@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack 05 | Gourmet Xchange</title>
+    <meta name="description" content="Stack 05 | Gourmet Xchange">
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/navigation.css">
+    <link rel="stylesheet" href="./assets/vendor/css/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/unit-compare.css">
+
+</head>
+
+<body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
+    <!-- Top Header -->
+    <section class="top-header fixed top-0 right-0 z-12 p-8 pb-[20px] w-full">
+        <div class="header-inner flex justify-between items-start relative">
+            <ul class="breadcrumb font-brandon-grotesque flex">
+                <li class="breadcrumb-item">
+                    <a href="product.html">Product</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="heritage-terrace.html">Heritage Terrace</a>
+                </li>
+                <li class="breadcrumb-item current-page">Stack 05</span>
+            </ul>
+            <a href="index.html">
+                <img src="./assets/images/main-logo.svg" alt="Logo">
+            </a>
+        </div>
+    </section>
+
+    <!-- Main navigation -->
+    <section class="navigation-wrap">
+        <div id="main-menu-overlay" class="overlay-menu"></div>
+        <!-- Menu Button -->
+        <button id="menuToggle" class="fixed bottom-[60px] left-[43px] transition-all duration-300 z-20 menu-closed">
+            <div id="menuIcon">
+                <img src="assets/images/menu/menu-icon-close.svg" alt="Menu Icon">
+            </div>
+        </button>
+        <div id="main-menu"
+            class="fixed bottom-[125px] w-full px-[108px] z-20 flex items-center  transition-all duration-500 ease-in-out transform origin-bottom opacity-100 menu-hidden">
+            <!-- Menu Content -->
+            <div id="menuContent"
+                class="bg-white-80 rounded-full rounded-bl-none pt-4 px-20 pb-[33px] flex gap-4 w-full">
+                <div class="flex items-center justify-between w-full">
+                    <div class="menu-item text-center" data-menu="development">
+                        <a href="development.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-development.svg" alt="Development">
+                            <span class="menu-title">Development</span>
+                        </a>
+                        <button class="menu-plus" data-menu="development">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="location">
+                        <a href="location.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-location.svg" alt="Location">
+                            <span class="menu-title">Location</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="product">
+                        <a href="product.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-product.svg" alt="Product">
+                            <span class="menu-title">Product</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-product">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="logistics">
+                        <a href="logistic-efficiency.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
+                            <span class="menu-title">Logistics Efficiency</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="facilities">
+                        <a href="facilities.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-facilities.svg" alt="Facilities">
+                            <span class="menu-title">Facilities</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="sustainability">
+                        <a href="sustainability.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-sustainability.svg" alt="Sustainability">
+                            <span class="menu-title">Sustainability</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="value">
+                        <a href="javascript:void(0)" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
+                            <span class="menu-title">Value Added</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-value">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="gallery">
+                        <a href="gallery.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-gallery.svg" alt="Gallery">
+                            <span class="menu-title">Gallery</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Submenus content -->
+                <div id="submenu-development" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <a href="introduction.html">Introduction</a>
+                            <a href="key-highlights.html">KeyHighlights</a>
+                            <a href="track-record.html">TrackRecord</a>
+                            <a href="./assets/images/e-brochure/dummy-ebrochure.pdf" target="_blank">eBrochure</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-product" class="submenu absolute bottom-[-93px]">
+                    <div class="w-full flex">
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[115px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">Select product by:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="the-xchange.html">The Xchange</a>
+                                <a href="heritage-terrace.html">Heritage Terrace</a>
+                                <a href="space-types.html">Space Types</a>
+                                <a href="food-operations.html">Food Operations</a>
+                            </div>
+                        </div>
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[60px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">View:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="unit-plan-comparison.html">Unit Plan Comparison</a>
+                                <a href="test-fit-plans.html">Test Fit Plans</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-value" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <div class="flex items-center menu-list">
+                            <a href="javascript:void(0)">Food Consultants</a>
+                            <a href="javascript:void(0)">Logistics Provider</a>
+                            <a href="javascript:void(0)">Equipment Suppliers</a>
+                            <a href="javascript:void(0)">R&d Services</a>
+                            <a href="javascript:void(0)">Renovation Contractors</a>
+                            <a href="javascript:void(0)">Other Services</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack Wrap -->
+    <section class="stack-wrap w-full h-full content-center">
+        <div class="columns-3 mx-140 gap-8">
+            <div class="relative">
+                <img src="./assets/images/product/heritage-terrace/stack-05/stack5-l1.webp" alt="1st storey plan #01-05"
+                    class="mx-auto">
+                <a href="javascript:void(0)"
+                    class="stack-img text-21-bold py-5 px-8 border border-color-dcddde rounded-full rounded-tl-none flex items-center justify-between hover:text-color-eb3b1d"
+                    data-bare-plan="stack-05-1st-storey.webp" data-cross-plan="section-stack-03_05_07-label.webp">
+                    <span>1<sup>st</sup> Storey Plan (#01-05)</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18.354" height="22.636"
+                            viewBox="0 0 18.354 22.636">
+                            <path id="arrowRight"
+                                d="M40.229,13.181,51.493,24.445,40.18,35.752q2.28,0,4.561.034c-.337,0,1.183-.028,2.452,0L58.534,24.445,47.224,13.15C44.891,13.171,42.577,13.178,40.229,13.181Z"
+                                transform="translate(-40.18 -13.15)" fill="#eb3b1d" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="relative">
+                <img src="./assets/images/product/heritage-terrace/stack-05/stack5-l2.webp" alt="2nd storey plan #02-05"
+                    class="mx-auto">
+                <a href="javascript:void(0)"
+                    class="stack-img text-21-bold py-5 px-8 border border-color-dcddde rounded-full rounded-tl-none flex items-center justify-between hover:text-color-eb3b1d"
+                    data-bare-plan="stack-05-2nd-storey.webp" data-cross-plan="section-stack-03_05_07-label.webp">
+                    <span>2<sup>nd</sup> Storey Plan (#02-05)</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18.354" height="22.636"
+                            viewBox="0 0 18.354 22.636">
+                            <path id="arrowRight"
+                                d="M40.229,13.181,51.493,24.445,40.18,35.752q2.28,0,4.561.034c-.337,0,1.183-.028,2.452,0L58.534,24.445,47.224,13.15C44.891,13.171,42.577,13.178,40.229,13.181Z"
+                                transform="translate(-40.18 -13.15)" fill="#eb3b1d" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="relative">
+                <img src="./assets/images/product/heritage-terrace/stack-05/stack5-l3.webp" alt="3rd storey plan #03-05"
+                    class="mx-auto">
+                <a href="javascript:void(0)"
+                    class="stack-img text-21-bold py-5 px-8 border border-color-dcddde rounded-full rounded-tl-none flex items-center justify-between hover:text-color-eb3b1d"
+                    data-bare-plan="stack-05-3rd-storey.webp" data-cross-plan="section-stack-03_05_07-label.webp">
+                    <span>3<sup>rd</sup> Storey Plan (#03-05)</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18.354" height="22.636"
+                            viewBox="0 0 18.354 22.636">
+                            <path id="arrowRight"
+                                d="M40.229,13.181,51.493,24.445,40.18,35.752q2.28,0,4.561.034c-.337,0,1.183-.028,2.452,0L58.534,24.445,47.224,13.15C44.891,13.171,42.577,13.178,40.229,13.181Z"
+                                transform="translate(-40.18 -13.15)" fill="#eb3b1d" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-7 right-7 w-[435px]">
+            <img src="./assets/images/product/heritage-terrace/stack-05/stack5-full-bare.webp" alt="Stack 03 Full Bare"
+                class="mx-auto">
+        </div>
+    </section>
+
+    <section id="stack-map-popup" class="fixed inset-0 bg-white z-10 content-center h-full hidden">
+        <!-- Tab contents -->
+        <div class="tab-contents relative">
+            <div id="tab-compare-plans" class="tab-content relative"></div>
+            <div id="tab-cross-sections" class="tab-content hidden">
+                <div class="map-image w-[1246px] mx-auto">
+                    <div class="panzoom-wrp relative panzoom-container">
+                        <div class="panzoom-img">
+                            <img id="cross-plan-img"
+                                src="./assets/images/product/heritage-terrace/stack-05/cross-section/section-stack-03_05_07-label.webp"
+                                alt="Cross Sections" class="w-full h-auto" />
+                        </div>
+                        <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2">
+                            <span class="zoom-in-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                    fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </span>
+                            <span class="zoom-out-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                    fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-bare-plan" class="tab-content hidden">
+                <div class="map-image w-[1066px] mx-auto">
+                    <div class="panzoom-wrp relative panzoom-container">
+                        <div class="panzoom-img">
+                            <img id="bare-plan-img"
+                                src="./assets/images/product/heritage-terrace/stack-05/stack-05-1st-storey.webp"
+                                alt="Compare Plans" class="w-full h-auto" />
+                        </div>
+                        <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2">
+                            <span class="zoom-in-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                    fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </span>
+                            <span class="zoom-out-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                    fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-specifications" class="tab-content hidden">
+                <h2 class="text-5xl text-center">Specifications</h2>
+            </div>
+        </div>
+
+        <!--Right tab bar -->
+        <div class="fixed bottom-8 right-8 z-10">
+            <ul class="flex flex-col items-center gap-3 tab-menu-list-vertical">
+                <li class=""><a href="unit-plan-comparison.html">Compare Plans</a></li>
+                <li class="" data-tab-target="cross-sections">Cross Sections</li>
+                <li class="" data-tab-target="bare-plan"> Bare Plan</li>
+                <li class="" data-tab-target="specifications">Specifications</li>
+            </ul>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="flex justify-start items-end fixed bottom-8 gap-8 left-[420px]">
+            <div class="flex flex-col">
+                <span class="select-title bg-white mb-1">Change Stack:</span>
+                <div class="custom-dropdown text-18-bold" id="stack-storey-dd">
+                    <button type="button" class="custom-dropdown-btn">
+                        <span class="custom-dropdown-text">Stack 01</span>
+                        <span class="custom-dropdown-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22.636" height="18.354"
+                                viewBox="0 0 22.636 18.354">
+                                <path id="arrow"
+                                    d="M40.229,13.181,51.493,24.445,40.18,35.752q2.28,0,4.561.034c-.337,0,1.183-.028,2.452,0L58.534,24.445,47.224,13.15C44.891,13.171,42.577,13.178,40.229,13.181Z"
+                                    transform="translate(-13.15 58.534) rotate(-90)" fill="#eb3b1d" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="custom-dropdown-list">
+                        <div class="custom-dropdown-list-inner"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0)"
+                class="back-storey inline-flex gap-[25px] items-center justify-between px-6 py-4 rounded-full border border-[#dcddde] bg-white no-underline transition hover:shadow-lg group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 28 26">
+                    <g id="restart" transform="translate(28 -1031)">
+                        <g id="Rectangle_745" data-name="Rectangle 745" transform="translate(-28 1031)" fill="#fff"
+                            stroke="#707070" stroke-width="1" opacity="0">
+                            <rect width="28" height="26" stroke="none"></rect>
+                            <rect x="0.5" y="0.5" width="27" height="25" fill="none"></rect>
+                        </g>
+                        <path id="Icon_material-refresh" data-name="Icon material-refresh"
+                            d="M26.475,9.525A12,12,0,1,0,29.6,21h-3.12A9,9,0,1,1,18,9a8.872,8.872,0,0,1,6.33,2.67L19.5,16.5H30V6Z"
+                            transform="translate(-32.008 1026)" fill="#eb3b1d"></path>
+                    </g>
+                </svg>
+                <span class="text-18-bold">Change Storey</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./assets/vendor/js/jquery.min.js"></script>
+    <script src="./assets/vendor/js/panzoom.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            // Global stack data
+            window.__STACK_DATA__ = [
+                { label: 'Stack 01', folder: 'stack-01', bare: { s1: 'stack-01-1st-storey.webp', s2: 'stack-01-2nd-storey.webp', s3: 'stack-01-3rd-storey.webp' }, cross: 'section-stack-01_02_04_06_08-label.webp' },
+                { label: 'Stack 02', folder: 'stack-02', bare: { s1: 'stack-02-1st-storey.webp', s2: 'stack-02-2nd-storey.webp', s3: 'stack-02-3rd-storey.webp' }, cross: 'section-stack-01_02_04_06_08-label.webp' },
+                { label: 'Stack 03', folder: 'stack-03', bare: { s1: 'stack-03-1st-storey.webp', s2: 'stack-03-2nd-storey.webp', s3: 'stack-03-3rd-storey.webp' }, cross: 'section-stack-03_05_07-label.webp' },
+                { label: 'Stack 04', folder: 'stack-04', bare: { s1: 'stack-04-1st-storey.webp', s2: 'stack-04-2nd-storey.webp', s3: 'stack-04-3rd-storey.webp' }, cross: 'section-stack-01_02_04_06_08-label.webp' },
+                { label: 'Stack 05', folder: 'stack-05', bare: { s1: 'stack-05-1st-storey.webp', s2: 'stack-05-2nd-storey.webp', s3: 'stack-05-3rd-storey.webp' }, cross: 'section-stack-03_05_07-label.webp' },
+                { label: 'Stack 06', folder: 'stack-06', bare: { s1: 'stack-06-1st-storey.webp', s2: 'stack-06-2nd-storey.webp', s3: 'stack-06-3rd-storey.webp' }, cross: 'section-stack-01_02_04_06_08-label.webp' },
+                { label: 'Stack 07', folder: 'stack-07', bare: { s1: 'stack-07-1st-storey.webp', s2: 'stack-07-2nd-storey.webp', s3: 'stack-07-3rd-storey.webp' }, cross: 'section-stack-03_05_07-label.webp' },
+                { label: 'Stack 08', folder: 'stack-08', bare: { s1: 'stack-08-1st-storey.webp', s2: 'stack-08-2nd-storey.webp', s3: 'stack-08-3rd-storey.webp' }, cross: 'section-stack-01_02_04_06_08-label.webp' }
+            ];
+
+            let activeStorey = 's1';
+            let activeStack = null;
+
+            // Functions
+            function updateStackVisuals(stack) {
+                if (!stack) return;
+                const base = `./assets/images/product/heritage-terrace/${stack.folder}/`;
+
+                // Update anchor data
+                $('.stack-wrap .columns-3 > .relative').each(function (i) {
+                    const bareKey = 's' + (i + 1);
+                    $(this).find('a.stack-img').attr({
+                        'data-bare-plan': stack.bare[bareKey],
+                        'data-cross-plan': stack.cross,
+                        'data-folder': stack.folder
+                    });
+                });
+
+                // Update popup images
+                $('#bare-plan-img').attr('src', base + stack.bare[activeStorey]);
+                $('#cross-plan-img').attr('src', base + 'cross-section/' + stack.cross);
+
+                // Update breadcrumb text
+                const cleanLabel = stack.label.replace(/^Stack\s0*/, 'Stack 0');
+                $('.breadcrumb-item.current-page').text(cleanLabel);
+            }
+
+            function showTab(target) {
+                $('.tab-content').hide();
+                $('#tab-' + target).fadeIn(300);
+                $('.tab-menu-list-vertical li').removeClass('active-tab');
+                $('.tab-menu-list-vertical li[data-tab-target="' + target + '"]').addClass('active-tab');
+            }
+
+            function setFallbackImage(selector) {
+                $(selector).on('error', function () {
+                    $(this).attr('src', './assets/images/fallback.webp');
+                });
+            }
+
+            // Popup open
+            $(document).on('click', '.stack-img', function (e) {
+                e.preventDefault();
+                if ($('#stack-map-popup').is(':animated')) return;
+
+                const $el = $(this);
+                const barePlan = $el.data('bare-plan');
+                const crossPlan = $el.data('cross-plan');
+                const folder = $el.data('folder') || 'stack-01';
+
+                // Identify storey clicked
+                const storeyLabel = $el.find('span').first().text().toLowerCase();
+                if (storeyLabel.includes('2nd')) activeStorey = 's2';
+                else if (storeyLabel.includes('3rd')) activeStorey = 's3';
+                else activeStorey = 's1';
+
+                // dfault to Stack 05
+                const stackIndex = 4;
+
+                // Set active stack dynamically
+                activeStack = window.__STACK_DATA__[stackIndex];
+                updateStackVisuals(activeStack);
+
+                // Update dropdown default to Stack 05
+                const $dropdown = $('#stack-storey-dd');
+                $dropdown.find('.custom-dropdown-text').text(activeStack.label);
+                $dropdown.find('.custom-dropdown-item').removeClass('selected');
+                $dropdown.find('.custom-dropdown-item').eq(stackIndex).addClass('selected');
+
+                // Show popup
+                showTab('bare-plan');
+                $('#stack-map-popup').fadeIn(300);
+            });
+
+            // Popup close / back to storey selection
+            $(document).on('click', '.back-storey', function () {
+                $('#stack-map-popup').fadeOut(300, function () {
+                    activeStack = null;
+                    activeStorey = 's1';
+
+                    // Reset dropdown
+                    const $dropdown = $('#stack-storey-dd');
+                    $dropdown.find('.custom-dropdown-text').text('Stack 01');
+                    $dropdown.find('.custom-dropdown-item').removeClass('selected');
+                    $dropdown.find('.custom-dropdown-item').eq(0).addClass('selected');
+
+                    // Reset breadcrumb
+                    $('.breadcrumb-item.current-page').text('Stack 05');
+                });
+            });
+
+            // Tab menu click
+            $(document).on('click', '.tab-menu-list-vertical li', function () {
+                const target = $(this).data('tab-target');
+                if (target) showTab(target);
+            });
+
+            showTab('bare-plan');
+
+            // Dropdown init
+            (function initStackDropdown() {
+                const $dropdown = $('#stack-storey-dd');
+                if (!$dropdown.length) return;
+
+                const $btn = $dropdown.find('.custom-dropdown-btn');
+                const $text = $dropdown.find('.custom-dropdown-text');
+                const $listInner = $dropdown.find('.custom-dropdown-list-inner');
+                const stacks = window.__STACK_DATA__;
+
+                // Populate dropdown
+                $listInner.empty();
+                stacks.forEach((s, i) => {
+                    $listInner.append(`<div class="custom-dropdown-item" data-index="${i}">${s.label}</div>`);
+                });
+
+                // Default selection = Stack 01
+                $text.text('Stack 01');
+                $listInner.find('.custom-dropdown-item').eq(0).addClass('selected');
+
+                // Toggle dropdown
+                $btn.on('click', function (e) {
+                    e.stopPropagation();
+                    $('.custom-dropdown').not($dropdown).removeClass('open');
+                    $dropdown.toggleClass('open');
+                });
+
+                // Handle selection
+                $listInner.on('click', '.custom-dropdown-item', function (e) {
+                    e.stopPropagation();
+                    const idx = $(this).data('index');
+                    const sel = stacks[idx];
+                    if (!sel) return;
+
+                    $listInner.find('.custom-dropdown-item').removeClass('selected');
+                    $(this).addClass('selected');
+                    $text.text(sel.label);
+                    activeStack = sel;
+
+                    // Update visuals and breadcrumb
+                    updateStackVisuals(sel);
+
+                    // Close dropdown
+                    setTimeout(() => $dropdown.removeClass('open'), 100);
+                });
+
+                // Close dropdown on outside click / ESC
+                $(document).on('click keydown', function (e) {
+                    if (!$(e.target).closest('#stack-storey-dd').length || e.key === 'Escape') {
+                        $dropdown.removeClass('open');
+                    }
+                });
+            })();
+
+            // image fallback handlers
+            setFallbackImage('#bare-plan-img');
+            setFallbackImage('#cross-plan-img');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Storey Mezzanine Plan | Gourmet Xchange</title>
+    <meta name="description" content="1st Storey Mezzanine Plan | Gourmet Xchange">
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/navigation.css">
+    <link rel="stylesheet" href="./assets/vendor/css/animate.min.css">
+</head>
+
+<body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
+    <!-- Top Header -->
+    <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
+        <div class="header-inner flex justify-between items-start relative">
+            <ul class="breadcrumb font-brandon-grotesque flex">
+                <li class="breadcrumb-item">
+                    <a href="product.html">Product</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="the-xchange.html">The Xchange</a>
+                </li>
+                <li class="breadcrumb-item current-page">
+                    1<sup>st</sup> Storey Mezzanine Plan
+                </li>
+            </ul>
+            <a href="index.html">
+                <img src="./assets/images/main-logo.svg" alt="Logo">
+            </a>
+        </div>
+    </section>
+
+    <!-- Main navigation -->
+    <section class="navigation-wrap">
+        <div id="main-menu-overlay" class="overlay-menu"></div>
+        <!-- Menu Button -->
+        <button id="menuToggle" class="fixed bottom-[60px] left-[43px] transition-all duration-300 z-20 menu-closed">
+            <div id="menuIcon">
+                <img src="assets/images/menu/menu-icon-close.svg" alt="Menu Icon">
+            </div>
+        </button>
+        <div id="main-menu"
+            class="fixed bottom-[125px] w-full px-[108px] z-20 flex items-center  transition-all duration-500 ease-in-out transform origin-bottom opacity-100 menu-hidden">
+            <!-- Menu Content -->
+            <div id="menuContent"
+                class="bg-white-80 rounded-full rounded-bl-none pt-4 px-20 pb-[33px] flex gap-4 w-full">
+                <div class="flex items-center justify-between w-full">
+                    <div class="menu-item text-center" data-menu="development">
+                        <a href="development.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-development.svg" alt="Development">
+                            <span class="menu-title">Development</span>
+                        </a>
+                        <button class="menu-plus" data-menu="development">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="location">
+                        <a href="location.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-location.svg" alt="Location">
+                            <span class="menu-title">Location</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="product">
+                        <a href="product.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-product.svg" alt="Product">
+                            <span class="menu-title">Product</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-product">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="logistics">
+                        <a href="logistic-efficiency.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
+                            <span class="menu-title">Logistics Efficiency</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="facilities">
+                        <a href="facilities.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-facilities.svg" alt="Facilities">
+                            <span class="menu-title">Facilities</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="sustainability">
+                        <a href="sustainability.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-sustainability.svg" alt="Sustainability">
+                            <span class="menu-title">Sustainability</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="value">
+                        <a href="javascript:void(0)" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
+                            <span class="menu-title">Value Added</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-value">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="gallery">
+                        <a href="gallery.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-gallery.svg" alt="Gallery">
+                            <span class="menu-title">Gallery</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Submenus content -->
+                <div id="submenu-development" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <a href="introduction.html">Introduction</a>
+                            <a href="key-highlights.html">KeyHighlights</a>
+                            <a href="track-record.html">TrackRecord</a>
+                            <a href="./assets/images/e-brochure/dummy-ebrochure.pdf" target="_blank">eBrochure</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-product" class="submenu absolute bottom-[-93px]">
+                    <div class="w-full flex">
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[115px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">Select product by:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="the-xchange.html">The Xchange</a>
+                                <a href="heritage-terrace.html">Heritage Terrace</a>
+                                <a href="space-types.html">Space Types</a>
+                                <a href="food-operations.html">Food Operations</a>
+                            </div>
+                        </div>
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[60px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">View:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="unit-plan-comparison.html">Unit Plan Comparison</a>
+                                <a href="test-fit-plans.html">Test Fit Plans</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-value" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <div class="flex items-center menu-list">
+                            <a href="javascript:void(0)">Food Consultants</a>
+                            <a href="javascript:void(0)">Logistics Provider</a>
+                            <a href="javascript:void(0)">Equipment Suppliers</a>
+                            <a href="javascript:void(0)">R&d Services</a>
+                            <a href="javascript:void(0)">Renovation Contractors</a>
+                            <a href="javascript:void(0)">Other Services</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="plan-wrap w-full h-full content-center">
+        <div id="select-level" class="fixed inset-0 bg-black/20 flex items-center justify-center z-30">
+            <div id="tap-loader"
+                class="relative flex gap-4 flex-col items-center justify-center w-48 h-48 rounded-full bg-dcddde-80  cursor-pointer text-center transition-all duration-500">
+                <img src="./assets/images/click-icon.svg" alt="Tap Icon">
+                <p class="text-lg leading-[26px]">Select a Unit</p>
+            </div>
+        </div>
+        <div class="img-wrap w-max mx-auto">
+            <div class="panzoom-wrp relative panzoom-container">
+                <div class="panzoom-img">
+                    <img src="assets/images/product/the-xchange/l1-mezzanine.png" alt="L1 Mezzanine Plan"
+                        class="w-full">
+                </div>
+                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2">
+                    <span class="zoom-in-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </span>
+                    <span class="zoom-out-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 right-4 bg-white/85 w-[386px] px-6 py-6">
+            <div class="flex items-center mb-2">
+                <span class="text-18-bold">Legend:</span>
+            </div>
+            <div class="flex flex-wrap gap-x-8 gap-y-3 text-[13px] uppercase">
+                <div class="flex w-full">
+                    <span class="inline-block w-5 h-5 bg-color-E99F9D mr-2"></span>
+                    <span class="text-13-normal">Type A - Restaurant / B1 (Food) Terraced Unit</span>
+                </div>
+                <div class="flex w-full">
+                    <span class="inline-block w-5 h-5 bg-color-B7DDDF mr-2"></span>
+                    <span class="text-13-normal">Type B - B2 (Food) Unit, Approx. 3,000 Sq Ft</span>
+                </div>
+                <div class="flex w-full">
+                    <span class="inline-block w-5 h-5 bg-color-FAD59D mr-2"></span>
+                    <span class="text-13-normal">Type C - B2 (Food) Unit, Approx. 7,000 Sq Ft</span>
+                </div>
+                <div class="flex w-full">
+                    <span class="inline-block w-5 h-5 bg-color-F2C2C0 mr-2"></span>
+                    <span class="text-13-normal">Restaurant / Industrial Canteen / Food Kiosk</span>
+                </div>
+                <div class="flex w-full">
+                    <span class="inline-block w-5 h-5 bg-color-C7C8E3 mr-2"></span>
+                    <span class="text-13-normal">Lobby / Lift</span>
+                </div>
+                <div class="flex w-full">
+                    <span class="inline-block w-5 h-5 bg-color-9AB6DE mr-2"></span>
+                    <span class="text-13-normal">Roof-top Heavy Vehicle Parking</span>
+                </div>
+            </div>
+            <div class="absolute bottom-4 right-4">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.792"
+                    height="43.547" viewBox="0 0 32.792 43.547">
+                    <defs>
+                        <clipPath id="clip-path">
+                            <rect id="Rectangle_919" data-name="Rectangle 919" width="32.792" height="43.547"
+                                fill="none" />
+                        </clipPath>
+                    </defs>
+                    <g id="Group_880" data-name="Group 880" transform="translate(0 0)">
+                        <g id="Group_881" data-name="Group 881" transform="translate(0 0)">
+                            <g id="Group_880-2" data-name="Group 880" clip-path="url(#clip-path)">
+                                <text id="N" transform="translate(20.608 6.569)" fill="#464749" font-size="9"
+                                    font-family="NewAtten-Bold, New Atten" font-weight="700">
+                                    <tspan x="0" y="0">N</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <path id="Path_406" data-name="Path 406"
+                            d="M3.327,32.981l8.448-5.663,2.325,10,2.876-15.329L19.851,6.664Z"
+                            transform="translate(2.632 5.271)" fill="#464749" />
+                        <g id="Group_883" data-name="Group 883" transform="translate(0 0)">
+                            <g id="Group_882" data-name="Group 882" clip-path="url(#clip-path)">
+                                <path id="Path_407" data-name="Path 407"
+                                    d="M16.4,6.611a15.763,15.763,0,0,0,0,31.523,15.763,15.763,0,0,0,0-31.523m0,32.406a16.646,16.646,0,0,1,0-33.289,16.646,16.646,0,0,1,0,33.289"
+                                    transform="translate(0 4.531)" fill="#464749" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <div class="flex justify-start fixed bottom-8 left-1/2 -translate-x-1/2 z-10">
+        <a href="the-xchange.html"
+            class="inline-flex gap-[25px] items-center justify-between px-6 py-4 rounded-full border border-[#dcddde] bg-white no-underline transition hover:shadow-lg group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 28 26">
+                <g id="restart" transform="translate(28 -1031)">
+                    <g id="Rectangle_745" data-name="Rectangle 745" transform="translate(-28 1031)" fill="#fff"
+                        stroke="#707070" stroke-width="1" opacity="0">
+                        <rect width="28" height="26" stroke="none" />
+                        <rect x="0.5" y="0.5" width="27" height="25" fill="none" />
+                    </g>
+                    <path id="Icon_material-refresh" data-name="Icon material-refresh"
+                        d="M26.475,9.525A12,12,0,1,0,29.6,21h-3.12A9,9,0,1,1,18,9a8.872,8.872,0,0,1,6.33,2.67L19.5,16.5H30V6Z"
+                        transform="translate(-32.008 1026)" fill="#eb3b1d" />
+                </g>
+            </svg>
+            <span class="text-18-bold">Change Level</span>
+        </a>
+    </div>
+
+    <section id="map-popup" class="fixed inset-0 bg-white z-10">
+        <!-- Top Header -->
+        <div class="top-header fixed top-0 right-0 p-8 pb-[20px] w-full">
+
+            <div class="header-inner flex justify-between items-start relative">
+                <ul class="breadcrumb font-brandon-grotesque flex">
+                    <a href="product.html" class="breadcrumb-item">Product</a>
+                    
+                    <a href="the-xchange.html" class="breadcrumb-item">The Xchange</a>
+                    
+                    <a href="1st-storey-plan.html" class="breadcrumb-item">1<sup>st</sup> Storey Plan</a>
+                    
+                    <li class="breadcrumb-item current-page">Unit Plan</span>
+                </div>
+                <a href="index.html">
+                    <img src="./assets/images/main-logo.svg" alt="Logo">
+                </a>
+            </div>
+        </div>
+        <div class="h-full content-center">
+            <div class="w-[1064px] mx-auto">
+                <div class="panzoom-wrp relative panzoom-container">
+                    <div class="panzoom-img">
+                        <img class="popup-img" id="planImage" src="" alt="Map Image">
+                    </div>
+                    <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2">
+                        <span class="zoom-in-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </span>
+                        <span class="zoom-out-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-start fixed bottom-8 left-1/2 -translate-x-1/2">
+            <a href="the-xchange.html"
+                class="inline-flex gap-[25px] items-center justify-between px-6 py-4 rounded-full border border-[#dcddde] bg-white no-underline transition hover:shadow-lg group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 28 26">
+                    <g id="restart" transform="translate(28 -1031)">
+                        <g id="Rectangle_745" data-name="Rectangle 745" transform="translate(-28 1031)" fill="#fff"
+                            stroke="#707070" stroke-width="1" opacity="0">
+                            <rect width="28" height="26" stroke="none"></rect>
+                            <rect x="0.5" y="0.5" width="27" height="25" fill="none"></rect>
+                        </g>
+                        <path id="Icon_material-refresh" data-name="Icon material-refresh"
+                            d="M26.475,9.525A12,12,0,1,0,29.6,21h-3.12A9,9,0,1,1,18,9a8.872,8.872,0,0,1,6.33,2.67L19.5,16.5H30V6Z"
+                            transform="translate(-32.008 1026)" fill="#eb3b1d"></path>
+                    </g>
+                </svg>
+                <span class="text-18-bold">Change Storey</span>
+            </a>
+            <a href="javascript:void(0)"
+                class="unit-back ml-4 inline-flex gap-[25px] items-center justify-between px-6 py-4 rounded-full border border-[#dcddde] bg-white no-underline transition hover:shadow-lg group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 28 26">
+                    <g id="restart" transform="translate(28 -1031)">
+                        <g id="Rectangle_745" data-name="Rectangle 745" transform="translate(-28 1031)" fill="#fff"
+                            stroke="#707070" stroke-width="1" opacity="0">
+                            <rect width="28" height="26" stroke="none"></rect>
+                            <rect x="0.5" y="0.5" width="27" height="25" fill="none"></rect>
+                        </g>
+                        <path id="Icon_material-refresh" data-name="Icon material-refresh"
+                            d="M26.475,9.525A12,12,0,1,0,29.6,21h-3.12A9,9,0,1,1,18,9a8.872,8.872,0,0,1,6.33,2.67L19.5,16.5H30V6Z"
+                            transform="translate(-32.008 1026)" fill="#eb3b1d"></path>
+                    </g>
+                </svg>
+                <span class="text-18-bold">Change Unit</span>
+            </a>
+        </div>
+        <div class="flex flex-col gap-3 fixed bottom-8 right-8 w-60">
+            <a href="unit-plan-comparison.html"
+                class="text-18-bold w-full py-4 text-center rounded-full rounded-tr-none border border-color-dcddde bg-white">Compare
+                Plans
+            </a>
+            <a href="javascript:void(0)"
+                class="text-18-bold w-full py-4 text-center rounded-full rounded-tr-none border border-color-dcddde bg-color-f2673a text-white">Bare
+                Plan</span>
+            </a>
+            <a href="javascript:void(0)"
+                class="text-18-bold w-full py-4 text-center rounded-full rounded-tr-none border border-color-dcddde bg-white">Specifications</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./assets/vendor/js/jquery.min.js"></script>
+    <script src="./assets/vendor/js/panzoom.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.plan-img[data-img]').on('click', function () {
+                const imgName = $(this).data('img');
+                const imgSrc = 'assets/images/product/the-xchange/1st-storey/' + imgName;
+
+                // Extract just the name (without extension)
+                const imgBaseName = imgName.replace(/\.[^/.]+$/, "");
+
+                // Create dynamic alt text
+                const altText = `1st Storey Plan ${imgBaseName}`;
+
+                // Set src and alt dynamically
+                $('#planImage').attr({
+                    'src': imgSrc,
+                    'alt': altText
+                });
+
+                // Show popup
+                $('#map-popup').fadeIn(500);
+            });
+
+            $('.unit-back').on('click', function () {
+                $('#map-popup').fadeOut(500);
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45.126" height="34.306" viewBox="0 0 45.126 34.306">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_921" data-name="Rectangle 921" width="45.126" height="34.306" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="BlkA-Northpoint" transform="translate(0 0)">
+    <g id="Group_886" data-name="Group 886" transform="translate(0 0)">
+      <g id="Group_885" data-name="Group 885" clip-path="url(#clip-path)">
+        <text id="N" transform="translate(38.077 24.201)" fill="#464545" font-size="9" font-family="NewAtten-Bold, New Atten" font-weight="700"><tspan x="0" y="0">N</tspan></text>
+      </g>
+    </g>
+    <path id="Path_408" data-name="Path 408" d="M10.675,12.195.636,16l16.287.839,16.287.841L3.627,4.229Z" transform="translate(0.555 3.691)" fill="#464545"/>
+    <g id="Group_888" data-name="Group 888" transform="translate(0 0)">
+      <g id="Group_887" data-name="Group 887" clip-path="url(#clip-path)">
+        <path id="Path_409" data-name="Path 409" d="M33.737,14.952a16.38,16.38,0,0,0-18.5-13.89A16.377,16.377,0,0,0,1.067,19.355a16.379,16.379,0,0,0,18.5,13.891A16.382,16.382,0,0,0,33.737,14.952M.153,19.478A17.3,17.3,0,0,1,15.112.159,17.3,17.3,0,0,1,34.652,14.83,17.3,17.3,0,0,1,19.692,34.147,17.294,17.294,0,0,1,.153,19.478" transform="translate(0 -0.001)" fill="#464545"/>
+      </g>
+    </g>
+  </g>
+</svg>

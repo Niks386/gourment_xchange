@@ -1,20 +1,20 @@
-<svg id="Sust-LowVoc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61.68" height="65.738" viewBox="0 0 61.68 65.738">
+<svg id="sust-lowvoc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.231" height="72.72" viewBox="0 0 68.231 72.72">
   <defs>
     <clipPath id="clip-path">
-      <rect id="Rectangle_848" data-name="Rectangle 848" width="60.733" height="60.569" fill="none"/>
+      <rect id="Rectangle_848" data-name="Rectangle 848" width="67.284" height="67.551" fill="none"/>
     </clipPath>
   </defs>
-  <rect id="Rectangle_748" data-name="Rectangle 748" width="61.68" height="65.738" fill="#fff"/>
+  <rect id="Rectangle_748" data-name="Rectangle 748" width="68.231" height="72.72" fill="#fff"/>
   <g id="Group_664" data-name="Group 664" transform="translate(0.474 2.176)">
-    <g id="Mask_Group_12" data-name="Mask Group 12" transform="translate(0 0)" clip-path="url(#clip-path)">
-      <g id="Group_663" data-name="Group 663" transform="translate(0.855 0.705)">
-        <g id="Group_665" data-name="Group 665" transform="translate(12.837 13.467)">
-          <text id="VOC" transform="translate(16 15)" fill="#489f36" font-size="16" font-family="NewAtten-Bold, New Atten" font-weight="700"><tspan x="-16" y="0">VOC</tspan></text>
-          <text id="FREE" transform="translate(16 28.082)" fill="#489f36" font-size="13" font-family="NewAtten-Bold, New Atten" font-weight="700"><tspan x="-14" y="0">FREE</tspan></text>
+    <g id="Mask_Group_12" data-name="Mask Group 12" clip-path="url(#clip-path)">
+      <g id="Group_663" data-name="Group 663" transform="translate(0.766 0.192)">
+        <g id="Group_665" data-name="Group 665" transform="translate(14.403 13.383)">
+          <text id="VOC" transform="translate(0 18)" fill="#489f36" font-size="17" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">VOC</tspan></text>
+          <text id="FREE" transform="translate(2.216 31.936)" fill="#489f36" font-size="13" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">FREE</tspan></text>
         </g>
-        <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(-0.164 -0.533)" fill="none" stroke="#489f36" stroke-width="3">
-          <ellipse cx="29.931" cy="29.932" rx="29.931" ry="29.932" stroke="none"/>
-          <ellipse cx="29.931" cy="29.932" rx="28.431" ry="28.432" fill="none"/>
+        <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(0)" fill="none" stroke="#489f36" stroke-width="3">
+          <ellipse cx="33.16" cy="33.382" rx="33.16" ry="33.382" stroke="none"/>
+          <ellipse cx="33.16" cy="33.382" rx="31.66" ry="31.882" fill="none"/>
         </g>
       </g>
     </g>

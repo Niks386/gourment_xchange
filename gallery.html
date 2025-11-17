@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Gourmet Xchange</title>
     <meta name="description" content="Gallery | Gourmet Xchange">
-
     <link rel="shortcut icon" href="./assets/images/favicon.png">
     <link href="./assets/css/output.css" rel="stylesheet">
     <link href="./assets/css/navigation.css" rel="stylesheet">
     <link href="./assets/vendor/css/fancybox.css" rel="stylesheet">
+    <!-- Fancybox JS -->
 
 </head>
 
@@ -18,9 +18,9 @@
     <!-- Top Header -->
     <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
         <div class="header-inner flex justify-between items-start relative">
-            <div class="breadcrumb font-brandon-grotesque flex gap-[15px]">
-                <span class="breadcrumb-item current-page">Gallery</span>
-            </div>
+            <ul class="breadcrumb font-brandon-grotesque flex">
+                <li class="breadcrumb-item current-page">Gallery</span>
+            </ul>
             <a href="index.html">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
             </a>
@@ -67,7 +67,7 @@
                         </button>
                     </div>
                     <div class="menu-item text-center" data-menu="logistics">
-                        <a href="logistics.html" class="flex flex-col items-center gap-[10px]">
+                        <a href="logistic-efficiency.html" class="flex flex-col items-center gap-[10px]">
                             <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
                             <span class="menu-title">Logistics Efficiency</span>
                         </a>
@@ -85,7 +85,7 @@
                         </a>
                     </div>
                     <div class="menu-item text-center" data-menu="value">
-                        <a href="value-added.html" class="flex flex-col items-center gap-[10px]">
+                        <a href="javascript:void(0)" class="flex flex-col items-center gap-[10px]">
                             <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
                             <span class="menu-title">Value Added</span>
                         </a>
@@ -134,12 +134,14 @@
                 <div id="submenu-value" class="submenu absolute bottom-[-93px]">
                     <div class="bg-white-80 rounded-full rounded-tl-none">
                         <div class="flex items-center menu-list">
-                            <a href="food-consultants.html">Food Consultants</a>
-                            <a href="logistics-provider.html">Logistics Provider</a>
-                            <a href="equipment-suppliers.html">Equipment Suppliers</a>
-                            <a href="rd-services.html">R&d Services</a>
-                            <a href="renovation-contractors.html">Renovation Contractors</a>
-                            <a href="other-services.html">Other Services</a>
+                            <div class="flex items-center menu-list">
+                            <a href="javascript:void(0)">Food Consultants</a>
+                            <a href="javascript:void(0)">Logistics Provider</a>
+                            <a href="javascript:void(0)">Equipment Suppliers</a>
+                            <a href="javascript:void(0)">R&d Services</a>
+                            <a href="javascript:void(0)">Renovation Contractors</a>
+                            <a href="javascript:void(0)">Other Services</a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -154,65 +156,85 @@
             <div id="tab-perspectives" class="tab-content">
                 <div class="flex justify-center">
                     <div
-                        class="custom-scrollbar grid grid-cols-4 gap-5 w-full mx-[140px] pr-10 overflow-y-auto max-h-[775px] ">
-                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image1.webp">
-                            <img src="./assets/images/gallery/gallery-image1.webp" alt="Gallery Image"
-                                class="rounded-br w-full h-auto" />
+                        class="grid grid-cols-4 gap-5 w-full mx-[140px] pr-10 overflow-y-auto max-h-[775px] custom-scrollbar">
+                        <a class="relative" data-fancybox="gallery" href="./assets/images/gallery/v01-hero.webp">
+                            <img src="./assets/images/gallery/perspthumb1.webp" alt="Gallery Image"
+                                class="rounded-br-[2rem] w-full h-auto" />
                             <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
                         </a>
-                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image2.webp">
-                            <img src="./assets/images/gallery/gallery-image2.webp" alt="Gallery Image"
-                                class="rounded-br w-full h-auto" />
+
+                        <a class="relative" data-fancybox="gallery" href="./assets/images/gallery/v01-hero-03.webp">
+                            <img src="./assets/images/gallery/perspthumb2.webp" alt="Gallery Image"
+                                class="rounded-br-[2rem] w-full h-auto" />
                             <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
                         </a>
-                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image3.webp">
-                            <img src="./assets/images/gallery/gallery-image3.webp" alt="Gallery Image"
-                                class="rounded-br w-full h-auto" />
+
+                        <a class="relative" data-fancybox="gallery"
+                            href="./assets/images/gallery/v02_overall-mid-aerial-01.webp">
+                            <img src="./assets/images/gallery/perspthumb3.webp" alt="Gallery Image"
+                                class="rounded-br-[2rem] w-full h-auto" />
                             <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
                         </a>
-                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image1.webp">
-                            <img src="./assets/images/gallery/gallery-image1.webp" alt="Gallery Image"
-                                class="rounded-br w-full h-auto" />
+
+                        <a class="relative" data-fancybox="gallery"
+                            href="./assets/images/gallery/v03_block-a-hero-02-option.webp">
+                            <img src="./assets/images/gallery/perspthumb4.webp" alt="Gallery Image"
+                                class="rounded-br-[2rem] w-full h-auto" />
                             <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
                         </a>
-                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image2.webp">
-                            <img src="./assets/images/gallery/gallery-image2.webp" alt="Gallery Image"
-                                class="rounded-br w-full h-auto" />
+
+                        <a class="relative" data-fancybox="gallery"
+                            href="./assets/images/gallery/v04_block-a-street-view-01.webp">
+                            <img src="./assets/images/gallery/perspthumb5.webp" alt="Gallery Image"
+                                class="rounded-br-[2rem] w-full h-auto" />
                             <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
                         </a>
-                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image3.webp">
-                            <img src="./assets/images/gallery/gallery-image3.webp" alt="Gallery Image"
-                                class="rounded-br w-full h-auto" />
+
+                        <a class="relative" data-fancybox="gallery" href="./assets/images/gallery/v05_showroom_01.webp">
+                            <img src="./assets/images/gallery/perspthumb6.webp" alt="Gallery Image"
+                                class="rounded-br-[2rem] w-full h-auto" />
                             <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
                         </a>
-                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image1.webp">
-                            <img src="./assets/images/gallery/gallery-image1.webp" alt="Gallery Image"
-                                class="rounded-br w-full h-auto" />
+
+                        <a class="relative" data-fancybox="gallery"
+                            href="./assets/images/gallery/v07_public-plaza_02.webp">
+                            <img src="./assets/images/gallery/perspthumb7.webp" alt="Gallery Image"
+                                class="rounded-br-[2rem] w-full h-auto" />
                             <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
                         </a>
-                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image2.webp">
-                            <img src="./assets/images/gallery/gallery-image2.webp" alt="Gallery Image"
-                                class="rounded-br w-full h-auto" />
+
+                        <a class="relative" data-fancybox="gallery"
+                            href="./assets/images/gallery/v08_sky-garden-l3-01.webp">
+                            <img src="./assets/images/gallery/perspthumb8.webp" alt="Gallery Image"
+                                class="rounded-br-[2rem] w-full h-auto" />
                             <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
                         </a>
-                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image3.webp">
-                            <img src="./assets/images/gallery/gallery-image3.webp" alt="Gallery Image"
-                                class="rounded-br w-full h-auto" />
+
+                        <a class="relative" data-fancybox="gallery"
+                            href="./assets/images/gallery/v09_water-promenade_03.webp">
+                            <img src="./assets/images/gallery/perspthumb9.webp" alt="Gallery Image"
+                                class="rounded-br-[2rem] w-full h-auto" />
                             <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
                         </a>
-                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image1.webp">
-                            <img src="./assets/images/gallery/gallery-image1.webp" alt="Gallery Image"
-                                class="rounded-br w-full h-auto" />
+
+                        <a class="relative" data-fancybox="gallery"
+                            href="./assets/images/gallery/v10_waterfront view_01.webp ">
+                            <img src="./assets/images/gallery/perspthumb10.webp" alt="Gallery Image"
+                                class="rounded-br-[2rem] w-full h-auto" />
                             <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
                         </a>
-                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image2.webp">
-                            <img src="./assets/images/gallery/gallery-image2.webp" alt="Gallery Image"
-                                class="rounded-br w-full h-auto" />
+
+                        <a class="relative" data-fancybox="gallery"
+                            href="./assets/images/gallery/v11_central-plaza_01.webp">
+                            <img src="./assets/images/gallery/perspthumb11.webp" alt="Gallery Image"
+                                class="rounded-br-[2rem] w-full h-auto" />
                             <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
                         </a>
-                        <a class="relative" data-fancybox="gallery" href="assets/images/gallery/gallery-image3.webp">
-                            <img src="./assets/images/gallery/gallery-image3.webp" alt="Gallery Image"
-                                class="rounded-br w-full h-auto" />
+
+                        <a class="relative" data-fancybox="gallery"
+                            href="./assets/images/gallery/v12_kiosk-canteen-01.webp">
+                            <img src="./assets/images/gallery/perspthumb12.webp" alt="Gallery Image"
+                                class="rounded-br-[2rem] w-full h-auto" />
                             <p class="absolute bottom-5 right-5 text-artist-9">artist's impression</p>
                         </a>
                     </div>
@@ -220,16 +242,87 @@
             </div>
             <div id="tab-360-ipms" class="tab-content hidden">
                 <div class="flex justify-center">
-                    <h1 class="h1title">360 IPMS</h1>
+                    <div class="flex justify-center">
+                        <div
+                            class="grid grid-cols-4 gap-5 w-full mx-[140px] pr-10 overflow-y-auto max-h-[775px] custom-scrollbar">
+                            <!-- 360 model 1-->
+                            <div class="relative">
+                                <img src="./assets/images/gallery/perspthumb3.webp" alt="video poster image"
+                                    class="rounded-br w-full h-auto">
+                                <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                    data-fancybox="" data-src="#360ipms1">
+                                    <img src="./assets/images/gallery/360-icon.svg" class="img-fluid w-full h-[91px]"
+                                        alt="video gallery1">
+                                </span>
+                            </div>
+
+                            <!-- 360 model 2-->
+                            <div class="relative">
+                                <img src="./assets/images/gallery/perspthumb1.webp" alt="video poster image"
+                                    class="rounded-br w-full h-auto">
+                                <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                    data-fancybox href="./assets/images/gallery/v01-hero.webp">
+                                    <img src="./assets/images/gallery/360-icon.svg" class="img-fluid w-full h-[91px]"
+                                        alt="video gallery1">
+                                </span>
+                            </div>
+
+                            <!-- 360 model 3-->
+                            <div class="relative">
+                                <img src="./assets/images/gallery/perspthumb2.webp" alt="video poster image"
+                                    class="rounded-br w-full h-auto">
+                                <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                    data-fancybox href="./assets/images/gallery/v01-hero-03.webp">
+                                    <img src="./assets/images/gallery/360-icon.svg" class="img-fluid w-full h-[91px]"
+                                        alt="video gallery1">
+                                </span>
+                            </div>
+
+                            <!-- 360 model 4-->
+                            <div class="relative">
+                                <img src="./assets/images/gallery/perspthumb4.webp" alt="video poster image"
+                                    class="rounded-br w-full h-auto">
+                                <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                    data-fancybox href="./assets/images/gallery/v03_block-a-hero-02-option.webp">
+                                    <img src="./assets/images/gallery/360-icon.svg" class="img-fluid w-full h-[91px]"
+                                        alt="video gallery1">
+                                </span>
+                            </div>
+
+                            <!-- 360 model 5-->
+                            <div class="relative">
+                                <img src="./assets/images/gallery/perspthumb5.webp" alt="video poster image"
+                                    class="rounded-br w-full h-auto">
+                                <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                    data-fancybox href="./assets/images/gallery/v04_block-a-street-view-01.webp">
+                                    <img src="./assets/images/gallery/360-icon.svg" class="img-fluid w-full h-[91px]"
+                                        alt="video gallery1">
+                                </span>
+                            </div>
+
+                            <!-- 360 model 6-->
+                            <div class="relative">
+                                <img src="./assets/images/gallery/perspthumb6.webp" alt="video poster image"
+                                    class="rounded-br w-full h-auto">
+                                <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                    data-fancybox href="./assets/images/gallery/v05_showroom_01.webp">
+                                    <img src="./assets/images/gallery/360-icon.svg" class="img-fluid w-full h-[91px]"
+                                        alt="video gallery1">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
             <div id="tab-videos" class="tab-content hidden">
                 <div class="flex justify-center">
                     <div
-                        class="grid grid-cols-4 gap-5 w-full mx-[140px] pr-10 overflow-y-auto max-h-[775px] scrollbar-thin scrollbar-thumb-[#EB3B1D] scrollbar-track-[#DCDDDE]">
+                        class="grid grid-cols-4 gap-5 w-full mx-[140px] pr-10 overflow-y-auto max-h-[775px] custom-scrollbar">
                         <!-- Video gallery 1-->
                         <div class="relative">
-                            <img src="assets/images/gallery/gallery-image1.webp" alt="video poster image"
+                            <img src="./assets/images/gallery/perspthumb1.webp" alt="video poster image"
                                 class="rounded-br w-full h-auto">
                             <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                 data-fancybox data-src="#vd_gallery1">
@@ -240,7 +333,7 @@
 
                         <!-- Video gallery 2-->
                         <div class="relative">
-                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                            <img src="./assets/images/gallery/perspthumb2.webp" alt="video poster image"
                                 class="rounded-br w-full h-auto">
                             <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                 data-fancybox data-src="#vd_gallery2">
@@ -251,7 +344,7 @@
 
                         <!-- Video gallery 3-->
                         <div class="relative">
-                            <img src="assets/images/gallery/gallery-image1.webp" alt="video poster image"
+                            <img src="./assets/images/gallery/perspthumb3.webp" alt="video poster image"
                                 class="rounded-br w-full h-auto">
                             <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                 data-fancybox data-src="#vd_gallery3">
@@ -262,7 +355,7 @@
 
                         <!-- Video gallery 4-->
                         <div class="relative">
-                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                            <img src="./assets/images/gallery/perspthumb4.webp" alt="video poster image"
                                 class="rounded-br w-full h-auto">
                             <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                 data-fancybox data-src="#vd_gallery4">
@@ -273,7 +366,7 @@
 
                         <!-- Video gallery 5-->
                         <div class="relative">
-                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                            <img src="./assets/images/gallery/perspthumb5.webp" alt="video poster image"
                                 class="rounded-br w-full h-auto">
                             <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                 data-fancybox data-src="#vd_gallery5">
@@ -284,7 +377,7 @@
 
                         <!-- Video gallery 6-->
                         <div class="relative">
-                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                            <img src="./assets/images/gallery/perspthumb6.webp" alt="video poster image"
                                 class="rounded-br w-full h-auto">
                             <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                 data-fancybox data-src="#vd_gallery6">
@@ -295,7 +388,7 @@
 
                         <!-- Video gallery 7-->
                         <div class="relative">
-                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                            <img src="./assets/images/gallery/perspthumb7.webp" alt="video poster image"
                                 class="rounded-br w-full h-auto">
                             <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                 data-fancybox data-src="#vd_gallery7">
@@ -306,7 +399,7 @@
 
                         <!-- Video gallery 8-->
                         <div class="relative">
-                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                            <img src="./assets/images/gallery/perspthumb8.webp" alt="video poster image"
                                 class="rounded-br w-full h-auto">
                             <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                 data-fancybox data-src="#vd_gallery8">
@@ -317,7 +410,7 @@
 
                         <!-- Video gallery 9-->
                         <div class="relative">
-                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                            <img src="./assets/images/gallery/perspthumb9.webp" alt="video poster image"
                                 class="rounded-br w-full h-auto">
                             <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                 data-fancybox data-src="#vd_gallery9">
@@ -328,7 +421,7 @@
 
                         <!-- Video gallery 10-->
                         <div class="relative">
-                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                            <img src="./assets/images/gallery/perspthumb10.webp" alt="video poster image"
                                 class="rounded-br w-full h-auto">
                             <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                 data-fancybox data-src="#vd_gallery10">
@@ -339,7 +432,7 @@
 
                         <!-- Video gallery 11-->
                         <div class="relative">
-                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                            <img src="./assets/images/gallery/perspthumb11.webp" alt="video poster image"
                                 class="rounded-br w-full h-auto">
                             <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                 data-fancybox data-src="#vd_gallery11">
@@ -350,7 +443,7 @@
 
                         <!-- Video gallery 12-->
                         <div class="relative">
-                            <img src="assets/images/gallery/gallery-image2.webp" alt="video poster image"
+                            <img src="./assets/images/gallery/perspthumb12.webp" alt="video poster image"
                                 class="rounded-br w-full h-auto">
                             <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                 data-fancybox data-src="#vd_gallery12">
@@ -358,20 +451,15 @@
                                     alt="video gallery1">
                             </span>
                         </div>
-
-
                     </div>
                 </div>
             </div>
-
         </div>
-        </div>
-
 
         <!-- Bottom sticky tab bar -->
         <div
             class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
-            <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
+            <div class="bg-white border border-[#94949d] rounded-full rounded-bl-none overflow-hidden">
                 <ul class="flex items-center tab-menu-list">
                     <li class="" data-tab-target="perspectives"> Perspectives </li>
                     <li class="" data-tab-target="360-ipms"> 360 IPMS</li>
@@ -380,6 +468,16 @@
             </div>
         </div>
     </section>
+
+
+    <!-- 360 IPMS Models -->
+    <div id="360ipms1" style="display: none; width: 100%; height: 100%; padding: 0px;" class="">
+        <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&amp;layer=mapnik""
+                width=" 100%" height="100%" frameborder="0" allowfullscreen
+            allow="xr-spatial-tracking; gyroscope; accelerometer">
+        </iframe>
+    </div>
 
     <!-- Video Popup Modal -->
     <div id="vd_gallery1" style="display:none; width: 100%; height: 100%; padding:0;" class="vid-modal">
@@ -432,6 +530,7 @@
 
     <!-- Scripts -->
     <script src="./assets/vendor/js/jquery.min.js"></script>
+    <script src="./assets/vendor/js/panzoom.js"></script>
     <script src="./assets/vendor/js/fancybox.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

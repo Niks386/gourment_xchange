@@ -95,12 +95,22 @@
     text-transform: uppercase;
     font-weight: 700;
     color: var(--color-eb3b1d);
-    opacity: 0.7;
+    color: rgba(235, 59, 29, 0.7);
+}
+.top-header .breadcrumb .breadcrumb-item:not(.current-page):after {
+    display: inline-block;
+    content: '';
+    background-image: url(../images/breadcrumb-arrow-new.svg);
+    filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.70));
+    width: 11px;
+    height: 13px;
+    margin: 0 20px 0 10px;
 }
 .top-header .breadcrumb .breadcrumb-item:hover {
     opacity: 1;
 }
 .top-header .breadcrumb .breadcrumb-item.current-page {
+    color: var(--color-eb3b1d);
     font-weight: 900;
     opacity: 1;
 }
