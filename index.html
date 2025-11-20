@@ -25,9 +25,9 @@
     </div>
 
     <!-- 360° Loader -->
-    <div id="overlay-360" class="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+    <div id="overlay-360" class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 cursor-pointer">
         <div id="circle360"
-            class="relative flex flex-col items-center justify-center w-48 h-48 rounded-full bg-dcddde-80  cursor-pointer text-center transition-all duration-500">
+            class="relative flex flex-col items-center justify-center w-48 h-48 rounded-full bg-dcddde-80 cursor-pointer text-center transition-all duration-500">
             <span class="font-brandon-grotesque text-color-eb3b1d text-4xl font-semibold">360<span
                     class="relative -top-4 -right-1 text-[33px] leading-none">•</span></span>
             <p class="text-lg leading-[26px]">Move around to<br>view development</p>
@@ -37,7 +37,7 @@
     <!-- Top Header -->
     <section class="top-header fixed top-0 right-0 z-10 p-8 w-full">
         <div class="header-inner flex justify-end">
-            <a href="index.html" class="animate__animated animate__fadeIn animate__slow animate__delay-1ss">
+            <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
             </a>
         </div>
@@ -121,9 +121,9 @@
                     <div class="bg-white-80 rounded-full rounded-tl-none">
                         <div class="flex items-center menu-list">
                             <a href="introduction.html">Introduction</a>
-                            <a href="key-highlights.html">KeyHighlights</a>
-                            <a href="track-record.html">TrackRecord</a>
-                            <a href="./assets/images/e-brochure/dummy-ebrochure.pdf" target="_blank">eBrochure</a>
+                            <a href="key-highlights.html">Key Highlights</a>
+                            <a href="track-record.html">Track Record</a>
+                            <a href="https://online.anyflip.com/wljyx/gbui/mobile/index.html" target="_blank">E-Brochure</a>
                         </div>
                     </div>
                 </div>
@@ -167,10 +167,11 @@
     <section class="rotate-wrap w-full h-full">
         <div class="rotate-img w-full h-full">
             <div class="cloudimage-360" id="rotatinImg" data-folder="./assets/images/rotating-model/"
-                data-filename="rotating_{index}.jpg" data-amount="251" data-autoplay="false" data-stop-at-edges="false"
-                data-spin-reverse="true" drag-speed="0" data-stop-draggable="true">
+                data-filename="rotating_{index}.webp" data-amount="251" data-autoplay="false" data-stop-at-edges="false"
+                data-spin-reverse="true" data-drag-speed="1" data-stop-draggable="true">
             </div>
         </div>
+        <span class="text-artist-8">Artist’s Impression</span>
     </section>
 
 

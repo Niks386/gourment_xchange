@@ -62,6 +62,9 @@
     pointer-events: none;
     transition: opacity 0.4s ease-in-out;
 }
+.overlay-menu.z-1051 {
+    z-index: 1051;
+}
 .overlay-menu.active-menu-overlay {
     opacity: 0.7;
     pointer-events: auto;

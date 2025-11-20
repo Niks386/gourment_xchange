@@ -35,7 +35,7 @@
                 </li>
                 <li class="breadcrumb-item current-page">3K Units</li>
             </ul>
-            <a href="index.html">
+            <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
             </a>
         </div>
@@ -119,9 +119,9 @@
                     <div class="bg-white-80 rounded-full rounded-tl-none">
                         <div class="flex items-center menu-list">
                             <a href="introduction.html">Introduction</a>
-                            <a href="key-highlights.html">KeyHighlights</a>
-                            <a href="track-record.html">TrackRecord</a>
-                            <a href="./assets/images/e-brochure/dummy-ebrochure.pdf" target="_blank">eBrochure</a>
+                            <a href="key-highlights.html">Key Highlights</a>
+                            <a href="track-record.html">Track Record</a>
+                            <a href="https://online.anyflip.com/wljyx/gbui/mobile/index.html" target="_blank">E-Brochure</a>
                         </div>
                     </div>
                 </div>
@@ -166,39 +166,25 @@
     <!-- Full screen carousel -->
     <section class="overflow-hidden h-full content-center cetral-kitchen-wrap">
         <!-- Tab contents -->
-        <div class="tab-contents relative">
-            <div id="tab-360-bare-plan" class="tab-content relative rotate-wrap w-full h-lvh">
-                <div class="rotate-wrap w-full">
-                    <!-- 360° Loader -->
-                    <div id="360-loader" class="fixed inset-0 bg-black/0 flex items-center justify-center z-5">
-                        <div id="circle-360-loader"
-                            class="relative flex flex-col items-center justify-center w-48 h-48 rounded-full bg-dcddde-80  cursor-pointer text-center transition-all duration-500">
-                            <span class="font-brandon-grotesque text-color-eb3b1d text-4xl font-semibold">360<span
-                                    class="relative -top-4 -right-1 text-[33px] leading-none">•</span></span>
-                            <p class="text-lg leading-[26px]">Move around to<br>view development</p>
-                        </div>
-                    </div>
-                    <!-- <div>
-                        <h3 class="uppercase text-white">3k central kitchen<br> 360 fitted ipm</h3>
-                    </div> -->
-                    <div class="rotate-img w-full">
-                        <div class="cloudimage-360" id="rotatinImg" data-folder="./assets/images/rotating-model/"
-                            data-filename="rotating_{index}.jpg" data-amount="251" data-autoplay="false"
-                            data-stop-at-edges="false" data-spin-reverse="true" drag-speed="0"
-                            data-stop-draggable="true">
-                        </div>
-                    </div>
-                </div>
+        <div class="tab-contents relative h-full content-center">
+            <div id="tab-360-bare-plan" class="tab-content relative w-full h-full">
+                <iframe
+                    src="https://projects.blanct.com/capitaland_aljunied/7k_bakery_bare"
+                    width="100%"
+                    height="100%"
+                    style="border:0; overflow:hidden;"
+                    allowfullscreen
+                ></iframe>
+                <span class="text-artist-8">Artist’s Impression</span>
             </div>
             <div id="tab-bare-plan" class="tab-content hidden">
                 <!-- Map image -->
                 <div class="map-image w-[1039px] mx-auto">
                     <div class="panzoom-wrp relative panzoom-container">
                         <div class="panzoom-img">
-                            <img src="./assets/images/food-operations/7k_fitted_bakery.webp" alt="7k_fitted_bakery"
-                                class="w-full h-auto" />
+                            <img src="./assets/images/food-operations/3k-central kitchen/01-21.webp" alt="3K Units Bare Plan" class="w-full h-auto" />
                         </div>
-                        <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                        <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                             <span class="zoom-in-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                     fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -219,9 +205,10 @@
                 </div>
             </div>
             <div id="tab-specifications" class="tab-content hidden">
-                <div class="relative h-screen">
-                    <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder" class="w-full h-full object-cover">
-                    <span class="text-artist-8">Artist’s Impression</span>
+                <div class="w-full h-full content-center">
+                    <div class="mx-auto text-center">
+                        <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -239,7 +226,7 @@
 
         <!--Right tab bar Global-->
         <div class="fixed bottom-8 right-8 z-12">
-            <p class="text-white text-[13px] tracking-[0.7px]">View Test-Fits:</p>
+            <p id="viewTestFits" class="text-white text-[13px] tracking-[0.7px]">View Test-Fits:</p>
             <ul class="flex flex-col items-center gap-3 tab-menu-list-vertical">
                 <li class="" data-popup="#unit-popup-1">Sauce manufacturing</li>
                 <li class="" data-popup="#unit-popup-2">Coffee roasting</li>
@@ -274,7 +261,7 @@
                     </li>
                     <li class="breadcrumb-item current-page">Sauce Manufacturing</li>
                 </ul>
-                <a href="index.html">
+                <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
                     <img src="./assets/images/main-logo.svg" alt="Logo">
                 </a>
             </div>
@@ -286,10 +273,10 @@
                         <div class="map-image w-[1039px] mx-auto">
                             <div class="panzoom-wrp relative panzoom-container">
                                 <div class="panzoom-img">
-                                    <img src="./assets/images/food-operations/sauce_bare_plan.webp" alt="bakery_bare_plan"
+                                    <img src="./assets/images/space-types/production/3k-units/sauce-manufacturing/bare-plan/3k_sauce_manufacturing_bare_plan.webp" alt="Sauce Manufacturing Bare Plan"
                                         class="w-full h-auto" />
                                 </div>
-                                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                                     <span class="zoom-in-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                             fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -314,10 +301,10 @@
                         <div class="map-image w-[1039px] mx-auto">
                             <div class="panzoom-wrp relative panzoom-container">
                                 <div class="panzoom-img">
-                                    <img src="./assets/images/food-operations/3k_fitted_sauce_manufacturing.webp"
-                                        alt="7k_fitted_bakery" class="w-full h-auto" />
+                                    <img src="./assets/images/space-types/production/3k-units/sauce-manufacturing/fitted-plan/3k_fitted_sauce_manufacturing.webp"
+                                        alt="Sauce Manufacturing Fitted plan" class="w-full h-auto" />
                                 </div>
-                                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                                     <span class="zoom-in-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                             fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -338,29 +325,25 @@
                         </div>
                     </div>
                     <div id="tab-perspective-1" class="tab-content hidden">
-                        <div class="relative h-screen">
-                            <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder"
-                                class="w-full h-full object-cover">
-                            <span
-                                class="text-artist-8">Artist’s
-                                Impression</span>
+                        <div class="w-full h-full content-center">
+                            <div class="mx-auto text-center">
+                                <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                            </div>
                         </div>
                     </div>
                     <div id="tab-specifications-1" class="tab-content hidden">
-                        <div class="relative h-screen">
-                            <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder"
-                                class="w-full h-full object-cover">
-                            <span
-                                class="text-artist-8">Artist’s
-                                Impression</span>
+                        <div class="w-full h-full content-center">
+                            <div class="mx-auto text-center">
+                                <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                            </div>
                         </div>
                     </div>
             </div>
             <!-- Bottom sticky tab bar -->
             <div
-                class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active w-full max-w-[834px]">
+                class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
                 <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
-                    <ul class="flex items-center justify-evenly tab-menu-list">
+                    <ul class="flex items-center justify-evenly tab-menu-list w-max">
                         <li class="" data-tab-target="bare-plan-1"> Bare Plan </li>
                         <li class="" data-tab-target="fitted-plan-1">Fitted plan</li>
                         <li class="" data-tab-target="perspective-1">Perspective</li>
@@ -394,7 +377,7 @@
                     </li>
                     <li class="breadcrumb-item current-page">Coffee Roasting</li>
                 </ul>
-                <a href="index.html">
+                <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
                     <img src="./assets/images/main-logo.svg" alt="Logo">
                 </a>
             </div>
@@ -411,26 +394,10 @@
                             Impression</span>
                     </div>
                 </div>
-                <div id="tab-360-fitted-2" class="tab-content relative rotate-wrap w-full h-lvh">
-                    <div class="rotate-wrap w-full">
-                        <!-- 360° Loader -->
-                        <div id="360-loader" class="fixed inset-0 bg-black/0 flex items-center justify-center z-5">
-                            <div id="circle-360-loader"
-                                class="relative flex flex-col items-center justify-center w-48 h-48 rounded-full bg-dcddde-80  cursor-pointer text-center transition-all duration-500">
-                                <span class="font-brandon-grotesque text-color-eb3b1d text-4xl font-semibold">360<span
-                                        class="relative -top-4 -right-1 text-[33px] leading-none">•</span></span>
-                                <p class="text-lg leading-[26px]">Move around to<br>view development</p>
-                            </div>
-                        </div>
-                        <!-- <div>
-                            <h3 class="uppercase text-white">3k central kitchen<br> 360 fitted ipm</h3>
-                        </div> -->
-                        <div class="rotate-img w-full">
-                            <div class="cloudimage-360" id="rotatinImg" data-folder="./assets/images/rotating-model/"
-                                data-filename="rotating_{index}.jpg" data-amount="251" data-autoplay="false"
-                                data-stop-at-edges="false" data-spin-reverse="true" drag-speed="0"
-                                data-stop-draggable="true">
-                            </div>
+                <div id="tab-360-fitted-2" class="tab-content relative w-full h-lvh">
+                    <div class="w-full h-full content-center">
+                        <div class="mx-auto text-center">
+                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
                         </div>
                     </div>
                 </div>
@@ -440,10 +407,10 @@
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/food-operations/3k_bare_plan_coffee_roasting.webp"
-                                    alt="3k_bare_plan_coffee_roasting" class="w-full h-auto" />
+                                <img src="./assets/images/space-types/production/3k-units/coffee-roasting/bare-plan/3k_cofee_roasting_bare_plan.webp"
+                                    alt="Coffee Roasting Bare Plan" class="w-full h-auto" />
                             </div>
-                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                                 <span class="zoom-in-btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                         fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -464,19 +431,17 @@
                     </div>
                 </div>
                 <div id="tab-specifications-2" class="tab-content hidden">
-                    <div class="relative h-screen">
-                        <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder"
-                            class="w-full h-full object-cover">
-                        <span
-                            class="text-artist-8">Artist’s
-                            Impression</span>
+                    <div class="w-full h-full content-center">
+                        <div class="mx-auto text-center">
+                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Bottom sticky tab bar -->
-            <div class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active w-max">
+            <div class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
                 <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
-                    <ul class="flex items-center tab-menu-list">
+                    <ul class="flex items-center tab-menu-list w-max">
                         <li class="" data-tab-target="360-bare-2"> 360° Bare </li>
                         <li class="" data-tab-target="360-fitted-2"> 360° Fitted </li>
                         <li class="" data-tab-target="bare-plan-2"> Bare Plan </li>
@@ -510,7 +475,7 @@
                     </li>
                     <li class="breadcrumb-item current-page">3K Central Kitchen</li>
                 </ul>
-                <a href="index.html">
+                <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
                     <img src="./assets/images/main-logo.svg" alt="Logo">
                 </a>
             </div>
@@ -527,26 +492,10 @@
                             Impression</span>
                     </div>
                 </div>
-                <div id="tab-360-fitted-3" class="tab-content relative rotate-wrap w-full h-lvh">
-                    <div class="rotate-wrap w-full">
-                        <!-- 360° Loader -->
-                        <div id="360-loader" class="fixed inset-0 bg-black/0 flex items-center justify-center z-5">
-                            <div id="circle-360-loader"
-                                class="relative flex flex-col items-center justify-center w-48 h-48 rounded-full bg-dcddde-80  cursor-pointer text-center transition-all duration-500">
-                                <span class="font-brandon-grotesque text-color-eb3b1d text-4xl font-semibold">360<span
-                                        class="relative -top-4 -right-1 text-[33px] leading-none">•</span></span>
-                                <p class="text-lg leading-[26px]">Move around to<br>view development</p>
-                            </div>
-                        </div>
-                        <!-- <div>
-                            <h3 class="uppercase text-white">3k central kitchen<br> 360 fitted ipm</h3>
-                        </div> -->
-                        <div class="rotate-img w-full">
-                            <div class="cloudimage-360" id="rotatinImg" data-folder="./assets/images/rotating-model/"
-                                data-filename="rotating_{index}.jpg" data-amount="251" data-autoplay="false"
-                                data-stop-at-edges="false" data-spin-reverse="true" drag-speed="0"
-                                data-stop-draggable="true">
-                            </div>
+                <div id="tab-360-fitted-3" class="tab-content relative w-full h-lvh">
+                    <div class="w-full h-full content-center">
+                        <div class="mx-auto text-center">
+                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
                         </div>
                     </div>
                 </div>
@@ -556,10 +505,10 @@
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/food-operations/sauce-manu-bare-plan.webp"
-                                    alt="Sauce menu bare plan" class="w-full h-auto" />
+                                <img src="./assets/images/space-types/production/3k-units/3k-central-kitchen/bare-plan/3k_central_kitchen_bare_plan.webp"
+                                    alt="Central Kitchen Bare Plan" class="w-full h-auto" />
                             </div>
-                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                                 <span class="zoom-in-btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                         fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -584,10 +533,10 @@
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/food-operations/3k_fitted_central_kitchen.webp"
-                                    alt="3k fitted central kitchen" class="w-full h-auto" />
+                                <img src="./assets/images/space-types/production/3k-units/3k-central-kitchen/3k_fitted_central_kitchen.webp"
+                                    alt="Central Kitchen Fitted Plan" class="w-full h-auto" />
                             </div>
-                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                                 <span class="zoom-in-btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                         fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -608,12 +557,10 @@
                     </div>
                 </div>
                 <div id="tab-perspective-3" class="tab-content hidden">
-                    <div class="relative h-screen">
-                        <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder"
-                            class="w-full h-full object-cover">
-                        <span
-                            class="text-artist-8">Artist’s
-                            Impression</span>
+                    <div class="w-full h-full content-center">
+                        <div class="mx-auto text-center">
+                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                        </div>
                     </div>
                 </div>
                 <div id="tab-3d-plan-3" class="tab-content relative">
@@ -626,21 +573,19 @@
                     </div>
                 </div>
                 <div id="tab-specifications-3" class="tab-content hidden">
-                    <div class="relative h-screen">
-                        <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder"
-                            class="w-full h-full object-cover">
-                        <span
-                            class="text-artist-8">Artist’s
-                            Impression</span>
+                    <div class="w-full h-full content-center">
+                        <div class="mx-auto text-center">
+                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Bottom sticky tab bar -->
             <div
-                class="bottom-menu fixed bottom-8 left-[180px] z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active w-max">
+                class="bottom-menu fixed bottom-8 left-[180px] z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
                 <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
-                    <ul class="flex items-center tab-menu-list">
+                    <ul class="flex items-center tab-menu-list w-max">
                         <li class="" data-tab-target="360-bare-3"> 360° Bare </li>
                         <li class="" data-tab-target="360-fitted-3"> 360° Fitted </li>
                         <li class="" data-tab-target="bare-plan-3"> Bare Plan </li>
@@ -677,7 +622,7 @@
                     </li>
                     <li class="breadcrumb-item current-page">Catering Kitchen</li>
                 </ul>
-                <a href="index.html">
+                <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
                     <img src="./assets/images/main-logo.svg" alt="Logo">
                 </a>
             </div>
@@ -691,10 +636,10 @@
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/food-operations/bakery_bare_plan.webp" alt="bakery_bare_plan"
+                                <img src="./assets/images/space-types/production/3k-units/catering-kitchen/bare-plan/3k_catering_kitchen_bare-plan.webp" alt="Catering Kitchen Bare Plan"
                                     class="w-full h-auto" />
                             </div>
-                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                                 <span class="zoom-in-btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                         fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -719,10 +664,10 @@
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/food-operations/7k_fitted_bakery.webp" alt="7k_fitted_bakery"
+                                <img src="./assets/images/space-types/production/3k-units/catering-kitchen/fitted-plan/3k_fitted_central_kitchen.webp" alt="Catering Kitchen Fitted Plan"
                                     class="w-full h-auto" />
                             </div>
-                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                                 <span class="zoom-in-btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                         fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -743,30 +688,49 @@
                     </div>
                 </div>
                 <div id="tab-perspective-4" class="tab-content hidden">
-                    <div class="relative h-screen">
-                        <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder"
-                            class="w-full h-full object-cover">
-                        <span
-                            class="text-artist-8">Artist’s
-                            Impression</span>
-                    </div>
+                    <img src="./assets/images/space-types/production/3k-units/catering-kitchen/perspective/3k-catering-perspective.webp" alt="Catering Kitchen Perspective"
+                                    class="w-full h-auto" />
+                    <!-- Map image -->
+                    <!-- <div class="map-image w-[1039px] mx-auto">
+                    <div class="panzoom-wrp relative panzoom-container">
+                            <div class="panzoom-img">
+                                <img src="./assets/images/space-types/production/3k-units/catering-kitchen/perspective/3k-catering-perspective.webp" alt="Catering Kitchen Perspective"
+                                    class="w-full h-auto" />
+                            </div>
+                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
+                                <span class="zoom-in-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                        fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </span>
+                                <span class="zoom-out-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                        fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>-->
                 </div>
                 <div id="tab-specifications-4" class="tab-content hidden">
-                    <div class="relative h-screen">
-                        <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder"
-                            class="w-full h-full object-cover">
-                        <span
-                            class="text-artist-8">Artist’s
-                            Impression</span>
+                    <div class="w-full h-full content-center">
+                        <div class="mx-auto text-center">
+                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Bottom sticky tab bar -->
             <div
-                class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active w-max">
+                class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
                 <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
-                    <ul class="flex items-center tab-menu-list">
+                    <ul class="flex items-center tab-menu-list w-max">
                         <li class="" data-tab-target="bare-plan-4"> Bare Plan </li>
                         <li class="" data-tab-target="fitted-plan-4">Fitted plan</li>
                         <li class="" data-tab-target="perspective-4">Perspective</li>
@@ -800,7 +764,7 @@
                     </li>
                     <li class="breadcrumb-item current-page">Food Lab</li>
                 </ul>
-                <a href="index.html">
+                <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
                     <img src="./assets/images/main-logo.svg" alt="Logo">
                 </a>
             </div>
@@ -814,10 +778,10 @@
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/food-operations/food-operation_bare_plan.webp"
-                                    alt="bakery_bare_plan" class="w-full h-auto" />
+                                <img src="./assets/images/space-types/production/3k-units/food-lab/bare-plan/3k_food_lab_bare_plan.webp"
+                                    alt="Food lab Bare Plan" class="w-full h-auto" />
                             </div>
-                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                                 <span class="zoom-in-btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                         fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -842,10 +806,10 @@
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/food-operations/3k_fitted_food_lab.webp" alt="7k_fitted_bakery"
+                                <img src="./assets/images/space-types/production/3k-units/food-lab/fitted-plan/3k_fitted_food _lab.webp" alt="Food Lab Fitted Plan"
                                     class="w-full h-auto" />
                             </div>
-                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                                 <span class="zoom-in-btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                         fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -866,21 +830,19 @@
                     </div>
                 </div>
                 <div id="tab-specifications-5" class="tab-content hidden">
-                    <div class="relative h-screen">
-                        <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder"
-                            class="w-full h-full object-cover">
-                        <span
-                            class="text-artist-8">Artist’s
-                            Impression</span>
+                    <div class="w-full h-full content-center">
+                        <div class="mx-auto text-center">
+                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Bottom sticky tab bar -->
             <div
-                class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active w-max">
+                class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
                 <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
-                    <ul class="flex items-center tab-menu-list">
+                    <ul class="flex items-center tab-menu-list w-max">
                         <li class="" data-tab-target="bare-plan-5"> Bare Plan </li>
                         <li class="" data-tab-target="fitted-plan-5">Fitted plan</li>
                         <li class="" data-tab-target="specifications-5">Specifications </li>
@@ -913,7 +875,7 @@
                     </li>
                     <li class="breadcrumb-item current-page">Food Repacking</li>
                 </ul>
-                <a href="index.html">
+                <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
                     <img src="./assets/images/main-logo.svg" alt="Logo">
                 </a>
             </div>
@@ -926,10 +888,10 @@
                 <div class="map-image w-[1039px] mx-auto">
                     <div class="panzoom-wrp relative panzoom-container">
                         <div class="panzoom-img">
-                            <img src="./assets/images/food-operations/food_repacking_bare_plan.webp"
-                                alt="bakery_bare_plan" class="w-full h-auto" />
+                            <img src="./assets/images/space-types/production/3k-units/food-packaging/bare-plan/3k_unit_food_packaging_bare_plan.webp"
+                                alt="Food Packaging Bare Plan" class="w-full h-auto" />
                         </div>
-                        <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                        <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                             <span class="zoom-in-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                     fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -954,10 +916,10 @@
                 <div class="map-image w-[1039px] mx-auto">
                     <div class="panzoom-wrp relative panzoom-container">
                         <div class="panzoom-img">
-                            <img src="./assets/images/food-operations/3k_fitted_food_repacking.webp"
-                                alt="7k_fitted_bakery" class="w-full h-auto" />
+                            <img src="./assets/images/space-types/production/3k-units/food-packaging/fitted-plan/3k_fitted_food_lab.webp"
+                                alt="Food Packaging Fitted Plan" class="w-full h-auto" />
                         </div>
-                        <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-30">
+                        <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                             <span class="zoom-in-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
                                     fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
@@ -978,21 +940,19 @@
                 </div>
             </div>
             <div id="tab-specifications-6" class="tab-content hidden">
-                <div class="relative h-screen">
-                    <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder"
-                        class="w-full h-full object-cover">
-                    <span
-                        class="text-artist-8">Artist’s
-                        Impression</span>
+                <div class="w-full h-full content-center">
+                    <div class="mx-auto text-center">
+                        <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Bottom sticky tab bar -->
         <div
-            class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active w-max">
+            class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
             <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
-                <ul class="flex items-center tab-menu-list">
+                <ul class="flex items-center tab-menu-list w-max">
                     <li class="" data-tab-target="bare-plan-6"> Bare Plan </li>
                     <li class="" data-tab-target="fitted-plan-6">Fitted plan</li>
                     <li class="" data-tab-target="specifications-6">Specifications </li>
@@ -1009,6 +969,18 @@
     <script src="./assets/js/main.js"></script>
     <script>
         jQuery(document).ready(function ($) {
+            // When any tab is clicked
+            $(document).on("click", ".tab-menu-list li", function () {
+                const target = $(this).data("tab-target");
+
+                if (target === "360-bare-plan") {
+                    $("#viewTestFits").addClass("text-white");
+                } else {
+                    $("#viewTestFits").removeClass("text-white");
+                }
+            });
+
+
             $('section[id^="unit-popup-"]').hide();
 
             // Handle popup opening via data-popup triggers

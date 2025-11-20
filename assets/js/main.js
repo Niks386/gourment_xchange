@@ -1,24 +1,63 @@
 jQuery(document).ready(function ($) {
     // Wait 8 seconds, then fade out loader
-    setTimeout(function () {
-        $("#loader-overlay").addClass("hidden");
-        // Optional: fully remove from DOM after animation
-        // setTimeout(function () {
-        //     $("#loader-overlay").hide();
-        // }, 1000); // match the CSS transition time (1s)
-    }, 8000);
-
-    //  Circle 360 Click → Close Overlay
-    $("#circle360").on("click", function () {
-        // Optional: disable repeated clicks
-        $(this).off("click");
-
-        // Wait 5 seconds after click, then fade out
+        // $('#loader-overlay').addClass('hidden');
+    if (sessionStorage.getItem('fromLoaderFalse') !== 'yes') {
         setTimeout(function () {
+            $("#loader-overlay").addClass("hidden");
+            // Optional: fully remove from DOM after animation
+            // setTimeout(function () {
+            //     $("#loader-overlay").hide();
+            // }, 1000); // match the CSS transition time (1s)
+
+            // Now run 360 overlay script safely AFTER loader hides
+            start360Overlay();
+        }, 8000);
+
+        // //  Circle 360 Click → Close Overlay
+        // $("#circle360").on("click", function () {
+        //     // Optional: disable repeated clicks
+        //     $(this).off("click");
+
+        //     // Wait 5 seconds after click, then fade out
+        //     setTimeout(function () {
+        //         $("#overlay-360").fadeOut(500);
+        //         $(".navigation-wrap").removeClass("hidden");
+        //     }, 5000);
+        // });
+
+        // --- FUNCTION TO START 360 OVERLAY LOGIC ---
+        function start360Overlay() {
+
+            // Fade in overlay
+            $("#overlay-360").hide().fadeIn(500);
+
+            // Disable body scroll
+            $("body").addClass("overflow-hidden");
+
+            // Auto hide after 5 seconds
+            setTimeout(function () {
+                hideOverlay360();
+            }, 5000);
+
+            // Click anywhere to hide immediately
+            $(document).on("click", "#overlay-360, #circle360", function () {
+                hideOverlay360();
+            });
+        }
+
+
+        // --- FUNCTION TO HIDE THE OVERLAY ---
+        function hideOverlay360() {
+
+            // Avoid duplicate hides
+            if (!$("#overlay-360").is(":visible")) return;
+
             $("#overlay-360").fadeOut(500);
+
+            $("body").removeClass("overflow-hidden");
             $(".navigation-wrap").removeClass("hidden");
-        }, 5000);
-    });
+        }
+    }
 
     $("#circle-360-loader").on("click", function () {
         $(this).fadeOut(500);
@@ -209,7 +248,7 @@ jQuery(document).ready(function ($) {
             });
         }
         // Event listener for accordion toggle
-        const tabMenuList = document.querySelectorAll('.tab-menu-list li, .plan-img, .right-tab a, .tab-menu-list-vertical li, .stack-img');
+        const tabMenuList = document.querySelectorAll('.tab-menu-list li, .plan-img, .right-tab a, .tab-menu-list-vertical li, .stack-img, .right-tab-menu li');
 
         tabMenuList.forEach(list => {
             list.addEventListener('click', function () {
@@ -224,7 +263,38 @@ jQuery(document).ready(function ($) {
     // Fancybox initialization
     if ($("[data-fancybox]").length > 0) {
         Fancybox.bind("[data-fancybox]", {
-            // if added custom options
+            keyboard: {
+                Escape: null,
+                Backspace: null,
+                Delete: null,
+                // keep others if desired:
+                PageUp: "next",
+                PageDown: "prev",
+                ArrowUp: "prev",
+                ArrowDown: "next",
+                ArrowRight: "next",
+                ArrowLeft: "prev",
+            },
+            Toolbar: {
+                display: {
+                    left: [],
+                    middle: [],
+                    right: ["close"],
+                },
+            },
         });
+    }
+
+    $(document).on('click', '.loader-false', function () {
+        sessionStorage.setItem('fromLoaderFalse', 'yes');
+    });
+});
+
+$(function () {
+    if (sessionStorage.getItem('fromLoaderFalse') === 'yes') {
+        // alert('You arrived here from loader-false link!');
+        // sessionStorage.removeItem('fromLoaderFalse');
+        $("#loader-overlay, #overlay-360").addClass("hidden");
+        $(".navigation-wrap").removeClass("hidden");
     }
 });
