@@ -11,18 +11,21 @@
     <link rel="stylesheet" href="./assets/css/output.css">
     <link rel="stylesheet" href="./assets/css/navigation.css">
     <link rel="stylesheet" href="./assets/vendor/css/animate.min.css">
-
+    <style>
+        .loader-none {
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
     <!-- Top Header -->
     <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
-
         <div class="header-inner flex justify-between items-start relative">
             <ul class="breadcrumb font-brandon-grotesque flex">
                 <li class="breadcrumb-item current-page">Product</span>
             </ul>
-            <a href="index.html">
+            <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
             </a>
         </div>
@@ -106,9 +109,9 @@
                     <div class="bg-white-80 rounded-full rounded-tl-none">
                         <div class="flex items-center menu-list">
                             <a href="introduction.html">Introduction</a>
-                            <a href="key-highlights.html">KeyHighlights</a>
-                            <a href="track-record.html">TrackRecord</a>
-                            <a href="./assets/images/e-brochure/dummy-ebrochure.pdf" target="_blank">eBrochure</a>
+                            <a href="key-highlights.html">Key Highlights</a>
+                            <a href="track-record.html">Track Record</a>
+                            <a href="https://online.anyflip.com/wljyx/gbui/mobile/index.html" target="_blank">E-Brochure</a>
                         </div>
                     </div>
                 </div>
@@ -176,9 +179,9 @@
     <!-- 360° Rotate Model -->
     <section class="rotate-wrap w-full h-full">
         <!-- 360° Loader -->
-        <div id="360-loader" class="fixed inset-0 bg-black/0 flex items-center justify-center z-5">
+        <div id="360-loader" class="loader-none content-center fixed inset-0 bg-black/0 flex items-center justify-center z-5">
             <div id="circle-360-loader"
-                class="relative flex flex-col items-center justify-center w-48 h-48 rounded-full bg-dcddde-80  cursor-pointer text-center transition-all duration-500">
+                class="relative flex flex-col items-center justify-center w-48 h-48 mx-auto rounded-full bg-dcddde-80 cursor-pointer text-center transition-all duration-500">
                 <span class="font-brandon-grotesque text-color-eb3b1d text-4xl font-semibold">360<span
                         class="relative -top-4 -right-1 text-[33px] leading-none">•</span></span>
                 <p class="text-lg leading-[26px]">Move around to<br>view development</p>
@@ -186,16 +189,47 @@
         </div>
         <div class="rotate-img w-full h-full">
             <div class="cloudimage-360" id="rotatinImg" data-folder="./assets/images/rotating-model/"
-                data-filename="rotating_{index}.jpg" data-amount="251" data-index="53" data-autoplay="false"
-                data-stop-at-edges="false" data-spin-reverse="true" drag-speed="0" data-stop-draggable="true">
+                data-filename="rotating_{index}.webp" data-amount="251" data-index="53" data-autoplay="false"
+                data-stop-at-edges="false" data-spin-reverse="true" data-drag-speed="1" data-stop-draggable="true">
             </div>
         </div>
+        <span class="text-artist-8">Artist’s Impression</span>
     </section>
 
     <!-- Scripts -->
     <script src="./assets/vendor/js/jquery.min.js"></script>
     <script src="./assets/vendor/js/360-view.min.js"></script>
+    <!-- <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/latest/js-cloudimage-360-view.min.js"></script> -->
     <script src="./assets/js/main.js"></script>
+
+    <script>
+        (function(){
+            var selector = '.loader-process-360';
+            var intervalMs = 500;
+            var maxChecks = 1200;
+            var checks = 0;
+
+            var timer = setInterval(function(){
+                checks++;
+                var $el = $(selector);
+
+                if ($el.length) {
+                    var text = $el.text().trim();
+                    var html = $el.html() ? $el.html().replace(/\s|&nbsp;/g, '') : '';
+
+                    if (text === '' && (html === '' || html === null)) {
+                        $("#360-loader").fadeIn(600); // Smooth fade
+                        clearInterval(timer);
+                    }
+                }
+
+                if (maxChecks !== null && checks >= maxChecks) {
+                    clearInterval(timer);
+                }
+            }, intervalMs);
+        })();
+
+    </script>
 </body>
 
 </html>

@@ -27,7 +27,7 @@
                 </li>
                 <li class="breadcrumb-item current-page">4<sup>th</sup> Storey Plan</li>
             </ul>
-            <a href="index.html">
+            <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
             </a>
         </div>
@@ -111,9 +111,9 @@
                     <div class="bg-white-80 rounded-full rounded-tl-none">
                         <div class="flex items-center menu-list">
                             <a href="introduction.html">Introduction</a>
-                            <a href="key-highlights.html">KeyHighlights</a>
-                            <a href="track-record.html">TrackRecord</a>
-                            <a href="./assets/images/e-brochure/dummy-ebrochure.pdf" target="_blank">eBrochure</a>
+                            <a href="key-highlights.html">Key Highlights</a>
+                            <a href="track-record.html">Track Record</a>
+                            <a href="https://online.anyflip.com/wljyx/gbui/mobile/index.html" target="_blank">E-Brochure</a>
                         </div>
                     </div>
                 </div>
@@ -156,6 +156,13 @@
     </section>
 
     <section class="plan-wrap w-full h-full content-center">
+        <div id="select-level" class="fixed inset-0 bg-black/20 flex items-center justify-center z-30">
+            <div id="tap-loader"
+                class="relative flex gap-4 flex-col items-center justify-center w-48 h-48 rounded-full bg-dcddde-80  cursor-pointer text-center transition-all duration-500">
+                <img src="./assets/images/click-icon.svg" alt="Tap Icon">
+                <p class="text-lg leading-[26px]">Select a Unit</p>
+            </div>
+        </div>
         <div class="img-wrap w-max mx-auto">
             <div class="panzoom-wrp relative panzoom-container">
                 <div class="panzoom-img">
@@ -935,7 +942,7 @@
                     <li class="breadcrumb-item unit-back cursor-pointer">4<sup>th</sup> Storey Plan</li>
                     <li class="breadcrumb-item current-page">Unit Plan</li>
                 </ul>
-                <a href="index.html">
+                <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
                     <img src="./assets/images/main-logo.svg" alt="Logo">
                 </a>
             </div>
