@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="./assets/css/output.css">
     <link rel="stylesheet" href="./assets/css/navigation.css">
     <link rel="stylesheet" href="./assets/vendor/css/animate.min.css">
-    <style>
-        .zoom-btns {
-            display: none;
-        }
-    </style>
 </head>
 
 <body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
@@ -121,7 +116,7 @@
                             <a href="introduction.html">Introduction</a>
                             <a href="key-highlights.html">Key Highlights</a>
                             <a href="track-record.html">Track Record</a>
-                            <a href="https://online.anyflip.com/wljyx/gbui/mobile/index.html" target="_blank">E-Brochure</a>
+                            <a href="javascript:void(0)" class="brochure-pp">E-Brochure</a>
                         </div>
                     </div>
                 </div>
@@ -690,32 +685,6 @@
                 <div id="tab-perspective-4" class="tab-content hidden">
                     <img src="./assets/images/space-types/production/3k-units/catering-kitchen/perspective/3k-catering-perspective.webp" alt="Catering Kitchen Perspective"
                                     class="w-full h-auto" />
-                    <!-- Map image -->
-                    <!-- <div class="map-image w-[1039px] mx-auto">
-                    <div class="panzoom-wrp relative panzoom-container">
-                            <div class="panzoom-img">
-                                <img src="./assets/images/space-types/production/3k-units/catering-kitchen/perspective/3k-catering-perspective.webp" alt="Catering Kitchen Perspective"
-                                    class="w-full h-auto" />
-                            </div>
-                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
-                                <span class="zoom-in-btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
-                                        fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    </svg>
-                                </span>
-                                <span class="zoom-out-btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
-                                        fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                    </div>-->
                 </div>
                 <div id="tab-specifications-4" class="tab-content hidden">
                     <div class="w-full h-full content-center">
@@ -962,6 +931,16 @@
         </div>
     </section>
 
+    <section id="eBrochure-pp" class="fixed inset-0 bg-white z-20">
+        <button id="close-brochure" class="absolute top-4 right-4 flex justify-center items-center">
+            <svg tabindex="-1" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m19.5 4.5-15 15M4.5 4.5l15 15" stroke="#ffffff" stroke-width="3" fill="none"/>
+            </svg>
+        </button>
+        <iframe src="https://online.anyflip.com/wljyx/uwbg/mobile/index.html" width="100%" height="100%"
+            frameborder="0" allowfullscreen></iframe>
+    </section>
+
     <!-- Scripts -->
     <script src="./assets/vendor/js/jquery.min.js"></script>
     <script src="./assets/vendor/js/360-view.min.js"></script>
@@ -980,10 +959,17 @@
                 }
             });
 
-
             $('section[id^="unit-popup-"]').hide();
 
             // Handle popup opening via data-popup triggers
+            // Default tabs per popup
+            const defaultTabs = {
+                "#unit-popup-1": "perspective-1",
+                "#unit-popup-2": "360-fitted-2",
+                "#unit-popup-3": "360-fitted-3",
+                "#unit-popup-4": "perspective-4"
+            };
+
             $('[data-popup]').on('click', function () {
                 const popupID = $(this).data('popup');
                 const $popup = $(popupID);
@@ -991,26 +977,34 @@
                 // Hide all other popups
                 $('section[id^="unit-popup-"]').fadeOut(200);
 
-                // Show the matched popup
+                // Show selected popup
                 $popup.fadeIn(300, function () {
-                    // Reset all tabs in this popup
-                    $popup.find('.tab-menu-list li, .tab-content').removeClass('active-tab');
 
-                    const $firstHorizontalTab = $popup.find('.tab-menu-list li:first');
-                    const $firstTabContent = $popup.find('.tab-contents .tab-content:first');
+                    // Reset all tab buttons and contents
+                    $popup.find('.tab-menu-list li').removeClass('active-tab');
+                    $popup.find('.tab-content').removeClass('active-tab').hide();
 
-                    // Remove active from all vertical tabs
+                    // Reset vertical tab active state
                     $('.tab-menu-list-vertical li').removeClass('active-tab');
-
-                    // Add active to the matching vertical tab by data-popup
                     $('.tab-menu-list-vertical li[data-popup="' + popupID + '"]').addClass('active-tab');
 
-                    // Activate first horizontal tab & content
-                    $firstHorizontalTab.addClass('active-tab');
-                    $firstTabContent.addClass('active-tab').show();
+                    // Determine default tab
+                    let defaultTarget = defaultTabs[popupID];
+                    let $tabToActivate = $popup.find(`.tab-menu-list li[data-tab-target="${defaultTarget}"]`);
 
-                    // Hide other tab contents
-                    $popup.find('.tab-contents .tab-content').not(':first').hide();
+                    // Fallback to first tab if no default match
+                    if ($tabToActivate.length === 0) {
+                        $tabToActivate = $popup.find('.tab-menu-list li:first');
+                    }
+
+                    // Activate chosen tab
+                    $tabToActivate.addClass('active-tab');
+
+                    // Activate content
+                    const contentID = $tabToActivate.data('tab-target');
+                    $popup.find(`#tab-${contentID}`).addClass('active-tab').show();
+
+                    $popup.find('.bottom-menu').removeClass('opacity-0').addClass('opacity-100');
                 });
             });
 
