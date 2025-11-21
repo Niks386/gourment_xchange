@@ -323,7 +323,8 @@
     }
 }
 
-:focus-visible {
+:focus-visible,
+:focus {
     outline: none;
 }
 .font-brandon-grotesque {
@@ -468,11 +469,13 @@
 .zoom-btns span:first-child {
     border-bottom: 2px solid #fff;
 }
-#map-popup {
+#map-popup,
+#eBrochure-pp {
     display: none;
 }
 /* Fancybox Custom Styles */
-.fancybox__container .f-button[data-fancybox-close] {
+.fancybox__container .f-button[data-fancybox-close],
+#close-brochure {
     right: 40px !important;
     bottom: auto !important;
     top: 20px !important;

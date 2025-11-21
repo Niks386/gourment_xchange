@@ -288,6 +288,17 @@ jQuery(document).ready(function ($) {
     $(document).on('click', '.loader-false', function () {
         sessionStorage.setItem('fromLoaderFalse', 'yes');
     });
+
+
+    // Open brochure popup
+    $(document).on('click', '.brochure-pp', function () {
+        $("#eBrochure-pp").fadeIn(300);
+    });
+
+    // Close brochure popup
+    $(document).on('click', '#close-brochure', function () {
+        $("#eBrochure-pp").fadeOut(300);
+    });
 });
 
 $(function () {
