@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
+<body class="overflow-hidden animate__animated animate__fadeIn animate__slow" data-stack-index="4" data-stack-label="Stack 05">
     <!-- Top Header -->
     <section class="top-header fixed top-0 right-0 z-12 p-8 pb-[20px] w-full">
         <div class="header-inner flex justify-between items-start relative">
@@ -26,7 +26,7 @@
                 <li class="breadcrumb-item">
                     <a href="heritage-terrace.html">Heritage Terrace</a>
                 </li>
-                <li class="breadcrumb-item current-page">Stack 05</span>
+                <li class="breadcrumb-item current-page">Stack 05</li>
             </ul>
             <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
@@ -220,14 +220,14 @@
     <section id="stack-map-popup" class="fixed inset-0 bg-white z-10 content-center h-full hidden">
         <!-- Tab contents -->
         <div class="tab-contents relative">
-            <div id="tab-compare-plans" class="tab-content relative"></div>
+
             <div id="tab-cross-sections" class="tab-content hidden">
                 <div class="map-image w-[1246px] mx-auto">
                     <div class="panzoom-wrp relative panzoom-container">
                         <div class="panzoom-img">
                             <img id="cross-plan-img"
                                 src="./assets/images/product/heritage-terrace/stack-05/cross-section/section-stack-03_05_07-label.webp"
-                                alt="Cross Sections" class="w-full h-auto" />
+                                alt="Cross Sections Plan" class="w-full h-auto" />
                         </div>
                         <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2">
                             <span class="zoom-in-btn">
@@ -255,7 +255,7 @@
                         <div class="panzoom-img">
                             <img id="bare-plan-img"
                                 src="./assets/images/product/heritage-terrace/stack-05/stack-05-1st-storey.webp"
-                                alt="Compare Plans" class="w-full h-auto" />
+                                alt="Bare Plan" class="w-full h-auto" />
                         </div>
                         <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2">
                             <span class="zoom-in-btn">
@@ -277,18 +277,16 @@
                     </div>
                 </div>
             </div>
-            <div id="tab-specifications" class="tab-content hidden">
-                <h2 class="text-5xl text-center">Specifications</h2>
-            </div>
+
         </div>
 
         <!--Right tab bar -->
         <div class="fixed bottom-8 right-8 z-10">
             <ul class="flex flex-col items-center gap-3 tab-menu-list-vertical">
-                <li class=""><a href="unit-plan-comparison.html">Compare Plans</a></li>
+                <li class=""><a href="unit-plan-comparison.html?tab=heritage-terrace">Compare Plans</a></li>
                 <li class="" data-tab-target="cross-sections">Cross Sections</li>
                 <li class="" data-tab-target="bare-plan"> Bare Plan</li>
-                <li class="" data-tab-target="specifications">Specifications</li>
+                <li class=""><a href="general-specification.html">Specifications</a></li>
             </ul>
         </div>
 
@@ -345,180 +343,8 @@
     <!-- Scripts -->
     <script src="./assets/vendor/js/jquery.min.js"></script>
     <script src="./assets/vendor/js/panzoom.js"></script>
+    <script src="./assets/js/stack.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-
-            // Global stack data
-            window.__STACK_DATA__ = [
-                { label: 'Stack 01', folder: 'stack-01', bare: { s1: 'stack-01-1st-storey.webp', s2: 'stack-01-2nd-storey.webp', s3: 'stack-01-3rd-storey.webp' }, cross: 'section-stack-01_02_04_06_08-label.webp' },
-                { label: 'Stack 02', folder: 'stack-02', bare: { s1: 'stack-02-1st-storey.webp', s2: 'stack-02-2nd-storey.webp', s3: 'stack-02-3rd-storey.webp' }, cross: 'section-stack-01_02_04_06_08-label.webp' },
-                { label: 'Stack 03', folder: 'stack-03', bare: { s1: 'stack-03-1st-storey.webp', s2: 'stack-03-2nd-storey.webp', s3: 'stack-03-3rd-storey.webp' }, cross: 'section-stack-03_05_07-label.webp' },
-                { label: 'Stack 04', folder: 'stack-04', bare: { s1: 'stack-04-1st-storey.webp', s2: 'stack-04-2nd-storey.webp', s3: 'stack-04-3rd-storey.webp' }, cross: 'section-stack-01_02_04_06_08-label.webp' },
-                { label: 'Stack 05', folder: 'stack-05', bare: { s1: 'stack-05-1st-storey.webp', s2: 'stack-05-2nd-storey.webp', s3: 'stack-05-3rd-storey.webp' }, cross: 'section-stack-03_05_07-label.webp' },
-                { label: 'Stack 06', folder: 'stack-06', bare: { s1: 'stack-06-1st-storey.webp', s2: 'stack-06-2nd-storey.webp', s3: 'stack-06-3rd-storey.webp' }, cross: 'section-stack-01_02_04_06_08-label.webp' },
-                { label: 'Stack 07', folder: 'stack-07', bare: { s1: 'stack-07-1st-storey.webp', s2: 'stack-07-2nd-storey.webp', s3: 'stack-07-3rd-storey.webp' }, cross: 'section-stack-03_05_07-label.webp' },
-                { label: 'Stack 08', folder: 'stack-08', bare: { s1: 'stack-08-1st-storey.webp', s2: 'stack-08-2nd-storey.webp', s3: 'stack-08-3rd-storey.webp' }, cross: 'section-stack-01_02_04_06_08-label.webp' }
-            ];
-
-            let activeStorey = 's1';
-            let activeStack = null;
-
-            // Functions
-            function updateStackVisuals(stack) {
-                if (!stack) return;
-                const base = `./assets/images/product/heritage-terrace/${stack.folder}/`;
-
-                // Update anchor data
-                $('.stack-wrap .columns-3 > .relative').each(function (i) {
-                    const bareKey = 's' + (i + 1);
-                    $(this).find('a.stack-img').attr({
-                        'data-bare-plan': stack.bare[bareKey],
-                        'data-cross-plan': stack.cross,
-                        'data-folder': stack.folder
-                    });
-                });
-
-                // Update popup images
-                $('#bare-plan-img').attr('src', base + stack.bare[activeStorey]);
-                $('#cross-plan-img').attr('src', base + 'cross-section/' + stack.cross);
-
-                // Update breadcrumb text
-                const cleanLabel = stack.label.replace(/^Stack\s0*/, 'Stack 0');
-                $('.breadcrumb-item.current-page').text(cleanLabel);
-            }
-
-            function showTab(target) {
-                $('.tab-content').hide();
-                $('#tab-' + target).fadeIn(300);
-                $('.tab-menu-list-vertical li').removeClass('active-tab');
-                $('.tab-menu-list-vertical li[data-tab-target="' + target + '"]').addClass('active-tab');
-            }
-
-            function setFallbackImage(selector) {
-                $(selector).on('error', function () {
-                    $(this).attr('src', './assets/images/fallback.webp');
-                });
-            }
-
-            // Popup open
-            $(document).on('click', '.stack-img', function (e) {
-                e.preventDefault();
-                if ($('#stack-map-popup').is(':animated')) return;
-
-                const $el = $(this);
-                const barePlan = $el.data('bare-plan');
-                const crossPlan = $el.data('cross-plan');
-                const folder = $el.data('folder') || 'stack-01';
-
-                // Identify storey clicked
-                const storeyLabel = $el.find('span').first().text().toLowerCase();
-                if (storeyLabel.includes('2nd')) activeStorey = 's2';
-                else if (storeyLabel.includes('3rd')) activeStorey = 's3';
-                else activeStorey = 's1';
-
-                // dfault to Stack 05
-                const stackIndex = 4;
-
-                // Set active stack dynamically
-                activeStack = window.__STACK_DATA__[stackIndex];
-                updateStackVisuals(activeStack);
-
-                // Update dropdown default to Stack 05
-                const $dropdown = $('#stack-storey-dd');
-                $dropdown.find('.custom-dropdown-text').text(activeStack.label);
-                $dropdown.find('.custom-dropdown-item').removeClass('selected');
-                $dropdown.find('.custom-dropdown-item').eq(stackIndex).addClass('selected');
-
-                // Show popup
-                showTab('bare-plan');
-                $('#stack-map-popup').fadeIn(300);
-            });
-
-            // Popup close / back to storey selection
-            $(document).on('click', '.back-storey', function () {
-                $('#stack-map-popup').fadeOut(300, function () {
-                    activeStack = null;
-                    activeStorey = 's1';
-
-                    // Reset dropdown
-                    const $dropdown = $('#stack-storey-dd');
-                    $dropdown.find('.custom-dropdown-text').text('Stack 01');
-                    $dropdown.find('.custom-dropdown-item').removeClass('selected');
-                    $dropdown.find('.custom-dropdown-item').eq(0).addClass('selected');
-
-                    // Reset breadcrumb
-                    $('.breadcrumb-item.current-page').text('Stack 05');
-                });
-            });
-
-            // Tab menu click
-            $(document).on('click', '.tab-menu-list-vertical li', function () {
-                const target = $(this).data('tab-target');
-                if (target) showTab(target);
-            });
-
-            showTab('bare-plan');
-
-            // Dropdown init
-            (function initStackDropdown() {
-                const $dropdown = $('#stack-storey-dd');
-                if (!$dropdown.length) return;
-
-                const $btn = $dropdown.find('.custom-dropdown-btn');
-                const $text = $dropdown.find('.custom-dropdown-text');
-                const $listInner = $dropdown.find('.custom-dropdown-list-inner');
-                const stacks = window.__STACK_DATA__;
-
-                // Populate dropdown
-                $listInner.empty();
-                stacks.forEach((s, i) => {
-                    $listInner.append(`<div class="custom-dropdown-item" data-index="${i}">${s.label}</div>`);
-                });
-
-                // Default selection = Stack 01
-                $text.text('Stack 01');
-                $listInner.find('.custom-dropdown-item').eq(0).addClass('selected');
-
-                // Toggle dropdown
-                $btn.on('click', function (e) {
-                    e.stopPropagation();
-                    $('.custom-dropdown').not($dropdown).removeClass('open');
-                    $dropdown.toggleClass('open');
-                });
-
-                // Handle selection
-                $listInner.on('click', '.custom-dropdown-item', function (e) {
-                    e.stopPropagation();
-                    const idx = $(this).data('index');
-                    const sel = stacks[idx];
-                    if (!sel) return;
-
-                    $listInner.find('.custom-dropdown-item').removeClass('selected');
-                    $(this).addClass('selected');
-                    $text.text(sel.label);
-                    activeStack = sel;
-
-                    // Update visuals and breadcrumb
-                    updateStackVisuals(sel);
-
-                    // Close dropdown
-                    setTimeout(() => $dropdown.removeClass('open'), 100);
-                });
-
-                // Close dropdown on outside click / ESC
-                $(document).on('click keydown', function (e) {
-                    if (!$(e.target).closest('#stack-storey-dd').length || e.key === 'Escape') {
-                        $dropdown.removeClass('open');
-                    }
-                });
-            })();
-
-            // image fallback handlers
-            setFallbackImage('#bare-plan-img');
-            setFallbackImage('#cross-plan-img');
-        });
-    </script>
 
 </body>
 

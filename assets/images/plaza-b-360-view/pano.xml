@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama hideabout="1" apprev="21009" id="node1" hassounds="0" appversion="7.1.10">
+  <input levelingroll="0" levelingpitch="0" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" overlap="1" width="1500" height="1500" levelbiashidpi="1.000" levelbias="0.400">
+    <level width="1500" height="1500" predecode="0" preload="0"/>
+    <level width="750" height="750" predecode="0" preload="0"/>
+    <level width="375" height="375" predecode="1" preload="1"/>
+    <preview color="0x808080" strip="1"/>
+  </input>
+  <view fovmode="2" pannorth="0">
+    <start tilt="0" pan="0" projection="4" fov="100"/>
+    <flyin tilt="-90" pan="0" projection="9" fov="170"/>
+    <min tilt="-90" pan="0" fovpixel="2"/>
+    <max tilt="90" scaletofit="1" fovstereographic="330" pan="360" fov="140" fovfisheye="360"/>
+  </view>
+  <userdata customnodeid="" datetime="" info="" title="" nodeid="node1" copyright="" comment="" author="" latitude="" heading="0" description="" longitude="" tags="Capitaland-AljuniedFoodIndustrial" source=""/>
+  <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+    <label textcolor="0x000000" enabled="1" background="1" width="180" height="20" backgroundcolor="0xffffff" textalpha="1" borderradius="1" bordercolor="0x000000" wordwrap="1" backgroundalpha="1" borderalpha="1" border="1"/>
+    <polystyle backgroundcolor="0x0000ff" mode="0" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
+    <hotspot tilt="0" pan="-305.44" description="RESTAURANTS/&#xa;F&amp;B*" url="https://nexuslinkdev.com/gourmet-xchange/restaurants-units.html" title="" target="_blank" id="Point01" skinid="Large Infotag"/>
+    <hotspot tilt="0" pan="-346.32" description="INDUSTRIAL&#xa;CANTEEN" url="https://nexuslinkdev.com/gourmet-xchange/industrial-canteen-unit.html" title="" target="_blank" id="Point02" skinid="Large Infotag"/>
+    <hotspot tilt="0" pan="-328.38" description="FOOD&#xa;KIOSKS" url="https://nexuslinkdev.com/gourmet-xchange/food-kiosks-unit.html" title="" target="_self" id="Point03" skinid="Large Infotag"/>
+    <hotspot tilt="0" pan="-73.3" description="RESTAURANTS/&#xa;F&amp;B*" url="https://nexuslinkdev.com/gourmet-xchange/restaurants-units.html" title="" target="_blank" id="Point04" skinid="Large Infotag"/>
+  </hotspots>
+  <media/>
+  <transition zoomspeed="2" zoomfov="40" delay="none" softedge="0" enabled="1" blendtime="1" zoomafteroutfov="40" zoomoutpause="1" zoomafterinfov="140" zoomin="0" zoomout="0" blendcolor="0x000000" type="crossdissolve"/>
+  <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
+  <control contextprojections="0" invertwheel="0" simulatemass="1" invertcontrol="1" contextfullscreen="0" zoomcentercursor="0" hideabout="1" contextvr="0" lockedkeyboard="0" sensitivity="5" lockedkeyboardzoom="0" lockedwheel="0" lockedmouse="0" dblclickfullscreen="0" rubberband="0" speedwheel="1"/>
+  <projectuserdata description="" title="" comment="" copyright="" tags="" author=""/>
+</panorama>
