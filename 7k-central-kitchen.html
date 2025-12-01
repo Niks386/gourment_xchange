@@ -10,21 +10,6 @@
     <link rel="stylesheet" href="./assets/css/output.css">
     <link rel="stylesheet" href="./assets/css/navigation.css">
     <link rel="stylesheet" href="./assets/vendor/css/animate.min.css">
-    <style>
-        .tab-menu-list li {
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-            width: 100%;
-            border: 1px solid #dcddde !important;
-            border-radius: 30px 0 30px 30px;
-            padding: 16px 30px;
-        }
-        .tab-menu-list li.active-tab {
-            background-color: var(--color-f2673a);
-            color: var(--color-ffffff);
-            pointer-events: none;
-        }
-    </style>
 </head>
 
 <body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
@@ -169,7 +154,7 @@
     </section>
 
     <!-- Full screen tabbing -->
-    <section class="overflow-hidden h-full content-center cetral-kitchen-wrap">
+    <section class="overflow-hidden h-full content-center">
         <div class="tab-contents h-full">
             <div id="tab-7k-central-kitchen" class="tab-content h-full">
                 <div class="tab-inner-content h-full">
@@ -181,12 +166,10 @@
                         </div>
                     </div>
                     <div id="tab-7k-bare-plan" class="inner-content content-center h-full hidden">
-
-                        <!-- Map image -->
                         <div class="map-image w-[1039px] mx-auto">
                             <div class="panzoom-wrp relative panzoom-container">
                                 <div class="panzoom-img">
-                                    <img src="./assets/images/food-operations/7k-central kitchen/7k_kitchen_bare_plan.webp" alt="7k-central kitchen"
+                                    <img src="./assets/images/food-operations/7k-central-kitchen/7k-kitchen-bare-plan.webp" alt="7k Central Kitchen bare Plan"
                                         class="w-full h-auto" />
                                 </div>
                                 <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
@@ -210,11 +193,10 @@
                         </div>
                     </div>
                     <div id="tab-7k-fitted-plan" class="inner-content content-center h-full hidden">
-                        <!-- Map image -->
                         <div class="map-image w-[1039px] mx-auto">
                             <div class="panzoom-wrp relative panzoom-container">
                                 <div class="panzoom-img">
-                                    <img src="./assets/images/food-operations/7k-central kitchen/7k_kitchen_fitted_plan.webp" alt="7k_fitted_plan"
+                                    <img src="./assets/images/food-operations/7k-central-kitchen/7k-kitchen-fitted-plan.webp" alt="7k Central Kitchen Fitted Plan"
                                         class="w-full h-auto" />
                                 </div>
                                 <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
@@ -323,7 +305,7 @@
         <!-- Bottom sticky tab bar -->
         <div class="bottom-menu fixed bottom-8 right-8 z-10">
             <div class="overflow-hidden">
-                <ul class="flex flex-col gap-3 items-center tab-menu-list w-[279px]">
+                <ul class="flex flex-col gap-3 items-center tab-menu-list w-[279px] v-list text-center">
                     <li class="" data-tab-target="7k-central-kitchen">7k Central Kitchen</li>
                     <li class="" data-tab-target="heritage-terrace">Heritage Terrace</li>
                 </ul>

@@ -1,7 +1,8 @@
 jQuery(document).ready(function ($) {
     // Wait 8 seconds, then fade out loader
         // $('#loader-overlay').addClass('hidden');
-    if (sessionStorage.getItem('fromLoaderFalse') !== 'yes') {
+    if (localStorage.getItem('fromLoaderFalse') !== 'yes') {
+        $(".home-rotating").removeClass("z-5").addClass("z-0");
         setTimeout(function () {
             $("#loader-overlay").addClass("hidden");
             // Optional: fully remove from DOM after animation
@@ -13,17 +14,6 @@ jQuery(document).ready(function ($) {
             start360Overlay();
         }, 8000);
 
-        // //  Circle 360 Click → Close Overlay
-        // $("#circle360").on("click", function () {
-        //     // Optional: disable repeated clicks
-        //     $(this).off("click");
-
-        //     // Wait 5 seconds after click, then fade out
-        //     setTimeout(function () {
-        //         $("#overlay-360").fadeOut(500);
-        //         $(".navigation-wrap").removeClass("hidden");
-        //     }, 5000);
-        // });
 
         // --- FUNCTION TO START 360 OVERLAY LOGIC ---
         function start360Overlay() {
@@ -284,12 +274,6 @@ jQuery(document).ready(function ($) {
             },
         });
     }
-
-    $(document).on('click', '.loader-false', function () {
-        sessionStorage.setItem('fromLoaderFalse', 'yes');
-    });
-
-
     // Open brochure popup
     $(document).on('click', '.brochure-pp', function () {
         $("#eBrochure-pp").fadeIn(300);
@@ -299,13 +283,51 @@ jQuery(document).ready(function ($) {
     $(document).on('click', '#close-brochure', function () {
         $("#eBrochure-pp").fadeOut(300);
     });
+
+    // For Test fit plan detail page
+    if ($(".tft-tab").length > 0) {
+        var $tab = $('[data-tab-target="fitted-plan"]');
+        if ($tab.length) {
+            $tab.trigger('click');
+        }
+    }
+
+    $(document).on('click', '.loader-false', function () {
+        localStorage.setItem('fromLoaderFalse', 'yes');
+    });
 });
 
 $(function () {
-    if (sessionStorage.getItem('fromLoaderFalse') === 'yes') {
-        // alert('You arrived here from loader-false link!');
-        // sessionStorage.removeItem('fromLoaderFalse');
-        $("#loader-overlay, #overlay-360").addClass("hidden");
+    if (localStorage.getItem('fromLoaderFalse') === 'yes') {
+        $("#loader-overlay, #overlay-360").hide().css("z-index", 0);
         $(".navigation-wrap").removeClass("hidden");
     }
 });
+
+
+// Loader show after finish 100 percent process 360
+(function(){
+    var selector = '.loader-process-360';
+    var intervalMs = 500;
+    var maxChecks = 1200;
+    var checks = 0;
+
+    var timer = setInterval(function(){
+        checks++;
+        var $el = $(selector);
+
+        if ($el.length) {
+            var text = $el.text().trim();
+            var html = $el.html() ? $el.html().replace(/\s|&nbsp;/g, '') : '';
+
+            if (text === '' && (html === '' || html === null)) {
+                $("#360-loader").fadeIn(600); // Smooth fade
+                clearInterval(timer);
+            }
+        }
+
+        if (maxChecks !== null && checks >= maxChecks) {
+            clearInterval(timer);
+        }
+    }, intervalMs);
+})();

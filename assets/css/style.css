@@ -449,6 +449,25 @@
     color: var(--color-ffffff);
     pointer-events: none;
 }
+.tab-menu-list.v-list li {
+    width: 100%;
+    border: 1px solid #dcddde !important;
+    border-radius: 30px 0 30px 30px;
+    padding: 16px 30px;
+}
+#stack-map-popup .tab-menu-list-vertical li:has(a) {
+    padding: 0;
+}
+#stack-map-popup .tab-menu-list-vertical li a {
+    @apply px-9;
+    @apply py-4;
+    display: inline-block;
+}
+.tab-menu-list.v-list li.active-tab {
+    background-color: var(--color-f2673a);
+    color: var(--color-ffffff);
+    pointer-events: none;
+}
 /* Panzoom Custom Styles */
 .panzoom-wrp .panzoom-img {
     /* cursor: auto !important; */
@@ -575,4 +594,10 @@ sup {
 .menu-item[data-menu="value"] {
     opacity: 0.4;
     pointer-events: none;
+}
+.loader-none {
+    display: none;
+}
+#tab-specifications .character-style-1 {
+    letter-spacing: 0;
 }

@@ -156,16 +156,22 @@
     </section>
 
     <!-- Full screen carousel -->
-    <section class="overflow-hidden h-full content-center cetral-kitchen-wrap">
+    <section class="overflow-hidden h-full content-center">
         <!-- Tab contents -->
-        <div class="tab-contents relative">
-            <div id="tab-bare-plan" class="tab-content relative">
-
-                <!-- Map image -->
+        <div class="tab-contents relative h-full">
+            <div id="tab-360-bare" class="tab-content relative h-full">
+                <iframe  src="https://projects.blanct.com/capitaland_aljunied/7k_bakery_bare/" width="100%" height="100%"
+                    style="border:0; overflow:hidden;" allowfullscreen></iframe>
+            </div>
+            <div id="tab-360-fitted" class="tab-content h-full hidden">
+                <iframe src="https://projects.blanct.com/capitaland_aljunied/7k_bakery/" width="100%" height="100%"
+                        style="border:0; overflow:hidden;" allowfullscreen></iframe>
+            </div>
+            <div id="tab-bare-plan" class="tab-content hidden relative">
                 <div class="map-image w-[1039px] mx-auto">
                     <div class="panzoom-wrp relative panzoom-container">
                         <div class="panzoom-img">
-                            <img src="./assets/images/food-operations/bakery/bakery_bare_plan.webp" alt="bakery_bare_plan"
+                            <img src="./assets/images/food-operations/bakery/bakery-bare-plan.webp" alt="Bakery Bare Plan"
                                 class="w-full h-auto" />
                         </div>
                         <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
@@ -189,11 +195,10 @@
                 </div>
             </div>
             <div id="tab-fitted-plan" class="tab-content hidden">
-                <!-- Map image -->
                 <div class="map-image w-[1039px] mx-auto">
                     <div class="panzoom-wrp relative panzoom-container">
                         <div class="panzoom-img">
-                            <img src="./assets/images/food-operations/bakery/bakery_fitted_plan.webp" alt="7k_fitted_bakery"
+                            <img src="./assets/images/food-operations/bakery/bakery-fitted-plan.webp" alt="Bakery Fitted Plan"
                                 class="w-full h-auto" />
                         </div>
                         <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
@@ -218,11 +223,8 @@
             </div>
             <div id="tab-perspective" class="tab-content hidden">
                 <div class="relative h-screen">
-                    <img src="assets/images/food-operations/3k-placeholder.webp" alt="Placeholder"
-                        class="w-full h-full object-cover">
-                    <span
-                        class="text-artist-8">Artist’s
-                        Impression</span>
+                    <img src="assets/images/food-operations/bakery/7k-bakery-perspective.webp" alt="Bakery perspective.webp" class="w-full h-full object-cover">
+                    <span class="text-artist-8">Artist’s Impression</span>
                 </div>
             </div>
             <div id="tab-specifications" class="tab-content hidden">
@@ -241,6 +243,8 @@
             class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
             <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
                 <ul class="flex items-center justify-evenly tab-menu-list w-max">
+                    <li class="" data-tab-target="360-bare"> 360° Bare </li>
+                    <li class="" data-tab-target="360-fitted"> 360° Fitted </li>
                     <li class="" data-tab-target="bare-plan"> Bare Plan </li>
                     <li class="" data-tab-target="fitted-plan">Fitted plan</li>
                     <li class="" data-tab-target="perspective">Perspective</li>

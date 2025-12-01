@@ -418,7 +418,7 @@
                         class="text-18-bold w-full py-4 text-center rounded-full rounded-tr-none border border-color-dcddde bg-color-f2673a pointer-events-none text-white">Compare
                         Plans</a>
                     <a href="javascript:void(0)" data-tab-target="compare-specs"
-                        class="text-18-bold w-full py-4 text-center rounded-full rounded-tr-none border border-color-dcddde bg-white">Compare
+                        class="text-18-bold w-full py-4 text-center rounded-full rounded-tr-none border border-color-dcddde bg-white pointer-events-none opacity-25">Compare
                         Specs
                     </a>
                 </div>
@@ -715,6 +715,16 @@
     <script src="./assets/vendor/js/panzoom.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
+        $(function () {
+            // Check if ?tab=heritage-terrace is in the current URL and activate that tab
+            if (window.location.search.indexOf('tab=heritage-terrace') !== -1) {
+                var $tab = $('[data-tab-target="heritage-terrace"]');
+                if ($tab.length) {
+                    $tab.trigger('click');
+                }
+            }
+        });
+
         // When main tab changes
         $(document).on('click', '.tab-menu-list li', function () {
             var target = $(this).data('tab-target');
@@ -1106,6 +1116,65 @@
             ]
         };
 
+        /* ---------- Loader helpers ---------- */
+        function getLoaderEl(img) {
+            if (!img) return null;
+            const wrapper = img.closest('.panzoom-img');
+            if (!wrapper) return null;
+            wrapper.classList.add('stack-loader-parent');
+            let loader = wrapper.querySelector('.stack-loader-overlay');
+            if (!loader) {
+                loader = document.createElement('div');
+                loader.className = 'stack-loader-overlay stack-loader-hidden';
+                loader.innerHTML = '<div class="stack-loader-spinner"></div>';
+                wrapper.appendChild(loader);
+            }
+            return loader;
+        }
+
+        function showLoader(img) {
+            const loader = getLoaderEl(img);
+            if (loader) loader.classList.remove('stack-loader-hidden');
+        }
+
+        function hideLoader(img) {
+            const loader = getLoaderEl(img);
+            if (loader) loader.classList.add('stack-loader-hidden');
+        }
+
+        function setImageSrcWithLoader(img, src) {
+            if (!img || !src) return;
+            const onDone = function () {
+                img.removeEventListener('load', onDone);
+                img.removeEventListener('error', onDone);
+                hideLoader(img);
+            };
+            img.addEventListener('load', onDone);
+            img.addEventListener('error', onDone);
+            showLoader(img);
+            img.src = src;
+        }
+
+        function initExistingImageLoaders() {
+            document.querySelectorAll('.panzoom-img img').forEach((img) => {
+                if (!img) return;
+                if (!img.complete || img.naturalWidth === 0) {
+                    const onDone = function () {
+                        img.removeEventListener('load', onDone);
+                        img.removeEventListener('error', onDone);
+                        hideLoader(img);
+                    };
+                    img.addEventListener('load', onDone);
+                    img.addEventListener('error', onDone);
+                    showLoader(img);
+                } else {
+                    hideLoader(img);
+                }
+            });
+        }
+
+
+
         /* ---------- Helper: format storey label with superscript ---------- */
         function formatStoreyLabel(label) {
             if (typeof label !== 'string') return label;
@@ -1293,7 +1362,7 @@
 
                     // if folder empty fallback to derived folder (best-effort)
                     const folderToUse = folder || storey.toLowerCase().replace(/\s+/g, '-');
-                    img.src = `${basePath}/${folderToUse}/${file}`;
+                    setImageSrcWithLoader(img, `${basePath}/${folderToUse}/${file}`);
                     // update alt text
                     const storeyAlt = typeof storey === 'string' ? storey : '';
                     const labelAlt = typeof unitLabel === 'string' ? unitLabel : '';
@@ -1514,6 +1583,8 @@
 
         /* ---------- Run on DOM ready ---------- */
         document.addEventListener('DOMContentLoaded', function () {
+            initExistingImageLoaders();
+
             // Initialize The Xchange tab with both plans and specs sections
             initTabContentBlocks('tab-the-xchange', './assets/images/product/the-xchange', [
                 {

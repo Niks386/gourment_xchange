@@ -165,6 +165,15 @@
 
     <!-- 360° Rotate Model -->
     <section class="rotate-wrap w-full h-full">
+         <!-- 360° Loader Second -->
+        <div id="360-loader" class="home-rotating loader-none content-center fixed inset-0 bg-black/0 flex items-center justify-center z-5">
+            <div id="circle-360-loader"
+                class="relative flex flex-col items-center justify-center w-48 h-48 mx-auto rounded-full bg-dcddde-80 cursor-pointer text-center transition-all duration-500">
+                <span class="font-brandon-grotesque text-color-eb3b1d text-4xl font-semibold">360<span
+                        class="relative -top-4 -right-1 text-[33px] leading-none">•</span></span>
+                <p class="text-lg leading-[26px]">Move around to<br>view development</p>
+            </div>
+        </div>
         <div class="rotate-img w-full h-full">
             <div class="cloudimage-360" id="rotatinImg" data-folder="./assets/images/rotating-model/"
                 data-filename="rotating_{index}.webp" data-amount="251" data-autoplay="false" data-stop-at-edges="false"
@@ -173,7 +182,6 @@
         </div>
         <span class="text-artist-8">Artist’s Impression</span>
     </section>
-
 
 
     <section id="eBrochure-pp" class="fixed inset-0 bg-white z-20">
@@ -190,7 +198,6 @@
     <script src="./assets/vendor/js/jquery.min.js"></script>
     <script src="./assets/vendor/js/360-view.min.js"></script>
     <script src="./assets/js/main.js"></script>
-
 </body>
 
 </html>

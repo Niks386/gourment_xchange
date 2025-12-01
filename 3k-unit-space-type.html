@@ -15,8 +15,6 @@
 <body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
     <!-- Top Header -->
     <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
-        <div class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
-        </div>
         <div class="header-inner flex justify-between items-start relative">
             <ul class="breadcrumb font-brandon-grotesque flex">
                 <li class="breadcrumb-item">
@@ -159,7 +157,7 @@
     </section>
 
     <!-- Full screen carousel -->
-    <section class="overflow-hidden h-full content-center cetral-kitchen-wrap">
+    <section class="overflow-hidden h-full content-center">
         <!-- Tab contents -->
         <div class="tab-contents relative h-full content-center">
             <div id="tab-360-bare-plan" class="tab-content relative w-full h-full">
@@ -173,11 +171,11 @@
                 <span class="text-artist-8">Artist’s Impression</span>
             </div>
             <div id="tab-bare-plan" class="tab-content hidden">
-                <!-- Map image -->
+
                 <div class="map-image w-[1039px] mx-auto">
                     <div class="panzoom-wrp relative panzoom-container">
                         <div class="panzoom-img">
-                            <img src="./assets/images/food-operations/3k-central kitchen/01-21.webp" alt="3K Units Bare Plan" class="w-full h-auto" />
+                            <img src="./assets/images/space-types/production/3k-units/bare-plan/3k-typical-02-21.webp" alt="3K Units Bare Plan" class="w-full h-auto" />
                         </div>
                         <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                             <span class="zoom-in-btn">
@@ -200,10 +198,8 @@
                 </div>
             </div>
             <div id="tab-specifications" class="tab-content hidden">
-                <div class="w-full h-full content-center">
-                    <div class="mx-auto text-center">
-                        <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
-                    </div>
+                <div class="h-full content-center">
+                    <h3 class="character-style-1 text-center font-normal">Please contact our appointed<br> marketing agents for more information</h3>
                 </div>
             </div>
         </div>
@@ -212,7 +208,7 @@
         <div class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
             <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
                 <ul class="flex items-center justify-evenly tab-menu-list w-max">
-                    <li class="" data-tab-target="360-bare-plan"> 360° Bare </li>
+                    <li class="pointer-events-none opacity-25" data-tab-target="360-bare-plan"> 360° Bare </li>
                     <li class="" data-tab-target="bare-plan"> Bare Plan </li>
                     <li class="" data-tab-target="specifications">Specifications </li>
                 </ul>
@@ -223,12 +219,12 @@
         <div class="fixed bottom-8 right-8 z-12">
             <p id="viewTestFits" class="text-white text-[13px] tracking-[0.7px]">View Test-Fits:</p>
             <ul class="flex flex-col items-center gap-3 tab-menu-list-vertical">
-                <li class="" data-popup="#unit-popup-1">Sauce manufacturing</li>
-                <li class="" data-popup="#unit-popup-2">Coffee roasting</li>
-                <li class="" data-popup="#unit-popup-3">3k central kitchen</li>
                 <li class="" data-popup="#unit-popup-4">Catering kitchen</li>
-                <li class="" data-popup="#unit-popup-5">Food lab</li>
+                <li class="pointer-events-none opacity-25" data-popup="#unit-popup-3">Central Kitchen</li>
+                <li class="pointer-events-none opacity-25" data-popup="#unit-popup-2">Coffee Roasting</li>
+                <li class="pointer-events-none opacity-25" data-popup="#unit-popup-1">Sauce Making</li>
                 <li class="" data-popup="#unit-popup-6">Food packaging</li>
+                <li class="" data-popup="#unit-popup-5">Food lab</li>
             </ul>
         </div>
     </section>
@@ -237,9 +233,7 @@
     <section id="unit-popup-1" class="fixed inset-0 bg-white z-10" >
         <!-- Top Header -->
         <div class="top-header z-10 fixed top-0 right-0 p-8 pb-[20px] w-full">
-            <div
-                class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
-            </div>
+
             <div class="header-inner flex justify-between items-start relative">
                 <ul class="breadcrumb font-brandon-grotesque flex">
                     <li class="breadcrumb-item">
@@ -261,78 +255,74 @@
                 </a>
             </div>
         </div>
-        <div class="h-full content-center cetral-kitchen-wrap">
+        <div class="h-full content-center">
              <div class="tab-contents relative">
-                    <div id="tab-bare-plan-1" class="tab-content relative">
-                        <!-- Map image -->
-                        <div class="map-image w-[1039px] mx-auto">
-                            <div class="panzoom-wrp relative panzoom-container">
-                                <div class="panzoom-img">
-                                    <img src="./assets/images/space-types/production/3k-units/sauce-manufacturing/bare-plan/3k_sauce_manufacturing_bare_plan.webp" alt="Sauce Manufacturing Bare Plan"
-                                        class="w-full h-auto" />
-                                </div>
-                                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
-                                    <span class="zoom-in-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
-                                            fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                    </span>
-                                    <span class="zoom-out-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
-                                            fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                    </span>
-                                </div>
+                <div id="tab-bare-plan-1" class="tab-content relative">
+                    <div class="map-image w-[1039px] mx-auto">
+                        <div class="panzoom-wrp relative panzoom-container">
+                            <div class="panzoom-img">
+                                <img src="./assets/images/space-types/production/3k-units/sauce-manufacturing/bare-plan/bare-plan-01-11.webp" alt="Sauce Manufacturing Bare Plan"
+                                    class="w-full h-auto" />
+                            </div>
+                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
+                                <span class="zoom-in-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                        fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </span>
+                                <span class="zoom-out-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                        fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div id="tab-fitted-plan-1" class="tab-content hidden">
-                        <!-- Map image -->
-                        <div class="map-image w-[1039px] mx-auto">
-                            <div class="panzoom-wrp relative panzoom-container">
-                                <div class="panzoom-img">
-                                    <img src="./assets/images/space-types/production/3k-units/sauce-manufacturing/fitted-plan/3k_fitted_sauce_manufacturing.webp"
-                                        alt="Sauce Manufacturing Fitted plan" class="w-full h-auto" />
-                                </div>
-                                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
-                                    <span class="zoom-in-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
-                                            fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                    </span>
-                                    <span class="zoom-out-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
-                                            fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                    </span>
-                                </div>
+                </div>
+                <div id="tab-fitted-plan-1" class="tab-content hidden">
+                    <div class="map-image w-[1039px] mx-auto">
+                        <div class="panzoom-wrp relative panzoom-container">
+                            <div class="panzoom-img">
+                                <img src="./assets/images/space-types/production/3k-units/sauce-manufacturing/fitted-plan/3k-fitted-sauce-manufacturing.webp"
+                                    alt="Sauce Manufacturing Fitted plan" class="w-full h-auto" />
+                            </div>
+                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
+                                <span class="zoom-in-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                        fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </span>
+                                <span class="zoom-out-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                        fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div id="tab-perspective-1" class="tab-content hidden">
-                        <div class="w-full h-full content-center">
-                            <div class="mx-auto text-center">
-                                <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
-                            </div>
+                </div>
+                <div id="tab-perspective-1" class="tab-content hidden">
+                    <div class="w-full h-full content-center">
+                        <div class="mx-auto text-center">
+                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
                         </div>
                     </div>
-                    <div id="tab-specifications-1" class="tab-content hidden">
-                        <div class="w-full h-full content-center">
-                            <div class="mx-auto text-center">
-                                <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
-                            </div>
-                        </div>
+                </div>
+                <div id="tab-specifications-1" class="tab-content hidden">
+                    <div class="h-full content-center">
+                        <h3 class="character-style-1 text-center font-normal">Please contact our appointed<br> marketing agents for more information</h3>
                     </div>
+                </div>
             </div>
             <!-- Bottom sticky tab bar -->
             <div
@@ -353,9 +343,6 @@
     <section id="unit-popup-2" class="fixed inset-0 bg-white z-10" >
         <!-- Top Header -->
         <div class="top-header z-10 fixed top-0 right-0 p-8 pb-[20px] w-full">
-            <div
-                class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
-            </div>
             <div class="header-inner flex justify-between items-start relative">
                 <ul class="breadcrumb font-brandon-grotesque flex">
                     <li class="breadcrumb-item">
@@ -377,17 +364,15 @@
                 </a>
             </div>
         </div>
-        <div class="h-full content-center cetral-kitchen-wrap">
+        <div class="h-full content-center">
              <!-- Tab contents -->
             <div class="tab-contents relative">
                 <div id="tab-360-bare-2" class="tab-content relative">
-                    <div class="relative h-screen">
-                        <img src="assets/images/food-operations/3k-placeholder1.webp" alt="Placeholder"
-                            class="w-full h-full object-cover">
-                        <span
-                            class="text-artist-8">Artist’s
-                            Impression</span>
+                    <div class="w-full h-full content-center">
+                    <div class="mx-auto text-center">
+                        <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
                     </div>
+                </div>
                 </div>
                 <div id="tab-360-fitted-2" class="tab-content relative w-full h-lvh">
                     <div class="w-full h-full content-center">
@@ -398,11 +383,10 @@
                 </div>
                 <div id="tab-bare-plan-2" class="tab-content relative">
 
-                    <!-- Map image -->
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/space-types/production/3k-units/coffee-roasting/bare-plan/3k_cofee_roasting_bare_plan.webp"
+                                <img src="./assets/images/space-types/production/3k-units/coffee-roasting/bare-plan/bare-plan-01-29.webp"
                                     alt="Coffee Roasting Bare Plan" class="w-full h-auto" />
                             </div>
                             <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
@@ -425,11 +409,35 @@
                         </div>
                     </div>
                 </div>
-                <div id="tab-specifications-2" class="tab-content hidden">
-                    <div class="w-full h-full content-center">
-                        <div class="mx-auto text-center">
-                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                <div id="tab-fitted-plan-2" class="tab-content hidden">
+
+                    <div class="map-image w-[1039px] mx-auto">
+                        <div class="panzoom-wrp relative panzoom-container">
+                            <div class="panzoom-img">
+                                <img src="./assets/images/space-types/production/3k-units/coffee-roasting/fitted-plan/3k-fitted-coffee-roasting.webp"
+                                    alt="Coffee Roasting Fitted plan" class="w-full h-auto" />
+                            </div>
+                            <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
+                                <span class="zoom-in-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </span>
+                                <span class="zoom-out-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div id="tab-specifications-2" class="tab-content hidden">
+                    <div class="h-full content-center">
+                        <h3 class="character-style-1 text-center font-normal">Please contact our appointed<br> marketing agents for more information</h3>
                     </div>
                 </div>
             </div>
@@ -440,6 +448,7 @@
                         <li class="" data-tab-target="360-bare-2"> 360° Bare </li>
                         <li class="" data-tab-target="360-fitted-2"> 360° Fitted </li>
                         <li class="" data-tab-target="bare-plan-2"> Bare Plan </li>
+                        <li class="" data-tab-target="fitted-plan-2">Fitted plan</li>
                         <li class="" data-tab-target="specifications-2">Specifications </li>
                     </ul>
                 </div>
@@ -451,9 +460,7 @@
     <section id="unit-popup-3" class="fixed inset-0 bg-white z-10" >
         <!-- Top Header -->
         <div class="top-header z-10 fixed top-0 right-0 p-8 pb-[20px] w-full">
-            <div
-                class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
-            </div>
+
             <div class="header-inner flex justify-between items-start relative">
                 <ul class="breadcrumb font-brandon-grotesque flex">
                     <li class="breadcrumb-item">
@@ -475,17 +482,15 @@
                 </a>
             </div>
         </div>
-        <div class="h-full content-center cetral-kitchen-wrap">
+        <div class="h-full content-center">
              <!-- Tab contents -->
              <div class="tab-contents relative">
                 <div id="tab-360-bare-3" class="tab-content relative">
-                    <div class="relative h-screen">
-                        <img src="assets/images/food-operations/3k-placeholder1.webp" alt="Placeholder"
-                            class="w-full h-full object-cover">
-                        <span
-                            class="text-artist-8">Artist’s
-                            Impression</span>
+                    <div class="w-full h-full content-center">
+                    <div class="mx-auto text-center">
+                        <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
                     </div>
+                </div>
                 </div>
                 <div id="tab-360-fitted-3" class="tab-content relative w-full h-lvh">
                     <div class="w-full h-full content-center">
@@ -496,12 +501,12 @@
                 </div>
                 <div id="tab-bare-plan-3" class="tab-content relative">
 
-                    <!-- Map image -->
+
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/space-types/production/3k-units/3k-central-kitchen/bare-plan/3k_central_kitchen_bare_plan.webp"
-                                    alt="Central Kitchen Bare Plan" class="w-full h-auto" />
+                                <img src="./assets/images/space-types/production/3k-units/3k-central-kitchen/bare-plan/bare-plan-01-11.webp"
+                                    alt="3K Central Kitchen Bare Plan" class="w-full h-auto" />
                             </div>
                             <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                                 <span class="zoom-in-btn">
@@ -524,12 +529,12 @@
                     </div>
                 </div>
                 <div id="tab-fitted-plan-3" class="tab-content hidden">
-                    <!-- Map image -->
+
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/space-types/production/3k-units/3k-central-kitchen/3k_fitted_central_kitchen.webp"
-                                    alt="Central Kitchen Fitted Plan" class="w-full h-auto" />
+                                <img src="./assets/images/space-types/production/3k-units/3k-central-kitchen/fitted-plan/3k-fitted-central-kitchen.webp"
+                                    alt="3K Central Kitchen Fitted Plan" class="w-full h-auto" />
                             </div>
                             <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
                                 <span class="zoom-in-btn">
@@ -559,19 +564,15 @@
                     </div>
                 </div>
                 <div id="tab-3d-plan-3" class="tab-content relative">
-                    <div class="relative h-screen">
-                        <img src="assets/images/food-operations/3k-placeholder1.webp" alt="Placeholder"
-                            class="w-full h-full object-cover">
-                        <span
-                            class="text-artist-8">Artist’s
-                            Impression</span>
+                    <div class="w-full h-full content-center">
+                    <div class="mx-auto text-center">
+                        <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
                     </div>
                 </div>
+                </div>
                 <div id="tab-specifications-3" class="tab-content hidden">
-                    <div class="w-full h-full content-center">
-                        <div class="mx-auto text-center">
-                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
-                        </div>
+                    <div class="h-full content-center">
+                        <h3 class="character-style-1 text-center font-normal">Please contact our appointed<br> marketing agents for more information</h3>
                     </div>
                 </div>
             </div>
@@ -598,9 +599,7 @@
     <section id="unit-popup-4" class="fixed inset-0 bg-white z-10" >
         <!-- Top Header -->
         <div class="top-header z-10 fixed top-0 right-0 p-8 pb-[20px] w-full">
-            <div
-                class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
-            </div>
+
             <div class="header-inner flex justify-between items-start relative">
                 <ul class="breadcrumb font-brandon-grotesque flex">
                     <li class="breadcrumb-item">
@@ -622,16 +621,16 @@
                 </a>
             </div>
         </div>
-        <div class="h-full content-center cetral-kitchen-wrap">
+        <div class="h-full content-center">
              <!-- Tab contents -->
              <div class="tab-contents relative">
                 <div id="tab-bare-plan-4" class="tab-content relative">
 
-                    <!-- Map image -->
+
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/space-types/production/3k-units/catering-kitchen/bare-plan/3k_catering_kitchen_bare-plan.webp" alt="Catering Kitchen Bare Plan"
+                                <img src="./assets/images/space-types/production/3k-units/catering-kitchen/bare-plan/bare-plan-01-11.webp" alt="Catering Kitchen Bare Plan"
                                     class="w-full h-auto" />
                             </div>
                             <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
@@ -655,11 +654,11 @@
                     </div>
                 </div>
                 <div id="tab-fitted-plan-4" class="tab-content hidden">
-                    <!-- Map image -->
+
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/space-types/production/3k-units/catering-kitchen/fitted-plan/3k_fitted_central_kitchen.webp" alt="Catering Kitchen Fitted Plan"
+                                <img src="./assets/images/space-types/production/3k-units/catering-kitchen/fitted-plan/3k-fitted-central-kitchen.webp" alt="Catering Kitchen Fitted Plan"
                                     class="w-full h-auto" />
                             </div>
                             <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
@@ -683,14 +682,14 @@
                     </div>
                 </div>
                 <div id="tab-perspective-4" class="tab-content hidden">
-                    <img src="./assets/images/space-types/production/3k-units/catering-kitchen/perspective/3k-catering-perspective.webp" alt="Catering Kitchen Perspective"
-                                    class="w-full h-auto" />
+                    <div class="relative h-screen">
+                        <img src="./assets/images/space-types/production/3k-units/catering-kitchen/perspective/3k-catering-perspective.webp" alt="Catering Kitchen Perspective" class="w-full h-full object-cover" />
+                        <span class="text-artist-8">Artist’s Impression</span>
+                    </div>
                 </div>
                 <div id="tab-specifications-4" class="tab-content hidden">
-                    <div class="w-full h-full content-center">
-                        <div class="mx-auto text-center">
-                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
-                        </div>
+                    <div class="h-full content-center">
+                        <h3 class="character-style-1 text-center font-normal">Please contact our appointed<br> marketing agents for more information</h3>
                     </div>
                 </div>
             </div>
@@ -714,9 +713,7 @@
     <section id="unit-popup-5" class="fixed inset-0 bg-white z-10" >
         <!-- Top Header -->
         <div class="top-header z-10 fixed top-0 right-0 p-8 pb-[20px] w-full">
-            <div
-                class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
-            </div>
+
             <div class="header-inner flex justify-between items-start relative">
                 <ul class="breadcrumb font-brandon-grotesque flex">
                     <li class="breadcrumb-item">
@@ -738,16 +735,16 @@
                 </a>
             </div>
         </div>
-        <div class="h-full content-center cetral-kitchen-wrap">
+        <div class="h-full content-center">
              <!-- Tab contents -->
              <div class="tab-contents relative">
                 <div id="tab-bare-plan-5" class="tab-content relative">
 
-                    <!-- Map image -->
+
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/space-types/production/3k-units/food-lab/bare-plan/3k_food_lab_bare_plan.webp"
+                                <img src="./assets/images/space-types/production/3k-units/food-lab/bare-plan/bare-plan-01-29.webp"
                                     alt="Food lab Bare Plan" class="w-full h-auto" />
                             </div>
                             <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
@@ -771,11 +768,11 @@
                     </div>
                 </div>
                 <div id="tab-fitted-plan-5" class="tab-content hidden">
-                    <!-- Map image -->
+
                     <div class="map-image w-[1039px] mx-auto">
                         <div class="panzoom-wrp relative panzoom-container">
                             <div class="panzoom-img">
-                                <img src="./assets/images/space-types/production/3k-units/food-lab/fitted-plan/3k_fitted_food _lab.webp" alt="Food Lab Fitted Plan"
+                                <img src="./assets/images/space-types/production/3k-units/food-lab/fitted-plan/3k-fitted-food-lab.webp" alt="Food Lab Fitted Plan"
                                     class="w-full h-auto" />
                             </div>
                             <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
@@ -799,10 +796,8 @@
                     </div>
                 </div>
                 <div id="tab-specifications-5" class="tab-content hidden">
-                    <div class="w-full h-full content-center">
-                        <div class="mx-auto text-center">
-                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
-                        </div>
+                    <div class="h-full content-center">
+                        <h3 class="character-style-1 text-center font-normal">Please contact our appointed<br> marketing agents for more information</h3>
                     </div>
                 </div>
             </div>
@@ -825,9 +820,7 @@
     <section id="unit-popup-6" class="fixed inset-0 bg-white z-10" >
         <!-- Top Header -->
         <div class="top-header z-10 fixed top-0 right-0 p-8 pb-[20px] w-full">
-            <div
-                class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,#231F20_0%,transparent_100%)] opacity-[0.23]">
-            </div>
+
             <div class="header-inner flex justify-between items-start relative">
                 <ul class="breadcrumb font-brandon-grotesque flex">
                     <li class="breadcrumb-item">
@@ -849,15 +842,15 @@
                 </a>
             </div>
         </div>
-        <div class="h-full content-center cetral-kitchen-wrap">
+        <div class="h-full content-center">
         <!-- Tab contents -->
         <div class="tab-contents relative">
             <div id="tab-bare-plan-6" class="tab-content relative">
-                <!-- Map image -->
+
                 <div class="map-image w-[1039px] mx-auto">
                     <div class="panzoom-wrp relative panzoom-container">
                         <div class="panzoom-img">
-                            <img src="./assets/images/space-types/production/3k-units/food-packaging/bare-plan/3k_unit_food_packaging_bare_plan.webp"
+                            <img src="./assets/images/space-types/production/3k-units/food-packaging/bare-plan/bare-plan-01-11.webp"
                                 alt="Food Packaging Bare Plan" class="w-full h-auto" />
                         </div>
                         <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
@@ -881,11 +874,10 @@
                 </div>
             </div>
             <div id="tab-fitted-plan-6" class="tab-content hidden">
-                <!-- Map image -->
                 <div class="map-image w-[1039px] mx-auto">
                     <div class="panzoom-wrp relative panzoom-container">
                         <div class="panzoom-img">
-                            <img src="./assets/images/space-types/production/3k-units/food-packaging/fitted-plan/3k_fitted_food_lab.webp"
+                            <img src="./assets/images/space-types/production/3k-units/food-packaging/fitted-plan/3k-fitted-food-lab.webp"
                                 alt="Food Packaging Fitted Plan" class="w-full h-auto" />
                         </div>
                         <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
@@ -909,10 +901,8 @@
                 </div>
             </div>
             <div id="tab-specifications-6" class="tab-content hidden">
-                <div class="w-full h-full content-center">
-                    <div class="mx-auto text-center">
-                        <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
-                    </div>
+                <div class="h-full content-center">
+                    <h3 class="character-style-1 text-center font-normal">Please contact our appointed<br> marketing agents for more information</h3>
                 </div>
             </div>
         </div>
@@ -943,13 +933,19 @@
 
     <!-- Scripts -->
     <script src="./assets/vendor/js/jquery.min.js"></script>
-    <script src="./assets/vendor/js/360-view.min.js"></script>
     <script src="./assets/vendor/js/panzoom.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
         jQuery(document).ready(function ($) {
+
+            // Default Bare Plan tab active
+            var $tab = $('[data-tab-target="bare-plan"]');
+            if ($tab.length) {
+                $tab.trigger('click');
+            }
+
             // When any tab is clicked
-            $(document).on("click", ".tab-menu-list li", function () {
+            $(document).on("click", ".tab-menu-list li, .tab-menu-list-vertical li", function () {
                 const target = $(this).data("tab-target");
 
                 if (target === "360-bare-plan") {
