@@ -23,7 +23,7 @@
             <ul class="breadcrumb font-brandon-grotesque">
                 <li class="breadcrumb-item current-page">Development</li>
             </ul>
-            <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
+            <a href="index.html" class="loader-false">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
             </a>
         </div>
@@ -128,7 +128,7 @@
                             <span class="text-[13px] text-white absolute top-[-25px]">View:</span>
                             <div class="flex items-center menu-list">
                                 <a href="unit-plan-comparison.html">Unit Plan Comparison</a>
-                                <a href="test-fit-plans.html">Test Fit Plans</a>
+                                <a href="test-fit-plans.html">Test-Fit Plans</a>
                             </div>
                         </div>
                     </div>
@@ -167,7 +167,7 @@
     <section class="overflow-hidden devel-wrap">
         <div class="full-carousel owl-carousel owl-theme h-screen">
             <div class="relative h-screen">
-                <video autoplay muted loop class="w-full h-full object-cover">
+                <video muted class="w-full h-full object-cover">
                     <source src="./assets/images/development/development-vid-01.mp4" type="video/mp4">
                 </video>
                 <span
@@ -175,7 +175,7 @@
                     Impression</span>
             </div>
             <div class="relative h-screen">
-                <video autoplay muted loop class="w-full h-full object-cover">
+                <video muted class="w-full h-full object-cover">
                     <source src="./assets/images/development/development-vid-02.mp4" type="video/mp4">
                 </video>
                 <span
@@ -183,7 +183,7 @@
                     Impression</span>
             </div>
             <div class="relative h-screen">
-                <video autoplay muted loop class="w-full h-full object-cover">
+                <video muted class="w-full h-full object-cover">
                     <source src="./assets/images/development/development-vid-03.mp4" type="video/mp4">
                 </video>
                 <span
@@ -191,7 +191,7 @@
                     Impression</span>
             </div>
             <div class="relative h-screen">
-                <video autoplay muted loop class="w-full h-full object-cover">
+                <video muted class="w-full h-full object-cover">
                     <source src="./assets/images/development/development-vid-04.mp4" type="video/mp4">
                 </video>
                 <span
@@ -199,7 +199,7 @@
                     Impression</span>
             </div>
             <div class="relative h-screen">
-                <video autoplay muted loop class="w-full h-full object-cover">
+                <video muted class="w-full h-full object-cover">
                     <source src="./assets/images/development/development-vid-05.mp4" type="video/mp4">
                 </video>
                 <span
@@ -223,6 +223,33 @@
     <script src="./assets/vendor/js/jquery.min.js"></script>
     <script src="./assets/vendor/js/owl.carousel.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+        var owl = $('.full-carousel');
+
+        owl.on('changed.owl.carousel', function(event) {
+            let index = event.item.index;
+
+            // Pause and reset all videos
+            owl.find('video').each(function() {
+                this.pause();
+                this.currentTime = 0;
+            });
+
+            // Play the current slide's video
+            let currentVideo = $(event.target).find('.owl-item').eq(index).find('video')[0];
+
+            if (currentVideo) {
+                currentVideo.play();
+
+                currentVideo.onended = function() {
+                    // WAIT 2 SECONDS BEFORE GOING NEXT
+                    setTimeout(function() {
+                        owl.trigger('next.owl.carousel');
+                    }, 500); // 2000ms = 2 seconds
+                };
+            }
+        });
+    </script>
 </body>
 
 </html>

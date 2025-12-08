@@ -1,14 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="91" viewBox="0 0 98 91">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="Rectangle_739" data-name="Rectangle 739" width="82.623" height="53.461" fill="none" stroke="#eb3b1d" stroke-width="2.5"/>
-    </clipPath>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
   <g id="menu-logistic" transform="translate(-21)">
-    <rect id="Rectangle_737" data-name="Rectangle 737" width="98" height="91" transform="translate(21)" fill="#fff" opacity="0"/>
-    <g id="Group_424" data-name="Group 424" transform="translate(28.689 18.77)">
-      <g id="Group_418" data-name="Group 418" transform="translate(0 0)" clip-path="url(#clip-path)">
-        <path id="Path_188" data-name="Path 188" d="M20.47,36.71a8.005,8.005,0,0,1,7.989,7.465c.012.179.019.36.019.543A8.009,8.009,0,1,1,20.47,36.71Zm45.694,0a8.008,8.008,0,1,1-8.008,8.008A8.009,8.009,0,0,1,66.165,36.71ZM.3,44.718H12.46m61.715,0h7.713m-27.147,0h3.415m23.732,0V29.56m0,0L72.6,14.87M54.741,10.4h9.921M81.888,29.56H62.03V16.71H73.768m3.993,22.923h4.128M46.413.3V44.718M63.193,10.4a10.62,10.62,0,0,1,9.985,5.38M.3,21.436H24.032M7.541,10.868H31.273m-2.794,33.85H54.741V.3H14.783" transform="translate(0.217 0.218)" fill="none" stroke="#eb3b1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <rect id="Rectangle_737" data-name="Rectangle 737" width="60" height="60" transform="translate(21)" fill="#fff" opacity="0"/>
+    <g id="Group_424" data-name="Group 424" transform="translate(23.259 12.036)">
+      <g id="Group_1020" data-name="Group 1020" transform="translate(-0.672 -0.672)">
+        <path id="Path_188" data-name="Path 188" d="M44.525,36.573a6.44,6.44,0,0,1-6.342-5.37H20.226a6.431,6.431,0,0,1-12.685,0H.359a1.059,1.059,0,0,1,0-2.118H7.541a6.43,6.43,0,0,1,12.684,0h10V1.418H10.071a1.059,1.059,0,1,1,0-2.118H36.865A1.059,1.059,0,0,1,37.924.359V6.071H42.5A8.181,8.181,0,0,1,50.142,10.2l.355.562q.022.033.043.067L55.955,19.4a1.056,1.056,0,0,1,.173.6V30.144A1.059,1.059,0,0,1,55.068,31.2h-4.2A6.441,6.441,0,0,1,44.525,36.573Zm0-10.74a4.311,4.311,0,1,0,4.312,4.311A4.316,4.316,0,0,0,44.525,25.833Zm-30.641,0A4.311,4.311,0,1,0,18.2,30.144c0-.094,0-.19-.01-.293a4.245,4.245,0,0,0-.6-1.911A4.334,4.334,0,0,0,13.884,25.833Zm36.984,3.252h3.141V27.793H52.3a1.059,1.059,0,1,1,0-2.118h1.709V21.039H41.753a1.059,1.059,0,0,1-1.059-1.059V11.363A1.059,1.059,0,0,1,41.753,10.3h5.885a6.11,6.11,0,0,0-4.171-2.115H37.924v20.9h.259a6.431,6.431,0,0,1,12.685,0Zm-18.528,0h3.466V1.418H32.34ZM42.812,18.92H53.146l-4.107-6.5H42.812ZM16.273,15.591H.359a1.059,1.059,0,0,1,0-2.118H16.273a1.059,1.059,0,1,1,0,2.118ZM21.128,8.5H5.215a1.059,1.059,0,1,1,0-2.118H21.128a1.059,1.059,0,1,1,0,2.118Z" transform="translate(0.7 0.7)" fill="#eb3b1d"/>
       </g>
     </g>
   </g>

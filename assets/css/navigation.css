@@ -99,6 +99,7 @@
     font-weight: 700;
     color: var(--color-eb3b1d);
     color: rgba(235, 59, 29, 0.7);
+    text-shadow: 0 0 5px rgb(0 0 0 / 32%);
 }
 .top-header .breadcrumb .breadcrumb-item:not(.current-page):after {
     display: inline-block;
@@ -122,4 +123,18 @@
 }
 .top-header .breadcrumb sup {
     font-size: 60%;
+}
+.menu-item[data-menu="value"] {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+a[href="food-operations.html"] {
+    display: none;
+}
+a[href="space-types.html"] {
+    border-right: none;
+}
+#menuContent.pt-4 {
+    padding-top: 9px !important;
+    padding-bottom: 28px !important;
 }

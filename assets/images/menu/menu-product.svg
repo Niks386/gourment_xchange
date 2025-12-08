@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="91" viewBox="0 0 98 91">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
   <defs>
     <clipPath id="clip-path">
-      <rect id="Rectangle_717" data-name="Rectangle 717" width="63.646" height="55.933" fill="none" stroke="#707070" stroke-width="3"/>
+      <rect id="Rectangle_717" data-name="Rectangle 717" width="51.888" height="45.6" fill="none" stroke="#707070" stroke-width="2"/>
     </clipPath>
   </defs>
   <g id="menu-product" transform="translate(-21)">
-    <rect id="Rectangle_737" data-name="Rectangle 737" width="98" height="91" transform="translate(21)" fill="#fff" opacity="0"/>
-    <g id="Group_450" data-name="Group 450" transform="translate(38.176 17.535)">
+    <rect id="Rectangle_737" data-name="Rectangle 737" width="60" height="60" transform="translate(21)" fill="#fff" opacity="0"/>
+    <g id="Group_450" data-name="Group 450" transform="translate(25.056 7.2)">
       <g id="Group_347" data-name="Group 347" transform="translate(0 0)" clip-path="url(#clip-path)">
-        <path id="Path_142" data-name="Path 142" d="M.714,48.933V7.465A6.75,6.75,0,0,1,7.463.714h2.894V43.145H6.5a5.786,5.786,0,0,0,0,11.573m0,0H62.431V8.429H10.357" transform="translate(0.251 0.251)" fill="none" stroke="#eb3b1d" stroke-width="3"/>
-        <path id="Path_143" data-name="Path 143" d="M32.345,42.993V31.421m-17.357-1.93H26.56m13.5-5.786h0a9.643,9.643,0,0,1-9.643-9.643V12.133H14.988v30.86H49.7V12.133H40.061Z" transform="translate(5.264 4.261)" fill="none" stroke="#eb3b1d" stroke-width="3"/>
+        <path id="Path_142" data-name="Path 142" d="M.714,40.025V6.217a5.5,5.5,0,0,1,5.5-5.5h2.36V35.307H5.431a4.717,4.717,0,0,0,0,9.435m0,0h45.6V7H8.576" transform="translate(0.073 0.073)" fill="none" stroke="#eb3b1d" stroke-width="2"/>
+        <path id="Path_143" data-name="Path 143" d="M29.139,37.292V27.858M14.988,26.285h9.434m11.007-4.717h0a7.861,7.861,0,0,1-7.862-7.862V12.133H14.988V37.292h28.3V12.133H35.429Z" transform="translate(1.522 1.232)" fill="none" stroke="#eb3b1d" stroke-width="2"/>
       </g>
     </g>
   </g>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mixed Production | Gourmet Xchange</title>
+    <meta name="description" content="Mixed Production | Gourmet Xchange" />
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="stylesheet" href="./assets/css/navigation.css" />
+    <link rel="stylesheet" href="./assets/vendor/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/unit-compare.css" />
+
+</head>
+
+<body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
+    <!-- Top Header -->
+    <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
+        <div class="header-inner flex justify-between items-start relative">
+            <ul class="breadcrumb font-brandon-grotesque flex">
+                <li class="breadcrumb-item"><a href="product.html">Product</a></li>
+                <li class="breadcrumb-item"><a href="space-types.html">Space Types</a></li>
+                <li class="breadcrumb-item current-page">Mixed Production</li>
+            </ul>
+            <a href="index.html" class="loader-false"><img src="./assets/images/main-logo.svg" alt="Logo" /></a>
+        </div>
+    </section>
+
+    <!-- Main navigation -->
+    <section class="navigation-wrap">
+        <div id="main-menu-overlay" class="overlay-menu"></div>
+        <!-- Menu Button -->
+        <button id="menuToggle" class="fixed bottom-[60px] left-[43px] transition-all duration-300 z-20 menu-closed">
+            <div id="menuIcon">
+                <img src="assets/images/menu/menu-icon-close.svg" alt="Menu Icon">
+            </div>
+        </button>
+        <div id="main-menu"
+            class="fixed bottom-[125px] w-full px-[108px] z-20 flex items-center  transition-all duration-500 ease-in-out transform origin-bottom opacity-100 menu-hidden">
+            <!-- Menu Content -->
+            <div id="menuContent" class="bg-white-80 rounded-full rounded-bl-none pt-4 px-20 pb-[33px] flex gap-4 w-full">
+                <div class="flex items-center justify-between w-full">
+                    <div class="menu-item text-center" data-menu="development">
+                        <a href="development.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-development.svg" alt="Development">
+                            <span class="menu-title">Development</span>
+                        </a>
+                        <button class="menu-plus" data-menu="development">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="location">
+                        <a href="location.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-location.svg" alt="Location">
+                            <span class="menu-title">Location</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="product">
+                        <a href="product.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-product.svg" alt="Product">
+                            <span class="menu-title">Product</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-product">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="logistics">
+                        <a href="logistic-efficiency.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-logistics.svg" alt="Logistics Efficiency">
+                            <span class="menu-title">Logistics Efficiency</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="facilities">
+                        <a href="facilities.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-facilities.svg" alt="Facilities">
+                            <span class="menu-title">Facilities</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="sustainability">
+                        <a href="sustainability.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-sustainability.svg" alt="Sustainability">
+                            <span class="menu-title">Sustainability</span>
+                        </a>
+                    </div>
+                    <div class="menu-item text-center" data-menu="value">
+                        <a href="javascript:void(0)" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-valueadded.svg" alt="Value Added">
+                            <span class="menu-title">Value Added</span>
+                        </a>
+                        <button class="menu-plus" data-menu="plus-value">
+                            <img src="./assets/images/menu/sub-menu-icon.svg" alt="Plus Icon">
+                        </button>
+                    </div>
+                    <div class="menu-item text-center" data-menu="gallery">
+                        <a href="gallery.html" class="flex flex-col items-center gap-[10px]">
+                            <img src="./assets/images/menu/menu-gallery.svg" alt="Gallery">
+                            <span class="menu-title">Gallery</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Submenus content -->
+                <div id="submenu-development" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <a href="introduction.html">Introduction</a>
+                            <a href="key-highlights.html">Key Highlights</a>
+                            <a href="track-record.html">Track Record</a>
+                            <a href="javascript:void(0)" class="brochure-pp">E-Brochure</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-product" class="submenu absolute bottom-[-93px]">
+                    <div class="w-full flex">
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[115px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">Select product by:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="the-xchange.html">The Xchange</a>
+                                <a href="heritage-terrace.html">Heritage Terrace</a>
+                                <a href="space-types.html">Space Types</a>
+                                <a href="food-operations.html">Food Operations</a>
+                            </div>
+                        </div>
+                        <div class="bg-white-80 rounded-full rounded-tl-none ml-[60px]">
+                            <span class="text-[13px] text-white absolute top-[-25px]">View:</span>
+                            <div class="flex items-center menu-list">
+                                <a href="unit-plan-comparison.html">Unit Plan Comparison</a>
+                                <a href="test-fit-plans.html">Test-Fit Plans</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="submenu-value" class="submenu absolute bottom-[-93px]">
+                    <div class="bg-white-80 rounded-full rounded-tl-none">
+                        <div class="flex items-center menu-list">
+                            <div class="flex items-center menu-list">
+                                <a href="javascript:void(0)">Food Consultants</a>
+                                <a href="javascript:void(0)">Logistics Provider</a>
+                                <a href="javascript:void(0)">Equipment Suppliers</a>
+                                <a href="javascript:void(0)">R&d Services</a>
+                                <a href="javascript:void(0)">Renovation Contractors</a>
+                                <a href="javascript:void(0)">Other Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN SECTION -->
+    <section class="w-full h-full overflow-hidden">
+        <div class="tab-contents h-full">
+            <!-- 1st STOREY TAB -->
+            <div id="tab-storey-plan-tb1st" class="tab-content h-full">
+                <div class="tab-inner-content h-full ">
+                    <div id="tb1st-bare-plan" class="inner-content h-full content-center">
+                        <div class="img-wrap w-[1130px] mx-auto mt-14">
+                            <div class="panzoom-wrp relative panzoom-container">
+                                <div class="panzoom-img">
+                                    <img src="assets/images/product/heritage-terrace/stack-01/stack-01-1st-storey.webp" alt="Bare plan" class="w-full h-auto" />
+                                </div>
+                                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
+                                    <span class="zoom-in-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                    <span class="zoom-out-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tb1st-fitted-plan" class="inner-content h-full content-center hidden">
+                        <div class="mx-auto text-center">
+                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                        </div>
+                    </div>
+                    <div id="tb1st-cs-sct" class="inner-content h-full content-center hidden">
+                        <div class="img-wrap w-[1300px] mx-auto">
+                            <div class="panzoom-wrp relative panzoom-container">
+                                <div class="panzoom-img">
+                                    <img src="assets/images/product/heritage-terrace/stack-01/cross-section/section_stack-01_02_04_06_08.webp"
+                                        alt="Cross Section" class="w-full h-auto" />
+                                </div>
+                                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
+                                    <span class="zoom-in-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                    <span class="zoom-out-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tb1st-cs-sct-mezzanine" class="inner-content content-center h-full hidden">
+                        <div class="img-wrap w-[1300px] mx-auto">
+                            <div class="panzoom-wrp relative panzoom-container">
+                                <div class="panzoom-img">
+                                    <img src="assets/images/product/heritage-terrace/stack-03/cross-section/section-stack-03_05_07.webp"
+                                        alt="Cross Section Mezzanine" class="w-full h-auto" />
+                                </div>
+                                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
+                                    <span class="zoom-in-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                    <span class="zoom-out-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tb1st-perspective" class="inner-content h-full content-center hidden">
+                        <div class="mx-auto text-center">
+                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT TABS for 1st storey -->
+                <div class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10">
+                    <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
+                        <ul class="flex items-center right-tab-menu w-max">
+                            <li class="tab-btn" data-target="tb1st-bare-plan">Bare Plan</li>
+                            <!-- <li class="tab-btn" data-target="tb1st-fitted-plan">Fitted Plan</li> -->
+                            <li class="tab-btn" data-target="tb1st-cs-sct">Cross Section 1</li>
+                            <li class="tab-btn" data-target="tb1st-cs-sct-mezzanine">Cross Section 2 (M)</li>
+                            <!-- <li class="tab-btn pointer-events-none opacity-25" data-target="tb1st-perspective">Perspective</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd STOREY TAB -->
+            <div id="tab-storey-plan-tb2nd" class="tab-content h-full hidden">
+                <div class="tab-inner-content h-full">
+                    <div id="tb2nd-bare-plan" class="inner-content h-full content-center">
+                        <div class="img-wrap w-[1130px] mx-auto mt-14">
+                            <div class="panzoom-wrp relative panzoom-container">
+                                <div class="panzoom-img">
+                                    <img src="assets/images/space-types/mixed-production/2nd-3rd-storey/bare-plan/stack-2nd-3rd-storey-bare-plan.webp"
+                                        alt="2nd & 3rd Storey Plan Bare plan"
+                                        class="w-full h-auto" />
+                                </div>
+                                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
+                                    <span class="zoom-in-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                    <span class="zoom-out-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tb2nd-fitted-plan" class="inner-content h-full content-center hidden">
+                        <div class="mx-auto text-center">
+                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                        </div>
+                    </div>
+                    <div id="tb2nd-cs-sct" class="inner-content h-full content-center hidden">
+                        <div class="img-wrap w-[1300px] mx-auto">
+                            <div class="panzoom-wrp relative panzoom-container">
+                                <div class="panzoom-img">
+                                    <img src="assets/images/space-types/mixed-production/2nd-3rd-storey/cross-section/stack-2nd-3rd-storey-cross-section.webp"
+                                        alt="2nd & 3rd Storey Cross Section" class="w-full h-auto" />
+                                </div>
+                                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
+                                    <span class="zoom-in-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                    <span class="zoom-out-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tb2nd-cs-sct-mezzanine" class="inner-content h-full content-center hidden">
+                        <div class="img-wrap w-[1300px] mx-auto">
+                            <div class="panzoom-wrp relative panzoom-container">
+                                <div class="panzoom-img">
+                                    <img src="assets/images/space-types/mixed-production/2nd-3rd-storey/cross-section-mezzanine/stack-2nd-3rd-storey-cross-mezzanie.webp"
+                                    alt="2nd & 3rd Storey Cross Section Mezzanine" class="w-full h-auto" />
+                                </div>
+                                <div class="zoom-btns fixed right-8 top-1/2 -translate-y-1/2 z-10">
+                                    <span class="zoom-in-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                    <span class="zoom-out-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tb2nd-perspective" class="inner-content h-full content-center hidden">
+                        <div class="mx-auto text-center">
+                            <p class="font-brandon text-8xl font-bold uppercase opacity-30">Placeholder</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT TABS for 2nd storey -->
+                <div class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10">
+                    <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
+                        <ul class="flex items-center right-tab-menu w-max">
+                            <li class="tab-btn" data-target="tb2nd-bare-plan">Bare Plan</li>
+                            <!-- <li class="tab-btn" data-target="tb2nd-fitted-plan">Fitted Plan</li> -->
+                            <li class="tab-btn" data-target="tb2nd-cs-sct">Cross Section 1</li>
+                            <li class="tab-btn" data-target="tb2nd-cs-sct-mezzanine">Cross Section 2 (M)</li>
+                            <!-- <li class="tab-btn pointer-events-none opacity-25" data-target="tb2nd-perspective">Perspective</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN TOP TABS -->
+        <div class="bottom-menu fixed top-24 left-6">
+            <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
+                <ul class="flex items-center tab-menu-list">
+                    <li data-tab-target="storey-plan-tb1st">1st Storey Plan</li>
+                    <li data-tab-target="storey-plan-tb2nd">2<sup>nd</sup> & 3<sup>nd</sup> storey Plan</li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-13-normal fixed bottom-2 left-1/2 -translate-x-1/2">Plans are not drawn to scale</p>
+    </section>
+
+    <section id="eBrochure-pp" class="fixed inset-0 bg-white z-20">
+        <button id="close-brochure" class="absolute top-4 right-4 flex justify-center items-center">
+            <svg tabindex="-1" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m19.5 4.5-15 15M4.5 4.5l15 15" stroke="#ffffff" stroke-width="3" fill="none"/>
+            </svg>
+        </button>
+        <iframe src="https://online.anyflip.com/wljyx/uwbg/mobile/index.html" width="100%" height="100%"
+            frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./assets/vendor/js/jquery.min.js"></script>
+    <script src="./assets/vendor/js/panzoom.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+
+            // === DEFAULT LOAD (1st storey + 1st inner tab) ===
+            $("#tab-storey-plan-tb1st").removeClass("hidden");
+            $("#tb1st-bare-plan").show();
+            $("#tab-storey-plan-tb1st .right-tab-menu .tab-btn").first().addClass("tab-btn-active");
+
+
+
+            // === RIGHT TAB CLICK (nested tab switching) ===
+            $(document).on("click", ".right-tab-menu .tab-btn", function () {
+
+                const target = $(this).data("target");
+                const $section = $(this).closest(".tab-content");
+
+                $section.find(".right-tab-menu .tab-btn").removeClass("tab-btn-active");
+                $(this).addClass("tab-btn-active");
+
+                $section.find(".inner-content").hide();
+                $("#" + target).fadeIn(150);
+            });
+
+
+
+            // === WHEN MAIN TAB CHANGES (from main.js) ===
+            $(document).on("click", ".tab-menu-list li", function () {
+
+                const mainTarget = $(this).data("tab-target");  // e.g., storey-plan-tb2nd
+                const fullID = "tab-" + mainTarget;             // convert to tab-storey-plan-tb2nd
+
+                // Show the selected main content block
+                $(".tab-content").addClass("hidden");
+                $("#" + fullID).removeClass("hidden");
+
+                // ---- AUTO ACTIVATE FIRST INNER TAB ----
+                const $section = $("#" + fullID);
+
+                const $firstInnerTab = $section.find(".right-tab-menu .tab-btn").first();
+                const firstTarget = $firstInnerTab.data("target");
+
+                // Remove all active classes
+                $section.find(".right-tab-menu .tab-btn").removeClass("tab-btn-active");
+
+                // Add active to first item
+                $firstInnerTab.addClass("tab-btn-active");
+
+                // Show first content
+                $section.find(".inner-content").hide();
+                $("#" + firstTarget).show();
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

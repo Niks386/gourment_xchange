@@ -295,6 +295,13 @@ jQuery(document).ready(function ($) {
     $(document).on('click', '.loader-false', function () {
         localStorage.setItem('fromLoaderFalse', 'yes');
     });
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('loader') === 'true') {
+        localStorage.removeItem('fromLoaderFalse');
+        console.log("localStorage removed because loader=true");
+    }
+
 });
 
 $(function () {
