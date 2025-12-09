@@ -61,6 +61,14 @@
         let activeStorey = 's1';
         let activeStack = null;
 
+        // ⭐ AUTO-GENERATE STACK PAGE LINK
+        function getStackPageLink(stack) {
+            if (!stack || !stack.label) return 'stack1.html';
+            const num = stack.label.replace(/\D+/g, '');
+            const cleanNum = parseInt(num, 10);
+            return `stack${cleanNum}.html`;
+        }
+
         function updateStackVisuals(stack) {
             if (!stack) return;
             const base = `./assets/images/product/heritage-terrace/${stack.folder}/`;
@@ -79,6 +87,9 @@
 
             const cleanLabel = stack.label.replace(/^Stack\s0*/, 'Stack 0');
             $('.breadcrumb-item.current-page').text(cleanLabel);
+
+            // UPDATE CHANGE STOREY BUTTON URL
+            $('.back-storey').attr('href', getStackPageLink(stack));
         }
 
         function showTab(target) {

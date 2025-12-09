@@ -39,7 +39,11 @@
         <!-- Menu Button -->
         <button id="menuToggle" class="fixed bottom-[60px] left-[43px] transition-all duration-300 z-20 menu-closed">
             <div id="menuIcon">
-                <img src="assets/images/menu/menu-icon-close.svg" alt="Menu Icon">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </button>
         <div id="main-menu"
@@ -158,7 +162,15 @@
     <!-- Full screen carousel -->
     <section class="overflow-hidden h-full content-center">
         <!-- Tab contents -->
-        <div class="tab-contents relative">
+        <div class="tab-contents relative h-full content-center">
+            <div id="tab-360-bare" class="tab-content h-full">
+                <iframe src="https://projects.blanct.com/capitaland_aljunied/3k_catering_bare/" width="100%" height="100%"
+                    style="border:0; overflow:hidden;" allowfullscreen></iframe>
+            </div>
+            <div id="tab-360-fitted" class="tab-content h-full">
+                <iframe src="https://projects.blanct.com/capitaland_aljunied/3k_catering/" width="100%" height="100%"
+                    style="border:0; overflow:hidden;" allowfullscreen></iframe>
+            </div>
             <div id="tab-bare-plan" class="tab-content relative">
                 <div class="map-image w-[1220px] mx-auto">
                     <div class="panzoom-wrp relative panzoom-container">
@@ -843,6 +855,8 @@
             class="bottom-menu fixed bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 transition-all duration-500 ease-in-out bottom-menu-active">
             <div class="bg-white border border-color-dcddde rounded-full rounded-tl-none overflow-hidden">
                 <ul class="flex items-center justify-evenly tab-menu-list w-max tft-tab">
+                    <li class="" data-tab-target="360-bare"> 360° Bare </li>
+                    <li class="" data-tab-target="360-fitted"> 360° Fitted </li>
                     <li class="" data-tab-target="bare-plan"> Bare Plan </li>
                     <li class="" data-tab-target="fitted-plan">Fitted plan</li>
                     <li class="" data-tab-target="specifications">Specifications </li>
