@@ -124,3 +124,7 @@
 		transform: rotate(360deg);
 	}
 }
+.link-disabled {
+	pointer-events: none;
+	opacity: 0.35;
+}

@@ -13,12 +13,16 @@
     <link rel="stylesheet" href="./assets/vendor/css/animate.min.css">
     <link rel="stylesheet" href="./assets/vendor/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/vendor/css/owl.theme.default.min.css">
+    <style>
+        .top-header.linear-full:before {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body class="overflow-hidden animate__animated animate__fadeIn animate__slow">
     <!-- Top Header -->
-    <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full">
-
+    <section class="top-header fixed top-0 right-0 z-10 p-8 pb-[20px] w-full linear-full">
         <div class="header-inner flex justify-between items-start relative">
             <ul class="breadcrumb font-brandon-grotesque flex">
                 <li class="breadcrumb-item">
@@ -26,8 +30,9 @@
                 </li>
                 <li class="breadcrumb-item current-page">Track Record</li>
             </ul>
-            <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
-                <img src="./assets/images/main-logo.svg" alt="Logo">
+            <a href="index.html" class="loader-false">
+                <img src="./assets/images/main-logo-white.svg" alt="Logo" id="logo-white">
+                <img src="./assets/images/main-logo.svg" alt="Logo" id="logo-black">
             </a>
         </div>
     </section>
@@ -38,7 +43,11 @@
         <!-- Menu Button -->
         <button id="menuToggle" class="fixed bottom-[60px] left-[43px] transition-all duration-300 z-20 menu-closed">
             <div id="menuIcon">
-                <img src="assets/images/menu/menu-icon-close.svg" alt="Menu Icon">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </button>
         <div id="main-menu"
@@ -131,7 +140,7 @@
                             <span class="text-[13px] text-white absolute top-[-25px]">View:</span>
                             <div class="flex items-center menu-list">
                                 <a href="unit-plan-comparison.html">Unit Plan Comparison</a>
-                                <a href="test-fit-plans.html">Test Fit Plans</a>
+                                <a href="test-fit-plans.html">Test-Fit Plans</a>
                             </div>
                         </div>
                     </div>
@@ -218,15 +227,15 @@
                         <div class="grid grid-cols-3 gap-10">
                             <div class="text-center">
                                 <img src="./assets/images/track-record/foodxchange.webp" alt="foodxchange">
-                                <p class="text-20-normal mt-2">Foodxchange</p>
+                                <p class="text-20-normal mt-2">FoodXchange @ Admiralty</p>
                             </div>
                             <div class="text-center">
                                 <img src="./assets/images/track-record/foodaxis.webp" alt="foodaxis">
-                                <p class="text-20-normal mt-2">Foodaxis</p>
+                                <p class="text-20-normal mt-2">FoodAxis @ Senoko</p>
                             </div>
                             <div class="text-center">
                                 <img src="./assets/images/track-record/senoko.webp" alt="senoko">
-                                <p class="text-20-normal mt-2">Senoko</p>
+                                <p class="text-20-normal mt-2">2 Senoko South Road</p>
                             </div>
                         </div>
                     </div>
@@ -262,6 +271,31 @@
     <script src="./assets/vendor/js/jquery.min.js"></script>
     <script src="./assets/vendor/js/owl.carousel.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+        var owl = $('.full-carousel');
+        owl.on('changed.owl.carousel', function (event) {
+            let relativeIndex = event.item.index - event.relatedTarget._clones.length / 2;
+
+            if (relativeIndex < 0) {
+                relativeIndex = event.item.count + relativeIndex;
+            }
+
+            console.log("Actual Slide =", relativeIndex);
+
+            // First 3 slides → white
+            if (relativeIndex <= 2) {
+                $('.top-header').addClass('linear-full');
+                $('#logo-white').show();
+                $('#logo-black').hide();
+            }
+            // Other slides → black
+            else {
+                $('.top-header').removeClass('linear-full');
+                $('#logo-white').hide();
+                $('#logo-black').show();
+            }
+        });
+    </script>
 </body>
 
 </html>

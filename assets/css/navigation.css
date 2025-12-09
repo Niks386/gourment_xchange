@@ -35,6 +35,44 @@
     left: 30px;
     bottom: 30px;
 }
+#menuToggle svg {
+    transition: all 0.5s ease;
+}
+#menuToggle.menu-open svg {
+    transform: rotate(-90deg);
+}
+.hamburger {
+    width: 65px;
+    height: 65px;
+    border-radius: 100px 100px 0 100px;
+    cursor: pointer;
+    background-color: var(--color-eb3b1d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: all 0.5s ease;
+}
+#menuToggle.menu-open .hamburger {
+    transform: rotate(-90deg);
+}
+.hamburger .bar {
+    display: block;
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    transition: all 300ms ease-in-out;
+}
+#menuToggle.menu-open .hamburger .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+#menuToggle.menu-open .hamburger .bar:nth-child(2) {
+    opacity: 0;
+}
+#menuToggle.menu-open .hamburger .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
 .submenu {
     opacity: 0;
     pointer-events: none;
@@ -99,6 +137,7 @@
     font-weight: 700;
     color: var(--color-eb3b1d);
     color: rgba(235, 59, 29, 0.7);
+    text-shadow: 0 0 5px rgb(0 0 0 / 32%);
 }
 .top-header .breadcrumb .breadcrumb-item:not(.current-page):after {
     display: inline-block;
@@ -122,4 +161,18 @@
 }
 .top-header .breadcrumb sup {
     font-size: 60%;
+}
+.menu-item[data-menu="value"] {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+a[href="food-operations.html"] {
+    display: none;
+}
+a[href="space-types.html"] {
+    border-right: none;
+}
+#menuContent.pt-4 {
+    padding-top: 9px !important;
+    padding-bottom: 28px !important;
 }

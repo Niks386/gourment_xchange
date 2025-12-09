@@ -68,43 +68,36 @@ jQuery(document).ready(function ($) {
     // });
 
     // Menu open close functionality
-    // Determine if .home-menu exists to set initial menu state
     let isOpen = $('#main-menu').hasClass('home-menu');
 
-    // Set menu state on load based on isOpen
-    $('#main-menu').toggleClass('menu-hidden', !isOpen);
-    $('#menuToggle').toggleClass('menu-open', isOpen);
-    $('#menuToggle').toggleClass('menu-closed', !isOpen);
-    $('#menuIcon').html(
-        isOpen
-            ? '<img src="assets/images/menu/menu-icon-close.svg" alt="Menu Icon">'
-            : '<img src="assets/images/menu/menu-icon-open.svg" alt="Menu Icon">'
-    );
 
+    // Set initial state
+    updateMenuState(isOpen);
+
+    // Toggle menu on click
     $('#menuToggle').on('click', function () {
         isOpen = !isOpen;
+        updateMenuState(isOpen);
 
-        // Toggle class for show/hide menu
-        $('#main-menu').toggleClass('menu-hidden', !isOpen);
-        $('.bottom-menu').toggleClass('bottom-menu-active');
-        $('#main-menu-overlay').toggleClass('active-menu-overlay');
-
-        // Toggle class for menuToggle button itself
-        $('#menuToggle').toggleClass('menu-open', isOpen);
-        $('#menuToggle').toggleClass('menu-closed', !isOpen);
-
-        // Change icon between hamburger and close
-        const iconHtml = isOpen
-            ? '<img src="assets/images/menu/menu-icon-close.svg" alt="Menu Icon">'
-            : '<img src="assets/images/menu/menu-icon-open.svg" alt="Menu Icon">';
-
-        $('#menuIcon').html(iconHtml);
-
-        //  If main menu is closed → close all submenus & overlay
         if (!isOpen) {
             closeAllSubmenus();
         }
     });
+
+    function updateMenuState(isOpen) {
+
+        // Main menu visibility
+        $('#main-menu').toggleClass('menu-hidden', !isOpen);
+        $('#main-menu-overlay').toggleClass('active-menu-overlay', isOpen);
+
+        // Menu toggle button state
+        $('#menuToggle').toggleClass('menu-open', isOpen);
+        $('#menuToggle').toggleClass('menu-closed', !isOpen);
+        $('.bottom-menu').toggleClass('bottom-menu-active', !isOpen);
+
+        // Hamburger animation
+        $('.hamburger').toggleClass('hamburger-open', isOpen);
+    }
 
     // Menu submenu functionality
     $('.menu-plus').on('click', function (e) {
@@ -295,6 +288,13 @@ jQuery(document).ready(function ($) {
     $(document).on('click', '.loader-false', function () {
         localStorage.setItem('fromLoaderFalse', 'yes');
     });
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('loader') === 'true') {
+        localStorage.removeItem('fromLoaderFalse');
+        console.log("localStorage removed because loader=true");
+    }
+
 });
 
 $(function () {

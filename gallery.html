@@ -22,7 +22,7 @@
             <ul class="breadcrumb font-brandon-grotesque flex">
                 <li class="breadcrumb-item current-page">Gallery</li>
             </ul>
-            <a href="index.html" class="loader-false animate__animated animate__fadeIn animate__slow">
+            <a href="index.html" class="loader-false">
                 <img src="./assets/images/main-logo.svg" alt="Logo">
             </a>
         </div>
@@ -34,7 +34,11 @@
         <!-- Menu Button -->
         <button id="menuToggle" class="fixed bottom-[60px] left-[43px] transition-all duration-300 z-20 menu-closed">
             <div id="menuIcon">
-                <img src="assets/images/menu/menu-icon-close.svg" alt="Menu Icon">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </button>
         <div id="main-menu"
@@ -127,7 +131,7 @@
                             <span class="text-[13px] text-white absolute top-[-25px]">View:</span>
                             <div class="flex items-center menu-list">
                                 <a href="unit-plan-comparison.html">Unit Plan Comparison</a>
-                                <a href="test-fit-plans.html">Test Fit Plans</a>
+                                <a href="test-fit-plans.html">Test-Fit Plans</a>
                             </div>
                         </div>
                     </div>
@@ -259,8 +263,9 @@
                             class="grid grid-cols-4 gap-5 w-full mx-[140px] pr-10 overflow-y-auto max-h-[775px] custom-scrollbar">
                             <!-- 360 model 1-->
                             <div class="relative">
-                                <img src="./assets/images/gallery/perspthumb-3.webp" alt="video poster image"
+                                <img src="./assets/images/gallery/360thumb-1.webp" alt="video poster image"
                                     class="rounded-br w-full h-auto">
+                                    <p class="absolute bottom-5 right-5 text-artist-9">Artist’s Impression</p>
                                 <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                     data-fancybox="" data-src="#360ipms1">
                                     <img src="./assets/images/gallery/icon-360.svg" class="img-fluid w-full h-[91px]"
@@ -270,8 +275,9 @@
 
                             <!-- 360 model 2-->
                             <div class="relative">
-                                <img src="./assets/images/gallery/perspthumb-1.webp" alt="video poster image"
+                                <img src="./assets/images/gallery/360thumb-2.webp" alt="video poster image"
                                     class="rounded-br w-full h-auto">
+                                    <p class="absolute bottom-5 right-5 text-artist-9">Artist’s Impression</p>
                                 <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                     data-fancybox href="./assets/images/gallery/v01-hero.webp" data-src="#360ipms2">
                                     <img src="./assets/images/gallery/icon-360.svg" class="img-fluid w-full h-[91px]"
@@ -281,8 +287,9 @@
 
                             <!-- 360 model 3-->
                             <div class="relative">
-                                <img src="./assets/images/gallery/perspthumb-2.webp" alt="video poster image"
+                                <img src="./assets/images/gallery/360thumb-3.webp" alt="video poster image"
                                     class="rounded-br w-full h-auto">
+                                    <p class="absolute bottom-5 right-5 text-artist-9">Artist’s Impression</p>
                                 <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                     data-fancybox href="./assets/images/gallery/v01-hero-03.webp" data-src="#360ipms3">
                                     <img src="./assets/images/gallery/icon-360.svg" class="img-fluid w-full h-[91px]"
@@ -292,8 +299,9 @@
 
                             <!-- 360 model 4-->
                             <div class="relative">
-                                <img src="./assets/images/gallery/perspthumb-4.webp" alt="video poster image"
+                                <img src="./assets/images/gallery/360thumb-4.webp" alt="video poster image"
                                     class="rounded-br w-full h-auto">
+                                    <p class="absolute bottom-5 right-5 text-artist-9">Artist’s Impression</p>
                                 <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                                     data-fancybox href="./assets/images/gallery/v03_block-a-hero-02-option.webp" data-src="#360ipms4">
                                     <img src="./assets/images/gallery/icon-360.svg" class="img-fluid w-full h-[91px]"
@@ -303,10 +311,11 @@
 
                             <!-- 360 model 5-->
                             <div class="relative">
-                                <img src="./assets/images/gallery/perspthumb-5.webp" alt="video poster image"
+                                <img src="./assets/images/gallery/360thumb-5.webp" alt="video poster image"
                                     class="rounded-br w-full h-auto">
+                                    <p class="absolute bottom-5 right-5 text-artist-9">Artist’s Impression</p>
                                 <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                                    data-fancybox href="./assets/images/gallery/v04_block-a-street-view-01.webp">
+                                    data-fancybox href="./assets/images/gallery/v04_block-a-street-view-01.webp" data-src="#360ipms5">
                                     <img src="./assets/images/gallery/icon-360.svg" class="img-fluid w-full h-[91px]"
                                         alt="video gallery1">
                                 </span>
@@ -314,10 +323,11 @@
 
                             <!-- 360 model 6-->
                             <div class="relative">
-                                <img src="./assets/images/gallery/perspthumb-6.webp" alt="video poster image"
+                                <img src="./assets/images/gallery/360thumb-6.webp" alt="video poster image"
                                     class="rounded-br w-full h-auto">
+                                    <p class="absolute bottom-5 right-5 text-artist-9">Artist’s Impression</p>
                                 <span class="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                                    data-fancybox href="./assets/images/gallery/v05_showroom_01.webp">
+                                    data-fancybox href="./assets/images/gallery/v05_showroom_01.webp" data-src="#360ipms6">
                                     <img src="./assets/images/gallery/icon-360.svg" class="img-fluid w-full h-[91px]"
                                         alt="video gallery1">
                                 </span>
@@ -474,8 +484,8 @@
             <div class="bg-white border border-[#94949d] rounded-full rounded-bl-none overflow-hidden">
                 <ul class="flex items-center tab-menu-list">
                     <li class="" data-tab-target="perspectives"> Perspectives </li>
-                    <li class="pointer-events-none opacity-25" data-tab-target="360-ipms"> 360 IPMS</li>
-                    <li class="pointer-events-none opacity-25" data-tab-target="videos"> Videos</li>
+                    <li class="" data-tab-target="360-ipms"> 360 IPMS</li>
+                    <!-- <li class="pointer-events-none opacity-25" data-tab-target="videos"> Videos</li> -->
                 </ul>
             </div>
         </div>
@@ -485,7 +495,7 @@
     <!-- 360 IPMS Models -->
     <div id="360ipms1" style="display: none; width: 100%; height: 100%; padding: 0px;" class="">
         <iframe
-            src="https://projects.blanct.com/capitaland_aljunied/plazaB/"
+            src="https://projects.blanct.com/capitaland_aljunied/plazaB_plain/"
                 width=" 100%" height="100%" frameborder="0" allowfullscreen
             allow="xr-spatial-tracking; gyroscope; accelerometer">
         </iframe>
@@ -493,7 +503,7 @@
 
     <div id="360ipms2" style="display: none; width: 100%; height: 100%; padding: 0px;" class="">
         <iframe
-            src="https://projects.blanct.com/capitaland_aljunied/3k_loadingbay/"
+            src="https://projects.blanct.com/capitaland_aljunied/plazaA/"
                 width=" 100%" height="100%" frameborder="0" allowfullscreen
             allow="xr-spatial-tracking; gyroscope; accelerometer">
         </iframe>
@@ -501,7 +511,7 @@
 
     <div id="360ipms3" style="display: none; width: 100%; height: 100%; padding: 0px;" class="">
         <iframe
-            src="https://projects.blanct.com/capitaland_aljunied/7k_loadingbay/"
+            src="https://projects.blanct.com/capitaland_aljunied/7k_loadingbay"
                 width=" 100%" height="100%" frameborder="0" allowfullscreen
             allow="xr-spatial-tracking; gyroscope; accelerometer">
         </iframe>
@@ -509,7 +519,23 @@
 
     <div id="360ipms4" style="display: none; width: 100%; height: 100%; padding: 0px;" class="">
         <iframe
-            src="https://projects.blanct.com/capitaland_aljunied/plazaA/"
+            src="https://projects.blanct.com/capitaland_aljunied/3k_loadingbay"
+                width=" 100%" height="100%" frameborder="0" allowfullscreen
+            allow="xr-spatial-tracking; gyroscope; accelerometer">
+        </iframe>
+    </div>
+
+    <div id="360ipms5" style="display: none; width: 100%; height: 100%; padding: 0px;" class="">
+        <iframe
+            src="https://projects.blanct.com/capitaland_aljunied/7k_bakery_bare/"
+                width=" 100%" height="100%" frameborder="0" allowfullscreen
+            allow="xr-spatial-tracking; gyroscope; accelerometer">
+        </iframe>
+    </div>
+
+    <div id="360ipms6" style="display: none; width: 100%; height: 100%; padding: 0px;" class="">
+        <iframe
+            src="https://projects.blanct.com/capitaland_aljunied/7k_bakery/"
                 width=" 100%" height="100%" frameborder="0" allowfullscreen
             allow="xr-spatial-tracking; gyroscope; accelerometer">
         </iframe>
